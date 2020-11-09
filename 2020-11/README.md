@@ -30,3 +30,10 @@ The second execution is made for 200 days, according to official data there were
 </p>
 
 As of November, Guatemala is reducing the number of infections, so the prediction may vary. However, depending on what is happening in Europe there could be a second wave of infections in December, adjustments would have to be made to the model so that the prediction remains correct.
+
+
+... more articles from students
+
+
+### References
+
