@@ -1,4 +1,4 @@
-# Techincal Report 2020-11
+# Technical Report 2020-11
 Universidad de San Carlos de Guatemala
 
 ## Title (depends on what the majority write)
@@ -7,7 +7,7 @@ Universidad de San Carlos de Guatemala
 
 Luis Fernando Espino Barrios (professor)
 
-Student1, Student2... (alphabetical order of surnames)
+Student1, Student2... alphabetical order of surnames (students)
 
 ### Resume
 
@@ -32,8 +32,9 @@ The second execution is made for 200 days, according to official data there were
 As of November, Guatemala is reducing the number of infections, so the prediction may vary. However, depending on what is happening in Europe there could be a second wave of infections in December, adjustments would have to be made to the model so that the prediction remains correct.
 
 
-... more articles from students
+... more articles from students (the order of the articles will be defined by the professor)
 
 
 ### References
 
+...
