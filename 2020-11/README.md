@@ -43,6 +43,11 @@ According to the graph, it is observed that indeed, in the next 50 days, the adv
 ### Prediction of deaths due to COVID - 19 in the department of Guatemala
 The solution of a development corresponding to the prediction that can determine the behavior that will continue to have as the days go by was executed, the mortality of the pandemic that affects the country and has spread worldwide since December of last year, this based in a linear regression, for which the results of said prediction are committed to whether there is a second wave derived from the social relaxation that is currently being experienced based on the drop in restrictions and curfews that have been without effect since the previous month .
 
+### Projection of deaths in Guatemala caused by COVID-19 at the end of 2020
+
+Using linear regression, a projection of deaths was made from the deaths of the first 200 days since the pandemic began.
+
+The data on the deceased persons were downloaded from the portal of the Ministry of Public Health and Social Assistance of Gautemala. These range from March 13 to November 8, 2020.
 
 ... more articles from students (the order of the articles will be defined by the professor)
 
