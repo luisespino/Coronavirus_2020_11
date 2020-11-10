@@ -7,7 +7,7 @@ Universidad de San Carlos de Guatemala
 
 Luis Fernando Espino Barrios (professor)
 
-Galicia Nery, Mejía Kevin, Cardona Berny, Student4... alphabetical order of surnames (students)
+Galicia Nery, Mejía Kevin, Cardona Berny, Villatoro Jerson ... alphabetical order of surnames (students)
 
 ### Resume
 
@@ -38,6 +38,12 @@ In the case of Costa Rica, it had a different behavior since the growth curve of
 ![alt text](https://github.com/nerygalicia/CoronavirusML/blob/main/2020-11/201503821.png?raw=true)
 
 According to the graph, it is observed that indeed, in the next 50 days, the advance of the infected will begin to decline and this is encouraging for the neighboring country.
+
+### Projection of deaths for Guatemala from COVID-19 until December 2020
+
+It seeks to make a projection using the sklearn library on the number of deaths that covid-19 can cause at the end of 2020.
+
+(Article in development)
 
 ... more articles from students (the order of the articles will be defined by the professor)
 
