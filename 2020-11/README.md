@@ -7,7 +7,7 @@ Universidad de San Carlos de Guatemala
 
 Luis Fernando Espino Barrios (professor)
 
-Galicia Nery, Student2... alphabetical order of surnames (students)
+Galicia Nery, Giron Gary, Student2... alphabetical order of surnames (students)
 
 ### Resume
 
@@ -37,7 +37,12 @@ In the case of Costa Rica, it had a different behavior since the growth curve of
 
 According to the graph, it is observed that indeed, in the next 50 days, the advance of the infected will begin to decline and this is encouraging for the neighboring country.
 
+### Prediction of deaths due to COVID - 19 in the department of Guatemala
+The solution of a development corresponding to the prediction that can determine the behavior that will continue to have as the days go by was executed, the mortality of the pandemic that affects the country and has spread worldwide since December of last year, this based in a linear regression, for which the results of said prediction are committed to whether there is a second wave derived from the social relaxation that is currently being experienced based on the drop in restrictions and curfews that have been without effect since the previous month .
+
 ... more articles from students (the order of the articles will be defined by the professor)
+
+
 
 
 ### References
