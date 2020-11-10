@@ -5,9 +5,9 @@ Universidad de San Carlos de Guatemala
 
 ### Authors
 
-Luis Fernando Espino Barrios (professor)
+Espino Barrios, Luis Fernando. (professor)
 
-Galicia Nery, Giron Gary, Student2... alphabetical order of surnames (students)
+Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin and Villatoro Jerson. (students)
 
 ### Resume
 
@@ -31,14 +31,18 @@ The second execution is made for 200 days, according to official data there were
 
 As of November, Guatemala is reducing the number of infections, so the prediction may vary. However, depending on what is happening in Europe there could be a second wave of infections in December, adjustments would have to be made to the model so that the prediction remains correct.
 
+For the department of Guatemala, it is projected that by the end of November, the curve of confirmed cases will decrease.
+
 In the case of Costa Rica, it had a different behavior since the growth curve of the infected behaved rather in the way of a polynomial of degree 4, that is, it can stabilize and begin a decline.
 
 ![alt text](https://github.com/nerygalicia/CoronavirusML/blob/main/2020-11/201503821.png?raw=true)
 
 According to the graph, it is observed that indeed, in the next 50 days, the advance of the infected will begin to decline and this is encouraging for the neighboring country.
 
+
 ### Prediction of deaths due to COVID - 19 in the department of Guatemala
 The solution of a development corresponding to the prediction that can determine the behavior that will continue to have as the days go by was executed, the mortality of the pandemic that affects the country and has spread worldwide since December of last year, this based in a linear regression, for which the results of said prediction are committed to whether there is a second wave derived from the social relaxation that is currently being experienced based on the drop in restrictions and curfews that have been without effect since the previous month .
+
 
 ... more articles from students (the order of the articles will be defined by the professor)
 
