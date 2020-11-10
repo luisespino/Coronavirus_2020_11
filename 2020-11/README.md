@@ -7,7 +7,7 @@ Universidad de San Carlos de Guatemala
 
 Luis Fernando Espino Barrios (professor)
 
-Galicia Nery, Student2... alphabetical order of surnames (students)
+Galicia Nery, Kevin Mejía, Student3... alphabetical order of surnames (students)
 
 ### Resume
 
