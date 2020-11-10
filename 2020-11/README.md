@@ -7,7 +7,7 @@ Universidad de San Carlos de Guatemala
 
 Luis Fernando Espino Barrios (professor)
 
-Galicia Nery, Student2... alphabetical order of surnames (students)
+Galicia Nery, Mejía Kevin, Cardona Berny, Student4... alphabetical order of surnames (students)
 
 ### Resume
 
@@ -30,6 +30,8 @@ The second execution is made for 200 days, according to official data there were
 </p>
 
 As of November, Guatemala is reducing the number of infections, so the prediction may vary. However, depending on what is happening in Europe there could be a second wave of infections in December, adjustments would have to be made to the model so that the prediction remains correct.
+
+For the department of Guatemala, it is projected that by the end of November, the curve of confirmed cases will decrease.
 
 In the case of Costa Rica, it had a different behavior since the growth curve of the infected behaved rather in the way of a polynomial of degree 4, that is, it can stabilize and begin a decline.
 
