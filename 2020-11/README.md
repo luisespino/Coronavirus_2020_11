@@ -5,9 +5,9 @@ Universidad de San Carlos de Guatemala
 
 ### Authors
 
-Luis Fernando Espino Barrios (professor)
+Espino Barrios, Luis Fernando. (professor)
 
-Galicia Nery, Mejía Kevin, Cardona Berny, Villatoro Jerson ... alphabetical order of surnames (students)
+Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin and Villatoro Jerson. (students)
 
 ### Resume
 
@@ -39,13 +39,14 @@ In the case of Costa Rica, it had a different behavior since the growth curve of
 
 According to the graph, it is observed that indeed, in the next 50 days, the advance of the infected will begin to decline and this is encouraging for the neighboring country.
 
-### Projection of deaths for Guatemala from COVID-19 until December 2020
 
-It seeks to make a projection using the sklearn library on the number of deaths that covid-19 can cause at the end of 2020.
+### Prediction of deaths due to COVID - 19 in the department of Guatemala
+The solution of a development corresponding to the prediction that can determine the behavior that will continue to have as the days go by was executed, the mortality of the pandemic that affects the country and has spread worldwide since December of last year, this based in a linear regression, for which the results of said prediction are committed to whether there is a second wave derived from the social relaxation that is currently being experienced based on the drop in restrictions and curfews that have been without effect since the previous month .
 
-(Article in development)
 
 ... more articles from students (the order of the articles will be defined by the professor)
+
+
 
 
 ### References
