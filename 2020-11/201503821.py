@@ -27,7 +27,7 @@ plt.scatter(X,Y)
 # _________________________________________________________________ 
 # Step 2: Predecir data
 
-nb_degree = 5
+nb_degree = 4
 polynomial_features = PolynomialFeatures(degree = nb_degree) 
 #print(X) 
 X_TRANSF = polynomial_features.fit_transform(X)  
