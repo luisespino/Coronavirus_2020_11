@@ -39,11 +39,11 @@ count_cases = count_cases[:, np.newaxis]
 days = days[:, np.newaxis]
 
 # ###############################################################################################
-#                                   Prediction of day 293
+#                                   Prediction of day 350
 # ###############################################################################################
 
 
-sequence = np.linspace(days.min(), days.max(), 300).reshape(-1, 1)
+sequence = np.linspace(days.min(), 350, 400).reshape(-1, 1)
 # ###############################################################################################
 #                                       Create the model
 #                                           Grade 7
