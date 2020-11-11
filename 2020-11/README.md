@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Jorge Veliz. (students)
+Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge. (students)
 
 ### Resume
 
