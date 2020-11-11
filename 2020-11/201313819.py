@@ -57,5 +57,5 @@ plotter.scatter(days, count_cases)
 #                                     Plotting the model
 # ###############################################################################################
 plotter.plot(sequence, model.predict(sequence), color="yellow")
-plotter.title("Number of deaths in Honduras - Covid-19")
+plotter.title("Prediction of # of deaths for day 350 in Honduras - Covid-19")
 plotter.show()
