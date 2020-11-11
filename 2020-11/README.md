@@ -34,6 +34,8 @@ As of November, Guatemala is reducing the number of infections, so the predictio
 
 For the department of Guatemala, it is projected that by the end of November, the curve of confirmed cases will decrease.
 
+### Prediction of deaths in Costa Rica
+
 In the case of Costa Rica, it had a different behavior since the growth curve of the infected behaved rather in the way of a polynomial of degree 4, that is, it can stabilize and begin a decline.
 
 ![alt text](https://github.com/nerygalicia/CoronavirusML/blob/main/2020-11/201503821.png?raw=true)

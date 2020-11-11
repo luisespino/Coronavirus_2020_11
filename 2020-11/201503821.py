@@ -64,7 +64,7 @@ plt.plot(X_NEW, Y_NEW, color='coral', linewidth=3)
 
 plt.grid()  
 plt.xlim(x_new_min,x_new_max)  
-plt.ylim(0,150000)  
+plt.ylim(0,170000)  
 
 title = 'Degree = {}; RMSE = {}; R2 = {}'.format(nb_degree, round(rmse,2), round(r2,2))
 plt.title('Costa Rica \n ' + title, fontsize=10)
