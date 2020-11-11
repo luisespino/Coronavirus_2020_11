@@ -44,7 +44,10 @@ According to the graph, it is observed that indeed, in the next 50 days, the adv
 
 The solution of a development corresponding to the prediction that can determine the behavior that will continue to have as the days go by was executed, the mortality of the pandemic that affects the country and has spread worldwide since December of last year, this based in a linear regression, for which the results of said prediction are committed to whether there is a second wave derived from the social relaxation that is currently being experienced based on the drop in restrictions and curfews that have been without effect since the previous month .
 
-... more articles from students (the order of the articles will be defined by the professor)
+Using linear regression, a projection of deaths was made from the deaths of the first 200 days since the pandemic began.
+
+The data on the deceased persons were downloaded from the portal of the Ministry of Public Health and Social Assistance of Gautemala. These range from March 13 to November 8, 2020.
+
 
 ### Prediction of deaths due to COVID - 19 in Honduras
 
@@ -53,6 +56,10 @@ This prediction was made on the 293rd day and deals with the number of deaths pr
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6562969/98753311-a6bfa000-2389-11eb-9e90-9cd0d67d7794.png" width="400">
 </p>
+
+
+... more articles from students (the order of the articles will be defined by the professor)
+
 
 ### References
 
