@@ -26,6 +26,8 @@ for i in cases:
     val = val+i
     count_cases.append(val)
 
+print(len(count_cases))
+
 days = []
 for i in range(len(count_cases)):
     days.append(i + 1)
@@ -37,7 +39,7 @@ count_cases = count_cases[:, np.newaxis]
 days = days[:, np.newaxis]
 
 # ###############################################################################################
-#                                   Prediction of day 250
+#                                   Prediction of day 293
 # ###############################################################################################
 
 
