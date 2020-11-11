@@ -37,7 +37,6 @@ In the case of Costa Rica, it had a different behavior since the growth curve of
 
 According to the graph, it is observed that indeed, in the next 50 days, the advance of the infected will begin to decline and this is encouraging for the neighboring country.
 
-... more articles from students (the order of the articles will be defined by the professor)
 
 
 ### Number of cases per day of covid 19 in the US for 218 days
@@ -48,6 +47,12 @@ The graph with the data analyzed during this period of time is shown, as well as
 ![alt text](201612226_img1.PNG?raw=true)
 
 ![alt text](201612226_img2.PNG?raw=true)
+
+
+
+
+... more articles from students (the order of the articles will be defined by the professor)
+
 
 ### References
 
