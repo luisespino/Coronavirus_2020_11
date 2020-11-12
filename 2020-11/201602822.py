@@ -1,3 +1,6 @@
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import requests
@@ -26,4 +29,3 @@ print(data_ca)
 
 dates = df_ca.columns.values[4:]
 formatted_dates = list(map(lambda date_str: datetime(2000+int(date_str.split('/')[2]), int(date_str.split('/')[0]), int(date_str.split('/')[1])).strftime('%d/%m/%Y'), dates))# strptime(date_str, '%-m/%-d/%-y').strftime('%d/%m/%Y'), dates))
-print(formatted_dates)
