@@ -65,6 +65,20 @@ This prediction was made on the 293rd day and deals with the number of deaths pr
 </p>
 
 
+
+
+### Number of cases per day of covid 19 in the US for 218 days
+
+The linear correlation graph using the polynomial characteristics shows us the behavior of the cases that have been registered in the US, in the first 218 days and we can clearly see the second wave of infections that the country is going through.
+The graph with the data analyzed during this period of time is shown, as well as the graph with the appropriate degree to model the behavior of the data.
+
+![alt text](201612226_img1.PNG?raw=true)
+
+![alt text](201612226_img2.PNG?raw=true)
+
+
+
+
 ... more articles from students (the order of the articles will be defined by the professor)
 
 
