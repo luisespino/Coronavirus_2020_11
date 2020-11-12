@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar and Villatoro Jerson. (students)
+Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge. (students)
 
 ### Resume
 
@@ -38,9 +38,10 @@ In the case of Costa Rica, it had a different behavior since the growth curve of
 
 ![alt text](https://github.com/nerygalicia/CoronavirusML/blob/main/2020-11/201503821.png?raw=true)
 
-According to the graph, it is observed that indeed, in the next 50 days, the advance of the infected will begin to decline and this is encouraging for the neighboring country.
+According to the graph, we can observe that indeed, in the next 50 days, the advance of the infected will begin to decline and this is encouraging for the neighboring country.
 
-### Prediction of deaths due to COVID - 19 in the department of Guatemala
+### Mortality prediction due to COVID - 19 in the department of Guatemala
+As days go by we will be able to determine a more accurate solution, by discovering the determined behavior, for the development corelated to the the excecuted solution. The mortality of this pandemic, which started to spread world-wide since december of 2019, prediction based on a linear regression, indicates that the outcome of whether there is a second wave derived from social relaxation related to the current decrease in social restrictions and curfews which were rendered without effect since the past month of october.
 
 The solution of a development corresponding to the prediction that can determine the behavior that will continue to have as the days go by was executed, the mortality of the pandemic that affects the country and has spread worldwide since December of last year, this based in a linear regression, for which the results of said prediction are committed to whether there is a second wave derived from the social relaxation that is currently being experienced based on the drop in restrictions and curfews that have been without effect since the previous month .
 
