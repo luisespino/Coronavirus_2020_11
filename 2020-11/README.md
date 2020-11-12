@@ -1,4 +1,4 @@
-# Technical Report 2020-11
+﻿# Technical Report 2020-11
 
 Universidad de San Carlos de Guatemala
 
@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge. (students)
+Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez. (students)
 
 ### Resume
 
@@ -80,6 +80,7 @@ The graph with the data analyzed during this period of time is shown, as well as
 ![alt text](201612226_img2.PNG?raw=true)
 
 
+### Analysis of the number of deaths from coronavirus in guatemala
 
 
 ... more articles from students (the order of the articles will be defined by the professor)
