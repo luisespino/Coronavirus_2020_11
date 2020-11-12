@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge. (students)
+Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Vega Daniel. (students)
 
 ### Resume
 
@@ -58,6 +58,10 @@ This prediction was made on the 293rd day and deals with the number of deaths pr
 <img src="https://user-images.githubusercontent.com/6562969/98753311-a6bfa000-2389-11eb-9e90-9cd0d67d7794.png" width="400">
 </p>
 
+
+### Trend of number of infected per day in Guatemala
+
+The analysis is performed by grouping the number of infected per day based on the number of infected, day of the pandemic and current day of the year.
 
 ... more articles from students (the order of the articles will be defined by the professor)
 
