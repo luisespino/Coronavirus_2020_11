@@ -79,7 +79,7 @@ The graph with the data analyzed during this period of time is shown, as well as
 ### Covid-19 in Guatemala, cases, predictions for 2021
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/6568351/98974447-881cee80-24da-11eb-8b38-622c861969d8.png" width="400">
+<img src="https://user-images.githubusercontent.com/6568351/98974867-02e60980-24db-11eb-8bc6-95284beba521.png" width="400">
 </p>
 
 
