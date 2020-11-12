@@ -67,7 +67,11 @@ This prediction was made on the 293rd day and deals with the number of deaths pr
 <img src="https://user-images.githubusercontent.com/6562969/98753311-a6bfa000-2389-11eb-9e90-9cd0d67d7794.png" width="400">
 </p>
 
+### Covid-19 in Guatemala, cases, predictions for 2021
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/6568351/98974447-881cee80-24da-11eb-8b38-622c861969d8.png" width="400">
+</p>
 
 
 ### Number of cases per day of covid 19 in the US for 218 days
