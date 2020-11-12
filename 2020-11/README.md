@@ -67,13 +67,6 @@ This prediction was made on the 293rd day and deals with the number of deaths pr
 <img src="https://user-images.githubusercontent.com/6562969/98753311-a6bfa000-2389-11eb-9e90-9cd0d67d7794.png" width="400">
 </p>
 
-### Covid-19 in Guatemala, cases, predictions for 2021
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6568351/98974447-881cee80-24da-11eb-8b38-622c861969d8.png" width="400">
-</p>
-
-
 ### Number of cases per day of covid 19 in the US for 218 days
 
 The linear correlation graph using the polynomial characteristics shows us the behavior of the cases that have been registered in the US, in the first 218 days and we can clearly see the second wave of infections that the country is going through.
@@ -83,7 +76,11 @@ The graph with the data analyzed during this period of time is shown, as well as
 
 ![alt text](201612226_img2.PNG?raw=true)
 
+### Covid-19 in Guatemala, cases, predictions for 2021
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/6568351/98974447-881cee80-24da-11eb-8b38-622c861969d8.png" width="400">
+</p>
 
 
 ... more articles from students (the order of the articles will be defined by the professor)
