@@ -34,6 +34,9 @@ formatted_dates = dates
 #formatted_dates = list(map(lambda date_str: datetime(2000+int(date_str.split('/')[2]), int(date_str.split('/')[0]), int(date_str.split('/')[1])).strftime('%d/%m/%Y'), dates))# strptime(date_str, '%-m/%-d/%-y').strftime('%d/%m/%Y'), dates))
 
 degree=9
+colors = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple', 'tab:brown', 'tab:pink']
+plots = []
+country_names = []
 for i in range(len(data_ca_countries)):
     X = np.array(range(len(dates)))
     x_max = X.max()
@@ -44,10 +47,13 @@ for i in range(len(data_ca_countries)):
     polyreg.fit(X[:, np.newaxis], Y)
     Y_predicted = polyreg.predict(X_seq)
     
-    plt.scatter(range(len(dates)), data_ca_countries[i][4:], color='gray')
-    plt.plot(X_seq, Y_predicted, color='coral', linewidth=4)
-    plt.grid()
-    plt.xlabel('Days from 01/22/2020')
-    plt.ylabel('Confirmed cases')
-    plt.title('%s' % data_ca_countries[i][1])
-    plt.show()
+    #plt.scatter(range(len(dates)), data_ca_countries[i][4:], color='gray')
+    plot, = plt.plot(X_seq, Y_predicted, color=colors[i], linewidth=3)
+    plots.append(plot)
+    country_names.append(data_ca_countries[i][1])
+plt.grid()
+plt.legend(plots, country_names)#, ncol=3, fontsize=8)
+plt.xlabel('Days from 01/22/2020')
+plt.ylabel('Confirmed cases')
+plt.title('Confirmed cases by Central America countries')
+plt.show()
