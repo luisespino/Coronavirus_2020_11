@@ -80,7 +80,12 @@ The graph with the data analyzed during this period of time is shown, as well as
 ![alt text](201612226_img2.PNG?raw=true)
 
 
-### Analysis of the number of deaths from coronavirus in guatemala
+### Analysis of the number of deaths from coronavirus in Guatemala
+
+
+Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
+
+![201403624_img1](https://user-images.githubusercontent.com/15852159/98961247-fb1e6900-24ca-11eb-8aa4-4c57721c3ca8.png)
 
 
 ... more articles from students (the order of the articles will be defined by the professor)
