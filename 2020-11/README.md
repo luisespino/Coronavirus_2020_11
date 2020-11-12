@@ -56,7 +56,7 @@ Using linear regression, a projection of deaths was made from the deaths of the 
 The data on the deceased persons were downloaded from the portal of the Ministry of Public Health and Social Assistance of Gautemala. These range from March 13 to November 8, 2020.
 
 
-### Prediction of deaths due to COVID - 19 in Honduras
+### Mortality prediction due to COVID - 19 in Honduras
 
 This prediction was made on the 293rd day and deals with the number of deaths predicted for the 350th day after the COVID-19 in Honduras. According to the graph, it can be seen that on day 350 the mortality figure due to the virus would reach 500,000.
 
