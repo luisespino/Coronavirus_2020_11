@@ -88,6 +88,9 @@ The graph with the data analyzed during this period of time is shown, as well as
 <img src="https://user-images.githubusercontent.com/37234131/99012125-45c3d380-2513-11eb-9b7b-dfc598ee209c.PNG" width="400">
 </p>
 
+For the analysis of cases in the United States, the following page was taken as a reference, from which the data of the first 218 days were taken. [COVID-19 in the US for 218 days](https://espanol.cdc.gov/coronavirus/2019-ncov/cases-updates/previouscases.html)
+
+
 
 
 ... more articles from students (the order of the articles will be defined by the professor)
