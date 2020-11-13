@@ -112,6 +112,27 @@ With these related data we could predict active cases in Guatemalan men by day 3
 <img src="https://user-images.githubusercontent.com/20606917/99028199-ca731980-2534-11eb-9b42-be27b8432845.png" width="400">
 </p>
 
+
+### Comparative between Guatemala/Central america and Japan
+As we can apretiate in the graphs above, we can see a similarities between Guatemala and Countries in Central when it comes to covid stats, which is somehow expected
+since we can find alot of cultural similarities between this countries, but now we will compare them to Japan.
+First we need to establish why Japan was the target, there are three main reasons:
+1. They started to do quarentine like the rest of the world, then they decided they were just going to have to learn to "live with it" and resumed their daily duties,
+with some added restrictions of course, but this was done at an early stage; meanwhile in Guatemala the quarentine lasted for longer time, and restrictions were more severe.
+2. They way they have dealt with the pandemic has been outstanding, reflecting in the lowest numbers per capita world wide.
+3. Their social standards, which are regarded to be among the best in the world.
+
+So we start by reviewing this Graph, where we find a model starting since the beggining of the second wave, october 1st, and aimed towards predicting, using a polynomial regression model. the number of confirmed cases by november 30, the end of the month
+
+--- graph
+
+As we can see, the numbers seem to similar to Guatemala, but we must also take into consideration that Japans population is 126.5 million as of 2018 and Guatemalas population
+is 17.25 million as of 2018 which is a staggering difference, this reflects in the behavior shown in the graphs, Japans seems to be more steady, while most of 
+Central America is quite the oposite.
+So now we must ask ourselves which factors create this difference, and the one that stands out the most is the culture, considering our current situation
+perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can 
+clearly see that Japan is a great example.
+
 ### References
 
 ...
