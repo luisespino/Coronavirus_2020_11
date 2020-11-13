@@ -74,7 +74,16 @@ This prediction was made on the 293rd day and deals with the number of deaths pr
 
 ### Trend of number of infected per day in Guatemala
 
-The analysis is performed by grouping the number of infected per day based on the number of infected, day of the pandemic and current day of the year.
+The analysis is carried out by grouping the number of infected per day according to the number of infected, the day of the pandemic and the current day of the year.
+
+It can be seen in the image that 3 groups were created in which the number of infected per day and the days of the current year in which those infected were presented are shown.
+
+With these data we can categorize based on the current day of the year and the number of infected of the day to which group it belongs and obtain an estimate of infections for that day.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
+</p>
+
 
 ### Number of cases per day of covid 19 in the US for 218 days
 
