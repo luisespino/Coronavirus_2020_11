@@ -105,7 +105,16 @@ The graph with the data analyzed during this period of time is shown, as well as
 
 For the analysis of cases in the United States, the following page was taken as a reference, from which the data of the first 218 days were taken. [COVID-19 in the US for 218 days](https://espanol.cdc.gov/coronavirus/2019-ncov/cases-updates/previouscases.html)
 
+Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
 
+The training result model is as follows:
+
+Y = 0.0805811339388978X + 7.712448377581117
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/15852159/99107552-a7378100-25ab-11eb-8a23-c19c7d36b849.png" width="400">
+</p>
 
 ### Covid-19 in Guatemala, cases, predictions for 2021
 
@@ -123,20 +132,6 @@ In the graph below you can see in red line how the first curve that is already w
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6568351/98974867-02e60980-24db-11eb-8bc6-95284beba521.png" width="400">
 </p>
-
-Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
-
-The training result model is as follows:
-
-Y = 0.0805811339388978X + 7.712448377581117
-
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/15852159/99107552-a7378100-25ab-11eb-8a23-c19c7d36b849.png" width="400">
-</p>
-
-
-... more articles from students (the order of the articles will be defined by the professor)
 
 
 ### Percentage of men infected by covid-19 in Guatemala since the first active case 
@@ -172,4 +167,5 @@ clearly see that Japan is a great example.
 
 ### References
 
+... more articles from students (the order of the articles will be defined by the professor)
 ...
