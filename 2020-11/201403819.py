@@ -8,6 +8,7 @@ from sklearn.cluster import KMeans
 # Data set
 # Datos de 13/02/2020 a 10/11/2020
 # De acuerdo con: https://tablerocovid.mspas.gob.gt/
+# Regiones de acuerdo con: https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/
 region_guatemala = ['Region2 Norte', 'Region2 Norte', 'Region 5 Central', 'Region3 Nor-Oriente', 'Region 8 Peten',
                     'Region3 Nor-Oriente', 'Region 7 Nor-Occidente', 'Region 5 Central', 'Region1 Metropolitana',
                     'Region 7 Nor-Occidente', 'Region3 Nor-Oriente', 'Region 4 Sur-Oriente', 'Region 4 Sur-Oriente',
@@ -37,6 +38,9 @@ x = np.array([
 ])
 kmeans = KMeans(n_clusters=3)
 kmeans.fit(x)
-print("Clusters: Fallecidos de acuerdo a regiones de Guatemala\n ",kmeans.cluster_centers_)
+print("Clusters: Fallecidos de acuerdo a regiones de Guatemala - Covid 19\n ",kmeans.cluster_centers_)
 plt.scatter(x[:,0], x[:,1], c=kmeans.labels_, cmap='rainbow')
+plt.title("Fallecidos de acuerdo a regiones de Guatemala\n- Covid 19 - Datos de 13/02/2020 a 10/11/2020")
+plt.xlabel('Regiones')
+plt.ylabel('Total fallecidos')
 plt.show()
