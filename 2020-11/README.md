@@ -1,4 +1,4 @@
-# Technical Report 2020-11
+﻿# Technical Report 2020-11
 
 Universidad de San Carlos de Guatemala
 
@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge. (students)
+Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez. (students)
 
 ### Resume
 
@@ -91,6 +91,12 @@ The graph with the data analyzed during this period of time is shown, as well as
 For the analysis of cases in the United States, the following page was taken as a reference, from which the data of the first 218 days were taken. [COVID-19 in the US for 218 days](https://espanol.cdc.gov/coronavirus/2019-ncov/cases-updates/previouscases.html)
 
 
+### Analysis of the number of deaths from coronavirus in Guatemala
+
+
+Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
+
+![201403624_img1](https://user-images.githubusercontent.com/15852159/98961247-fb1e6900-24ca-11eb-8aa4-4c57721c3ca8.png)
 
 
 ... more articles from students (the order of the articles will be defined by the professor)
