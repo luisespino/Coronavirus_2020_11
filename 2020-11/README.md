@@ -102,6 +102,16 @@ Analysis of the number of deaths from coronavirus in Guatemala by means of a lin
 ... more articles from students (the order of the articles will be defined by the professor)
 
 
+### Percentage of men infected by covid-19 in Guatemala since the first active case 
+
+The graphic below shows up how infected cases in mens are increasing and decreasing during the days, we can see how infected cases are shown by blue dots in the graph,
+futhermore, we can fit a trend line to these cases using a polynomial function of degree 4, in this way, we have a data correlation of 0.69.
+With these related data we could predict active cases in Guatemalan men by day 350 of the pandemic
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20606917/99028199-ca731980-2534-11eb-9b42-be27b8432845.png" width="400">
+</p>
+
 ### References
 
 ...
