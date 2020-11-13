@@ -111,7 +111,14 @@ For the analysis of cases in the United States, the following page was taken as 
 
 Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
 
-![201403624_img1](https://user-images.githubusercontent.com/15852159/98961247-fb1e6900-24ca-11eb-8aa4-4c57721c3ca8.png)
+The training result model is as follows:
+
+Y = 0.0805811339388978X + 7.712448377581117
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/15852159/99107552-a7378100-25ab-11eb-8a23-c19c7d36b849.png" width="400">
+</p>
 
 
 ... more articles from students (the order of the articles will be defined by the professor)
