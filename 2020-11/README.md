@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge. (students)
+Cardona Berny, Galicia Nery, Giron Gary, Wilson Palma, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge. (students)
 
 ### Resume
 
@@ -92,6 +92,61 @@ For the analysis of cases in the United States, the following page was taken as 
 
 
 
+## Average deaths from confirmed cases and age of covid19 in Guatemala
+
+Taking into account the number of deaths, the number of confirmed cases by average age taking into account the years from ten to ten starting at zero and ending at one hundred, that is, for the first group of data the average age would be five, for the second fifteen and for the last one it would be ninety-five. We proceeded to the analysis of these data using artificial intelligence where by means of the k-means algorithm of the sklearn library using the following data set.
+
+| Number of deaths | Confirmed cases | Average age |
+| ---------------- | --------------- | ----------- |
+| 31               | 3045            | 5           |
+| 21               | 5790            | 15          |
+| 107              | 28883           | 25          |
+| 209              | 28398           | 35          |
+| 479              | 18996           | 45          |
+| 757              | 12701           | 55          |
+| 1032             | 7673            | 65          |
+| 575              | 2317            | 75          |
+| 241              | 827             | 85          |
+| 41               | 134             | 95          |
+
+Grouping the data by 2 clusters, the result of the k-means algorithm indicates the following:
+
+### Centroid 1
+
+_where each data refers to the mean of the grouped data_
+
+| Number of deaths | Confirmed cases | Average age |
+| ---------------- | --------------- | ----------- |
+| 385              | 4641            | 56          |
+
+### Centroide 2
+
+_where each data refers to the mean of the grouped data_
+
+| Number of deaths | Confirmed cases | Average age |
+| ---------------- | --------------- | ----------- |
+| 265              | 25425           | 35          |
+
+### Graph of the previous data
+
+![Grafica de clusters ](https://user-images.githubusercontent.com/12839670/99020367-0ea9ee00-2524-11eb-9323-fff1fd87ca90.JPG)
+
+The graph only shows the number of deaths in two dimensions on the "X" axis and the number of confirmed cases on the "Y" axis.
+
+### Analysis of data
+
+From the data shown for centroid 1, it can be said that for every 464 Data analysis1 positive cases with people with an average age of 56 years, 385 will die.
+
+From the data shown for centroid 2, it can be said that for every 25,425 positive cases with people with an average age of 35 years, 265 will die.
+
+What seeing it in a fast way and corobrating what is indicated in a global way, older people are more susceptible to dying, since out of 4641 cases the
+8% while of the cases of the youngest people of 25425 cases 1% dies.
+
+With the estimate given above, it is possible to predict the number of deaths that there will be in a hospital, city or any place in general since we can deduce the probability that a person has of dying according to their age and the number of deaths that there will be in a population.
+
+### How to predict
+
+The correct way to find out if a person belongs to one set of data or another is through their age, if their age is closer to 56 years than to 35 years it means that they belong to that set of information, otherwise If your age is closer to 35 years than 56 years, it belongs to the second set of information.
 
 ... more articles from students (the order of the articles will be defined by the professor)
 
