@@ -40,7 +40,9 @@ In the case of Costa Rica, it had a different behavior since the growth curve of
 
 The degree of the polynomial has an R2 of 0.998, that is, the data does fit the model. Also with grade 5 R2 is even closer to 0.999, but the behavior does not correspond to a pandemic, because it goes down too quickly, without stabilizing.
 
-![alt text](https://github.com/nerygalicia/CoronavirusML/blob/main/2020-11/201503821.png?raw=true)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/37234131/99012300-a94e0100-2513-11eb-8a67-bcd93c686047.png" width="400">
+</p>
 
 According to the graph, we can observe that indeed, in the next 50 days, the advance of the infected will continue but could begin to stabilize, which is encouraging for the neighboring country.
 
