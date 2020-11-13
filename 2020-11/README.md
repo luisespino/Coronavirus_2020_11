@@ -1,4 +1,4 @@
-# Technical Report 2020-11
+﻿# Technical Report 2020-11
 
 Universidad de San Carlos de Guatemala
 
@@ -8,7 +8,11 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
+<<<<<<< HEAD
 Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Vega Daniel. (students)
+=======
+Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez. (students)
+>>>>>>> 6013ffce80cba0a7a109af0bd685061c3ce6e730
 
 ### Resume
 
@@ -102,9 +106,47 @@ The graph with the data analyzed during this period of time is shown, as well as
 For the analysis of cases in the United States, the following page was taken as a reference, from which the data of the first 218 days were taken. [COVID-19 in the US for 218 days](https://espanol.cdc.gov/coronavirus/2019-ncov/cases-updates/previouscases.html)
 
 
+### Analysis of the number of deaths from coronavirus in Guatemala
+
+
+Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
+
+![201403624_img1](https://user-images.githubusercontent.com/15852159/98961247-fb1e6900-24ca-11eb-8aa4-4c57721c3ca8.png)
 
 
 ... more articles from students (the order of the articles will be defined by the professor)
+
+
+### Percentage of men infected by covid-19 in Guatemala since the first active case 
+
+The graphic below shows up how infected cases in mens are increasing and decreasing during the days, we can see how infected cases are shown by blue dots in the graph,
+futhermore, we can fit a trend line to these cases using a polynomial function of degree 4, in this way, we have a data correlation of 0.69.
+With these related data we could predict active cases in Guatemalan men by day 350 of the pandemic
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20606917/99028199-ca731980-2534-11eb-9b42-be27b8432845.png" width="400">
+</p>
+
+
+### Comparative between Guatemala/Central america and Japan
+As we can apretiate in the graphs above, we can see a similarities between Guatemala and Countries in Central when it comes to covid stats, which is somehow expected
+since we can find alot of cultural similarities between this countries, but now we will compare them to Japan.
+First we need to establish why Japan was the target, there are three main reasons:
+1. They started to do quarentine like the rest of the world, then they decided they were just going to have to learn to "live with it" and resumed their daily duties,
+with some added restrictions of course, but this was done at an early stage; meanwhile in Guatemala the quarentine lasted for longer time, and restrictions were more severe.
+2. They way they have dealt with the pandemic has been outstanding, reflecting in the lowest numbers per capita world wide.
+3. Their social standards, which are regarded to be among the best in the world.
+
+So we start by reviewing this Graph, where we find a model starting since the beggining of the second wave, october 1st, and aimed towards predicting, using a polynomial regression model. the number of confirmed cases by november 30, the end of the month
+
+--- graph
+
+As we can see, the numbers seem to similar to Guatemala, but we must also take into consideration that Japans population is 126.5 million as of 2018 and Guatemalas population
+is 17.25 million as of 2018 which is a staggering difference, this reflects in the behavior shown in the graphs, Japans seems to be more steady, while most of 
+Central America is quite the oposite.
+So now we must ask ourselves which factors create this difference, and the one that stands out the most is the culture, considering our current situation
+perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can 
+clearly see that Japan is a great example.
 
 ### References
 
