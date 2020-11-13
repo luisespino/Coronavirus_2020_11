@@ -6,17 +6,16 @@ from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import numpy as np
 import random
-import pandas as pd  # To read data
+import pandas as pd  
 
-data = pd.read_csv('201403624_data.csv')  # load data set
-X = data.iloc[:, 0].values.reshape(-1, 1)  # values converts it into a numpy array
-Y = data.iloc[:, 2].values.reshape(-1, 1)  # -1 means that calculate the dimension of rows, but have 1 column
-linear_regressor = LinearRegression()  # create object for the class
-linear_regressor.fit(X, Y)  # perform linear regression
-Y_pred = linear_regressor.predict(X)  # make predictions
-
+data = pd.read_csv('201403624_data.csv')  
+X = data.iloc[:, 0].values.reshape(-1, 1)  
+Y = data.iloc[:, 2].values.reshape(-1, 1)  
+linear_regressor = LinearRegression()  
+linear_regressor.fit(X, Y)  
+Y_pred = linear_regressor.predict(X)  
 plt.scatter(X, Y)
-plt.plot(X, Y_pred, color='red')
+plt.plot(X, Y_pred, color='cyan')
 plt.show()
 
 
@@ -76,6 +75,6 @@ valores_prueba=np.array([[2500],[2000],[14000]])
 #print("Predict:\n ",kmeans.predict(valores_prueba))
 plt.scatter(valores_prueba[:,0],[210,211,212], color='Black')
 #plt.scatter(X_NEW,Y_NEW, color='Black')
-
 #plt.show()
+
 
