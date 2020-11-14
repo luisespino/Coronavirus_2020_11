@@ -12,7 +12,9 @@ Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordo
 
 ### Resume
 
-...
+The following report deals with how the covid-19 pandemic has evolved since the first day it arrived in Guatemala and some countries in America, such as Honduras, Costa Rica and the United States, dealing with issues about the death rate, number of people infected by day, percentage of dead people according to active cases.
+
+All the data collected and displayed have been extracted from the public databases of each country that keep track of this information. With this information and using the python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown next.
 
 ### Covid-19 infection trend in Guatemala
 
