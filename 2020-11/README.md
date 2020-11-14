@@ -87,6 +87,7 @@ With these data we can categorize based on the current day of the year and the n
 <img src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
 </p>
 
+
 ### Number of cases per day of covid 19 in the US for 218 days
 
 The linear correlation graph using the polynomial characteristics shows us the behavior of the cases that have been registered in the US, in the first 218 days and we can clearly see the second wave of infections that the country is going through.
@@ -105,7 +106,7 @@ For the analysis of cases in the United States, the following page was taken as 
 
 The data used and the graphs presented for the analysis of cases of covid 19 in the usa can be found here: [201612226.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201612226.py)
 
-
+---
 
 Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
 
