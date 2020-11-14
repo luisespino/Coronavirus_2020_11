@@ -12,13 +12,15 @@ Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordo
 
 ### Resume
 
-...
+The following report deals with how the covid-19 pandemic has evolved since the first day it arrived in Guatemala and some countries in America, such as Honduras, Costa Rica and the United States, dealing with issues about the death rate, number of people infected by day, percentage of dead people according to active cases.
+
+All the data collected and displayed have been extracted from the public databases of each country that keep track of this information. With this information and using the python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown next.
 
 ### Covid-19 infection trend in Guatemala
 
 The trend of infections is carried out through two perspectives: one having 30 days of information on infections in Guatemala at the beginning of the pandemic and the trend will be shown at different times.
 
-The first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
+According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/66042898/98481436-d327c080-21bf-11eb-852a-39c27f8c5cf0.jpg" width="400">
@@ -75,17 +77,24 @@ This prediction was made on the 293rd day and deals with the number of deaths pr
 <img src="https://user-images.githubusercontent.com/6562969/98753311-a6bfa000-2389-11eb-9e90-9cd0d67d7794.png" width="400">
 </p>
 
-### Trend of number of infected per day in Guatemala
+## Trend of number of infected per day in Guatemala
 
 The analysis is carried out by grouping the number of infected per day according to the number of infected, the day of the pandemic and the current day of the year.
 
-It can be seen in the image that 3 groups were created in which the number of infected per day and the days of the current year in which those infected were presented are shown.
+According to the file 201212596.py, It can be seen in the image that 3 groups were created in which the number of infected per day and the days of the current year in which those infected were presented are shown.
 
 With these data we can categorize based on the current day of the year and the number of infected of the day to which group it belongs and obtain an estimate of infections for that day.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
 </p>
+
+### Centroid information
+
+Grouping the information in 3 clusters, the k-means algorithm gave us the following information using 3 centroids:
+  * Centroid 1: 89 infections, 72 days of pandemic, 144 current days of the year.
+  * Centroid 2: 1067 infections, 120 days of pandemic, 192 current days of the year.
+  * Centroid 3: 558 infections, 163 pandemic days, 235 current days of the year.
 
 ### Number of cases per day of covid 19 in the US for 218 days
 
@@ -102,6 +111,10 @@ The graph with the data analyzed during this period of time is shown, as well as
 </p>
 
 For the analysis of cases in the United States, the following page was taken as a reference, from which the data of the first 218 days were taken. [COVID-19 in the US for 218 days](https://espanol.cdc.gov/coronavirus/2019-ncov/cases-updates/previouscases.html)
+
+The data used and the graphs presented for the analysis of cases of covid 19 in the usa can be found here: [201612226.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201612226.py)
+
+---
 
 Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
 
@@ -161,7 +174,84 @@ So now we must ask ourselves which factors create this difference, and the one t
 perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can
 clearly see that Japan is a great example.
 
+## Average deaths from confirmed cases and age of covid 19 in Guatemala
+
+Taking into account the number of deaths, the number of confirmed cases by average age taking into account the years from ten to ten starting at zero and ending
+In one hundred, that is, for the first group of data the average age would be five, for the second fifteen and for the last it would be ninety-five. We proceeded to the analysis of
+these data using artificial intelligence where by means of the k-means algorithm from the sklearn library using the following data set.
+
+| Number of deaths | Confirmed cases | Average age |
+| ---------------- | --------------- | ----------- |
+| 31               | 3045            | 5           |
+| 21               | 5790            | 15          |
+| 107              | 28883           | 25          |
+| 209              | 28398           | 35          |
+| 479              | 18996           | 45          |
+| 757              | 12701           | 55          |
+| 1032             | 7673            | 65          |
+| 575              | 2317            | 75          |
+| 241              | 827             | 85          |
+| 41               | 134             | 95          |
+
+Grouping the data by 2 clusters, the result of the k-means algorithm indicates the following:
+
+### Centroid 1
+
+_where each data refers to the mean of the grouped data_
+
+| Number of deaths | Confirmed cases | Average age |
+| ---------------- | --------------- | ----------- |
+| 385              | 4641            | 56          |
+
+### Centroide 2
+
+_where each data refers to the mean of the grouped data_
+
+| Number of deaths | Confirmed cases | Average age |
+| ---------------- | --------------- | ----------- |
+| 265              | 25425           | 35          |
+
+### Graph of the previous data
+
+![Grafica de clusters ](https://user-images.githubusercontent.com/12839670/99020367-0ea9ee00-2524-11eb-9323-fff1fd87ca90.JPG)
+
+The graph only shows the number of deaths in two dimensions on the "X" axis and the number of confirmed cases on the "Y" axis.
+
+### Analysis of data
+
+From the data shown for centroid 1, it can be said that for every 464 Data analysis1 positive cases with people with an average age of 56 years, 385 will die.
+
+From the data shown for centroid 2, it can be said that for every 25,425 positive cases with people with an average age of 35 years, 265 will die.
+
+What seeing it in a fast way and corobrating what is indicated in a global way, older people are more susceptible to dying, since out of 4641 cases the
+8% while of the cases of the youngest people of 25425 cases 1% dies.
+
+With the estimate given above, it is possible to predict the number of deaths that there will be in a hospital, city or any place in general since we can deduce the probability that a person has of dying according to their age and the number of deaths that there will be in a population.
+
+### How to predict
+
+The correct way to find out if a person belongs to one set of data or another is through their age, if their age is closer to 56 years than to 35 years it means that they belong to that set of information, otherwise If your age is closer to 35 years than 56 years, it belongs to the second set of information.
+
+### China, the city where everything started. How are they now? 
+
+China is the city where the pandemic started. This year, they experimented a second wave of Covid 19. The objective of this analysis is to determine what was the behavior of the second wave of Covid in China and how long it took to overcome. The analysis begins on January 22, 2020. As can be seen in the following graph, the highest peak of infections was reached in February, with a maximum of 15136 cases of contagion, which represented an anomaly compared to the values recorded in the previous days. This day marked a clear limit in the case of infections, in the following days the policies
+taken by the Chinese government were stricter and a began a decrease in daily cases. By March 10, the days in which more than 100 cases were registered were very few. We can say with complete certainty, based on the following graph, that the second wave lasted approximately two months and its peak was one month after the first contagions began to register. Clearly, this decrease in cases was due to stricter health policies and the collaboration of all citizens.
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34200816/99139374-9283d900-25fd-11eb-9cc9-955d600e031a.png" width="400">
+</p>
+
+The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201602656.py)
+
+
+
+
+According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
+
 ### References
 
 ... more articles from students (the order of the articles will be defined by the professor)
 ...
+
+

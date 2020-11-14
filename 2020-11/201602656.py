@@ -57,7 +57,7 @@ def plotCovid():
     seq = np.linspace(X.min(), X.max()).reshape(-1, 1)    
     pyplot.scatter(X, Y)
     pyplot.plot(seq, pipeline.predict(seq), color="orange")
-    pyplot.title("Contagios diarios Covid-19")
+    pyplot.title("Covid-19 - Daily cases in china")
     pyplot.show()
 
 plotCovid()
