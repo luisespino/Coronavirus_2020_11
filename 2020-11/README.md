@@ -122,6 +122,12 @@ Grouping the information in 3 clusters, the k-means algorithm gave us the follow
 - Centroid 2: 1067 infections, 120 days of pandemic, 192 current days of the year.
 - Centroid 3: 558 infections, 163 pandemic days, 235 current days of the year.
 
+### Data analysis
+- Given the data shown for centroid 1, it can be concluded approximately that during the 72 days of the pandemic there were an average of 89 cases per day. 
+- For centroid 2, it can be concluded approximately that within 120 days of the pandemic there were an average of 1067 cases per day. 
+- For centroid 3, it can be concluded approximately that within 163 days of the pandemic there were an average of 558 cases per day.
+
+
 ### Number of cases per day of covid 19 in the US for 218 days
 
 The linear correlation graph using the polynomial characteristics shows us the behavior of the cases that have been registered in the US, in the first 218 days and we can clearly see the second wave of infections that the country is going through.
