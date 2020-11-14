@@ -18,7 +18,7 @@ Cardona Berny, Galicia Nery, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordo
 
 The trend of infections is carried out through two perspectives: one having 30 days of information on infections in Guatemala at the beginning of the pandemic and the trend will be shown at different times.
 
-Using the code [20080862.py](/20080862.py) you can see the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
+According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/66042898/98481436-d327c080-21bf-11eb-852a-39c27f8c5cf0.jpg" width="400">
