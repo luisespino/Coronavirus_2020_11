@@ -75,7 +75,7 @@ This prediction was made on the 293rd day and deals with the number of deaths pr
 <img src="https://user-images.githubusercontent.com/6562969/98753311-a6bfa000-2389-11eb-9e90-9cd0d67d7794.png" width="400">
 </p>
 
-### Trend of number of infected per day in Guatemala
+## Trend of number of infected per day in Guatemala
 
 The analysis is carried out by grouping the number of infected per day according to the number of infected, the day of the pandemic and the current day of the year.
 
