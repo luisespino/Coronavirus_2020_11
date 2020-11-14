@@ -103,6 +103,12 @@ The graph with the data analyzed during this period of time is shown, as well as
 
 For the analysis of cases in the United States, the following page was taken as a reference, from which the data of the first 218 days were taken. [COVID-19 in the US for 218 days](https://espanol.cdc.gov/coronavirus/2019-ncov/cases-updates/previouscases.html)
 
+The data used and the graphs presented for the analysis of cases of covid 19 in the usa can be found here:
+
+[201612226.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201612226.py)
+
+
+
 Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
 
 The training result model is as follows:
