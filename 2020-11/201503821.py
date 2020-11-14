@@ -70,5 +70,4 @@ title = 'Degree = {}; RMSE = {}; R2 = {}'.format(nb_degree, round(rmse,2), round
 plt.title('Costa Rica \n ' + title, fontsize=10)
 plt.xlabel('Days')  
 plt.ylabel('Infecteds')  
-plt.savefig("201503821.png", bbox_inches='tight') 
 plt.show()
