@@ -95,6 +95,8 @@ It is evident that Costa Rica has more cases of infected compared to Guatemala, 
 
 The code was developed in Python using the Scikit Learn library, in this case a linear regression model was used, through a polynomial function of degree 4. The idea is to find a trend of the currently existing points and fit to test and error one degree for the polynomial, that is, this degree will coincide with the input data, once done it is possible to extend the data over time and make a prediction of the infected.
 
+For this case, first a grade 5 was used, and the fit was very good, but when interpreting that it is a pandemic, the behavior was not correct, therefore another grade was sought, in this case 4, which also presents a good fit, and its behavior in more similar to that of pandemics.
+
 ### Mortality prediction due to COVID - 19 in the department of Guatemala
 
 #### Resume
@@ -434,7 +436,7 @@ The maximum of each daily count is plotted.
 
 ### References
 
-- 1. Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
+- Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 - C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
 
 ... more articles from students (the order of the articles will be defined by the professor)
