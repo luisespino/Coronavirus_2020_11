@@ -1,4 +1,4 @@
-# Technical Report 2020-11
+﻿# Technical Report 2020-11
 
 Universidad de San Carlos de Guatemala
 
@@ -182,7 +182,14 @@ We can see that the situation is delicate in the country and that the infections
 
 ---
 
-Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
+
+### Analysis of the number of deaths from coronavirus in Guatemala
+
+Simple linear regression is the most used technique, it is a way that allows modeling a relationship between two sets of variables. The result is an equation that can be used to make projections or estimates on the data.
+
+This model is considered a predictor x and a dependent variable or response Y. Suppose that the true relationship between Y and x is a straight line and that observation Y at each level x is a random variable.
+
+Analysis of the number of deaths from coronavirus in Guatemala through a linear regression, which says that when the reported deaths are far from what the actual behavior of said event should be, the analysis was carried out from day 1 to be reported the first case. Until day 226, the day on which 548 cases and 17 deaths were reported, all this always remembering the importance of the data regarding the pandemic and that they are not only numbers but also people who fall victims of this pandemic every day, always remembering the necessary prevention measures so that these types of graphs do not take the form they are taking due to so many deaths.
 
 The training result model is as follows:
 
@@ -191,6 +198,12 @@ Y = 0.0805811339388978X + 7.712448377581117
 <p align="center">
 <img src="https://user-images.githubusercontent.com/15852159/99107552-a7378100-25ab-11eb-8a23-c19c7d36b849.png" width="400">
 </p>
+
+The data used and the graphs presented for the analysis of cases of covid 19 in the usa can be found here: [201403624.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201403624.py).
+
+---
+
+
 
 ### Covid-19 in Guatemala, cases, predictions for 2021
 
