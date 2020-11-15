@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo, Yoselin Lemus. (students)
+Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Melgar James, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo, Yoselin Lemus. (students)
 
 ### Resume
 
@@ -322,6 +322,25 @@ The y-axis represents the number of deaths.
 There is a cluster divided into 3 classes, within which there is an anomalous region, since this is where the largest number of deaths is concentrated.
 
 ![Cluster_Regiones_Guatemala](https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png)
+
+# Percentage of Deaths vs. total cases in Central America
+
+This study looks at the percentage of Covid-19 cases in total divided by the number of deaths in each Central American country (Guatemala, Honduras, Nicaragua and El Salvador), each country has a different percentage for example:
+
+In El Salvador the month of July had a number of cases of 18096 and a number of deaths of 773 when making the division gives us a total of 23.4%, making the division of each month the average is 26.2% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
+
+This analysis has the purpose of being able to enter the data from other months and that this through skelearn does not say if there is an improvement in the number of deaths or if, on the contrary, the country had a greater amount than the average.
+
+Each country has a different average, which is the following:
+
+|     country      | average | 
+| ---------------- | ------- |
+| Guatemala        | 36%     | 
+| El Salvador      | 26.2%   | 
+| Nicaragua        | 32%     | 
+| Honduras         | 32.9%   | 
+
+For this study we used the months of July, August, September and October.
 
 ### References
 
