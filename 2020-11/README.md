@@ -256,6 +256,9 @@ With these related data we could predict active cases in Guatemalan men by day 3
 <img src="https://user-images.githubusercontent.com/20606917/99028199-ca731980-2534-11eb-9b42-be27b8432845.png" width="400">
 </p>
 
+
+This prediction was made by using this file [201314285.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201314285.py), where we will achieve that the first execution was made by means of a linear regression trend and with a polynomial of degree 4, obtaining in this way a valid data correlation that allows us to predict the next events that will happen in Guatemala with respect to the percentage of men infected with respect to total covid-19 infections.
+
 ### Comparative between Guatemala, Central America and Japan
 
 As we can apretiate in the graphs above, we notice a trend between Guatemala and Countries in Central when it comes to covid stats, which is somehow expected
