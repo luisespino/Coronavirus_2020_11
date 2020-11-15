@@ -241,7 +241,7 @@ In the predictions given, it will be observed that whenever it is increasing, un
 <img src="https://user-images.githubusercontent.com/6568351/99194217-b6513700-2743-11eb-8604-190acbf69d13.png" width="400">
 </p>
 
-The degree is 6, which is used to control the number of features added so that the prediction is correct and specified.
+The degree is 10, which is used to control the number of features added so that the prediction is correct and specified.
 
 ### Percentage of men infected by covid-19 in Guatemala since the first active case
 
