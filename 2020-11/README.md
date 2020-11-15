@@ -498,6 +498,29 @@ The maximum of each daily count is plotted.
 <img src="https://user-images.githubusercontent.com/34287415/99180350-1d8ecd00-26eb-11eb-9847-d8bdeae445bc.png" width="400">
 </p>
 
+
+# Behavior and classification of people infected by COVID-19 by municipality in Guatemala
+
+The following prediction, rather than a prediction, is focused on classifying into "groups" the most infected sectors within the departments of Guatemala, in this case, its municipalities.
+
+## Preliminaries
+Since last March 13, when the first COVID-19 contagion was detected in Guatemala, the pandemic has been growing steadily in the country until the second week of April, when there was a peak of 39 cases in a single day , and then continue with the marked trend of a score of daily cases. However, since the second week of May, infections began to increase exponentially, from 68 daily cases on May 8 to 370 new cases in a single day on May 24. In June the cases already exceeded a thousand cases a day. And in July, with a new dashboard, the numbers have become even less reliable.
+
+The president, to evaluate his decisions focused on the reopening of the country before the population, paradoxically showed the data of a country with more municipalities on maximum alert, with a red light for more than half of the country.
+
+These indicators come from the COVID19 dashboard that the Ministry of Health and Social Assistance (MSPAS) feeds daily. However, what the president ignored in his presentation was that, although the number of daily infections has decreased compared to previous weeks, the deceased are a figure that is increasing. Deaths from coronavirus have become the biggest challenge in the region.
+
+## Analysis
+Based on the foregoing, it can be determined that for the information provided by the country's high command to have logic to be able to make the traffic light classification, they had to group the municipalities based on their infected.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/6531771/99190774-1ccb5a80-272e-11eb-8f6b-649e7d43a3d0.png" width="400">
+</p>
+
+This can clearly be done with a prediction using a machine learning algorithm to create the necessary clusters (in this case, the lights of a traffic light) to be able to identify the measures that a municipality can count on depending on its number of infected .
+
+This prediction has the advantage that it is not only based on the data of the day but can also work preventively in order to find a pattern in the data in the future.
+
 ### References
 
 ... more articles from students (the order of the articles will be defined by the professor)
