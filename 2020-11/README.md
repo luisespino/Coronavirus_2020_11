@@ -56,6 +56,20 @@ The data used for the elaboration of the graph was obtained from [COVID-19 Data 
 
 Costa Rica has 5 million inhabitants, they have as of today, November 13, 2020, 120,939 cases of coronavirus, while Guatemala on the same day today with a population of 17 million inhabitants, have 113,543 cases of coronavirus. In other words, Costa Rica has more cases, when they are practically a third of the inhabitants that Guatemala has, this indicates that the sanitary measures taken by each of the people and the responsibility of each of them has made the difference between both countries to avoid contagions.
 
+|                  | Guatemala  | Costa Rica |
+| ---------------- | ---------- | ---------- |
+| Population       | 17,250,000 | 4,999,000  |
+| Infecteds        | 113,543    | 120,939    |
+| Percentage       | 0.66%      | 2.41%      |
+
+It is evident that Costa Rica has more cases of infected compared to Guatemala, which indicates that Guatemala has contained the disease in a better way and the restrictive measures have really helped.
+
+#### Explanation of the code used for the prediction of infected in Costa Rica
+
+- [201503821.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201503821.py)
+
+The code was developed in Python using the Scikit Learn library, in this case a linear regression model was used, through a polynomial function of degree 4. The idea is to find a trend of the currently existing points and fit to test and error one degree for the polynomial, that is, this degree will coincide with the input data, once done it is possible to extend the data over time and make a prediction of the infected.
+
 ### Mortality prediction due to COVID - 19 in the department of Guatemala
 
 #### Resume
