@@ -55,7 +55,7 @@ The degree of the polynomial has an R2 of 0.9989, that is, the data does fit the
 | Grade 4    | 0.9989 | 1184.62 |
 | Grade 5    | 0.9998 | 461.72  |
 
-It can be seen in the table that the mean square error is a lower value in the polynomial of degree 5, this means, that it is a better fit to the graph, also R2 is closer to 1, however, the behavior From a pandemic it cannot be taken down immediately, but the cases are decreasing little by little and the graph is gradually flattening out.
+It can be seen in the table that the mean square error RMSE is a lower value in the polynomial of degree 5, this means, that it is a better fit to the graph, also R2 is closer to 1, however, the behavior from a pandemic it cannot be taken down immediately, but the cases are decreasing little by little and the graph is gradually flattening out.
 
 With the above, it can be determined that the degree of the polynomial must be 4 and discard the degree of 5.
 
@@ -68,6 +68,8 @@ According to the graph, we can observe that indeed, in the next 50 days, the adv
 With the above it is observed that by day 300, the number of infected will be close to 160,000 people, that is, it will continue to increase.
 
 The data used for the elaboration of the graph was obtained from [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19) In the case of Costa Rica, the first day for the graph is taken on March 5, 2020 with zero infected, and the final data of the graph is for November 8, 2020 with 116,363 infected, for a total of 249 days sample history.
+
+The code used to generate the graph is [201503821.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201503821.py), which is based on a linear regression, with a polynomial of degree 4.
 
 #### Comparative analysis of coronavirus cases between Costa Rica and Guatemala
 
