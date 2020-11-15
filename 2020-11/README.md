@@ -65,7 +65,13 @@ With the above, it can be determined that the degree of the polynomial must be 4
 
 According to the graph, we can observe that indeed, in the next 50 days, the advance of the infected will continue but could begin to stabilize, which is encouraging for the neighboring country.
 
-With the above it is observed that by day 300, the number of infected will be close to 160,000 people, that is, it will continue to increase.
+| Day  | Date      | Infecteds | Data       |
+| ---- | ----------| --------- | ---------- |
+| 1    | 06/03/20  | 1         | Real       |
+| 248  | 08/11/20  | 116,363   | Real       |
+| 300  | 31/12/20  | 160,000   | Prediction |
+
+With the above it is observed that by day 300, the number of infected will be close to 160,000 people, that is, it will continue to increase. That is, Costa Rica will close the year with about 160,000 infected.
 
 The data used for the elaboration of the graph was obtained from [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19) In the case of Costa Rica, the first day for the graph is taken on March 5, 2020 with zero infected, and the final data of the graph is for November 8, 2020 with 116,363 infected, for a total of 249 days sample history.
 
