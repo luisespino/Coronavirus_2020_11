@@ -22,6 +22,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
+- [Mortality prediction due to COVID - 19 in Honduras](#Mortality-prediction-due-to-COVID-19-in-Honduras)
 - [References](#References)
 
 ### Covid-19 infection trend in Guatemala
