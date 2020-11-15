@@ -173,6 +173,9 @@ Grouping the information in 3 clusters, the k-means algorithm gave us the follow
 - For centroid 2, it can be concluded approximately that within 120 days of the pandemic there were an average of 1067 cases per day. 
 - For centroid 3, it can be concluded approximately that within 163 days of the pandemic there were an average of 558 cases per day.
 
+With this information we can determine that in the middle of the pandemic it was where the maximum average number of infections per day was reached, being 1067 infected per day, later it presented a decrease to 558 infected per day that would approximately be a decrease of 52% of infections with respect to at average maximum peak.
+Based on the previous conclusions, we can predict the number of infections that there will be in a day because we can group it into any of the 3 clusters according to the information entered and determine an approximate average of infections per day.
+
 --- 
 
 ### Number of cases per day of covid 19 in the US for 218 days
