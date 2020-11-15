@@ -342,6 +342,17 @@ Each country has a different average, which is the following:
 
 For this study we used the months of July, August, September and October.
 
+### Rise in COVID cases base on 4 values for country
+
+Based on the theory that the increase in COVID cases depends on the days of initial quarantine, travel restrictions, the percentage of investment in public spending on health, and the population density, I set myself the task of knowing if an increase could occur in Guatemala. in the cases with a model trained with the Bayes algorithm in the file [201504394.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201504394.py).
+
+The data collected can be found in this repository at [201504394.xlsx](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201504394.xlsx). The sources for the data used to train the model are at:
+- [Initial quarantine days](https://es.wikipedia.org/wiki/Cuarentena_por_la_pandemia_de_COVID-19#cite_note-8)
+- [Travel restrictions](https://www.kayak.com.gt/restricciones-de-viaje)
+- [Investment in health](https://datosmacro.expansion.com/estado/gasto/salud)
+- [Population density](https://datosmacro.expansion.com/demografia/poblacion)
+- [Increase in cases](https://news.google.com/covid19/map?hl=es-419&gl=US&ceid=US%3Aes-419)
+
 ### References
 
 ... more articles from students (the order of the articles will be defined by the professor)
