@@ -540,6 +540,39 @@ This can clearly be done with a prediction using a machine learning algorithm to
 
 This prediction has the advantage that it is not only based on the data of the day but can also work preventively in order to find a pattern in the data in the future.
 
+## Guatemala Goverment Alert Level System - Bayes Naive Classification
+
+The government of Guatemala manages the restrictions that are applied in each municipality and economic activity according to a system called "Semaforo". This system is based on 3 factors which are: Rate per 100k inhabitants, Percentage of positive tests and Rate of tests per 1k inhabitants. So, depending on this 3 factor the goverment set the alert lavel and take measures.
+
+
+For example:
+
+| Rate per 100k inhabitans | % Positive tests | Rate of tests per 1k inhabitants | Alert Level |
+| ------------------------ | ---------------- | -------------------------------- | ----------- |
+| 14.65                    | 13.56            | 0.05                             | 5           |
+
+
+Using the data provided by the goverment on [this site](https://covid19.gob.gt/semaforo.html), We make a clasification model based on Naive Bayes (GaussianNB) algorithm to classify the alert level for future results of the 3 factors. 
+
+The alert level is in a scale from 1 to 10, according to the data, alert level can take levels in step of .5 meaning that can be levels like 4.5 or 9.5, thats why in we use LabelEncoder from Sklearn to make this values unique and have a more consistent scale.
+
+In our tests we get the following values:
+
+| Rate per 100k inhabitans | % Positive tests | Rate of tests per 1k inhabitants | Alert Level |
+| ------------------------ | ---------------- | -------------------------------- | ----------- |
+| 119.44                   | 11.50            | 0.74                             | 7           |
+| 25.65                    | 11.20            | 0.16                             | 6           |
+| 50.0                     | 5.0              | 0.20                             | 7           |
+
+| Precision |
+| --------- |
+| 0.6823529 |
+
+The first result row was an already known value (7) , this one was for control, the model have a precision on 68.23529%, we are aware that this model can be more precise but due to the actual data inconsitency on data capture we can not asure more precision.
+
+Source Code [200714832.py]
+Data File [200714832.xlsx]
+
 ### References
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
