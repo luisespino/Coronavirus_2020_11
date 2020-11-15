@@ -1,4 +1,4 @@
-﻿# Technical Report 2020-11
+# Technical Report 2020-11
 
 Universidad de San Carlos de Guatemala
 
@@ -16,12 +16,11 @@ The following report deals with how the covid-19 pandemic has evolved since the 
 
 All the data collected and displayed have been extracted from the public databases of each country that keep track of this information. With this information and using the python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown next.
 
-**Table of Contents**
+### Table of Contents
 
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
-- [Prediction of infecteds in Costa Rica] (#prediction-of-infecteds-in-costa-rica)
+- [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [References](#References)
-
 
 ### Covid-19 infection trend in Guatemala
 
