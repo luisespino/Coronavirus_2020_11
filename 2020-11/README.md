@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Ordoñez Bryan, Solares Cesar, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Ordoñez Bryan, Solares Cesar, Vega Daniel, Veliz Jorge, Villatoro Kherson, Solares Omar. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -572,6 +572,14 @@ The first result row was an already known value (7) , this one was for control, 
 
 Source Code [200714832.py]
 Data File [200714832.xlsx]
+
+## Prediction of deaths on the last day of the first year of infections in Guatemala
+
+According to the data collected, of the number of deaths per day, on the website of the Ministry of Health and Social Assistance (https://tablerocovid.mspas.gob.gt/), such data is used in Python code from the file 201403981.py to apply an analysis and prediction of how many deaths may occur on the last day of the first year of infections in Guatemala, that is, on day 365 of the pandemic, for which a grade 4 polynomial regression was applied, which predicts a number of 262 deaths approximately by day 365 of the pandemic.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
+</p>
 
 ### References
 
