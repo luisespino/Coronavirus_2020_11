@@ -38,7 +38,7 @@ Cases = [
     73679,73912,74074,74893,75644,76358,77040,77481,77683,77828,78721,79622,80306,81009,
     81658,81909,82172,82684,82924,83664,84344,85152,85444,85681,86623,87442,87933,88878,
     89702,90092,90263,90968,91746,92409,93090,93748,93963,94182,94870,95704,96480,96935,
-    97544,97715,97836,99094,99715,99765,101028,102415,109849,111262,11360
+    97544,97715,97836,99094,99715,99765,101028,102415,109849,111262,113600,114123
 ]
 
 # X = Days
@@ -47,7 +47,7 @@ X = np.array(range(len(Cases)))
 sequencia = np.linspace(X.min(), X.max(), len(Cases)).reshape(-1, 1)
 
 #grade
-grade = 6
+grade = 10
 #grade = 10
 polyreg=make_pipeline(PolynomialFeatures(grade), LinearRegression())
 polyreg.fit(X[:, np.newaxis], Cases)
@@ -55,7 +55,7 @@ polyreg.fit(X[:, np.newaxis], Cases)
 grafica.figure()
 grafica.scatter(X, Cases) #Forming the graph 
 grafica.plot(sequencia, polyreg.predict(sequencia), color = "red") # prediction line
-grafica.title("Linear Regression Grade 6")
+grafica.title("Linear Regression Grade 10")
 grafica.savefig('Covid Graph')
 #view
 grafica.show()
