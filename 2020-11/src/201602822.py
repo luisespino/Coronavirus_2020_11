@@ -102,7 +102,7 @@ real_data = output_data
 plt.plot(real_data, label='Real')
 plt.plot(predicted_data, label='Predicted')
 plt.legend()
-plt.xlabel('Days since first case (01/22/2020)')
+plt.xlabel('')
 plt.ylabel('Confirmed cases')
 plt.grid()
 plt.title('Confirmed cases by Latin America countries')
