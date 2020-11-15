@@ -48,7 +48,16 @@ For the department of Guatemala, it is projected that by the end of November, th
 
 In the case of Costa Rica, it had a different behavior since the growth curve of the infected behaved rather in the way of a polynomial of degree 4, that is, it can stabilize and begin a decline.
 
-The degree of the polynomial has an R2 of 0.998, that is, the data does fit the model. Also with grade 5 R2 is even closer to 0.999, but the behavior does not correspond to a pandemic, because it goes down too quickly, without stabilizing.
+The degree of the polynomial has an R2 of 0.9989, that is, the data does fit the model. Also with grade 5 R2 is even closer to 0.9998, but the behavior does not correspond to a pandemic, because it goes down too quickly, without stabilizing.
+
+| Polynomial | R2     | RMSE    |
+| ---------- | ------ | ------- |
+| Grade 4    | 0.9989 | 1184.62 |
+| Grade 5    | 0.9998 | 461.72  |
+
+It can be seen in the table that the mean square error RMSE is a lower value in the polynomial of degree 5, this means, that it is a better fit to the graph, also R2 is closer to 1, however, the behavior from a pandemic it cannot be taken down immediately, but the cases are decreasing little by little and the graph is gradually flattening out.
+
+With the above, it can be determined that the degree of the polynomial must be 4 and discard the degree of 5.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/37234131/99012300-a94e0100-2513-11eb-8a67-bcd93c686047.png" width="400">
@@ -56,9 +65,17 @@ The degree of the polynomial has an R2 of 0.998, that is, the data does fit the 
 
 According to the graph, we can observe that indeed, in the next 50 days, the advance of the infected will continue but could begin to stabilize, which is encouraging for the neighboring country.
 
-With the above it is observed that by day 300, the number of infected will be close to 160,000 people, that is, it will continue to increase.
+| Day  | Date      | Infecteds | Data       |
+| ---- | ----------| --------- | ---------- |
+| 1    | 06/03/20  | 1         | Real       |
+| 248  | 08/11/20  | 116,363   | Real       |
+| 300  | 31/12/20  | 160,000   | Prediction |
+
+With the above it is observed that by day 300, the number of infected will be close to 160,000 people, that is, it will continue to increase. That is, Costa Rica will close the year with about 160,000 infected.
 
 The data used for the elaboration of the graph was obtained from [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19) In the case of Costa Rica, the first day for the graph is taken on March 5, 2020 with zero infected, and the final data of the graph is for November 8, 2020 with 116,363 infected, for a total of 249 days sample history.
+
+The code used to generate the graph is [201503821.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201503821.py), which is based on a linear regression, with a polynomial of degree 4.
 
 #### Comparative analysis of coronavirus cases between Costa Rica and Guatemala
 
@@ -77,6 +94,8 @@ It is evident that Costa Rica has more cases of infected compared to Guatemala, 
 - [201503821.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201503821.py)
 
 The code was developed in Python using the Scikit Learn library, in this case a linear regression model was used, through a polynomial function of degree 4. The idea is to find a trend of the currently existing points and fit to test and error one degree for the polynomial, that is, this degree will coincide with the input data, once done it is possible to extend the data over time and make a prediction of the infected.
+
+For this case, first a grade 5 was used, and the fit was very good, but when interpreting that it is a pandemic, the behavior was not correct, therefore another grade was sought, in this case 4, which also presents a good fit, and its behavior in more similar to that of pandemics.
 
 ### Mortality prediction due to COVID - 19 in the department of Guatemala
 
@@ -499,6 +518,9 @@ The maximum of each daily count is plotted.
 </p>
 
 ### References
+
+- Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
+- C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
 
 ... more articles from students (the order of the articles will be defined by the professor)
 ...
