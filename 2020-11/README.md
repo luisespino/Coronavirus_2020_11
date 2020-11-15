@@ -238,7 +238,7 @@ In the graph below you can see in red line how the first curve that is already w
 In the predictions given, it will be observed that whenever it is increasing, unless people take care of themselves, the curve will be able to go down in Guatemala.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/6568351/98974867-02e60980-24db-11eb-8bc6-95284beba521.png" width="400">
+<img src="https://user-images.githubusercontent.com/6568351/99194217-b6513700-2743-11eb-8604-190acbf69d13.png" width="400">
 </p>
 
 The degree is 6, which is used to control the number of features added so that the prediction is correct and specified.
