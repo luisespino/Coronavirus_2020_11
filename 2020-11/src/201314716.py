@@ -1,15 +1,36 @@
+#Data
 #https://www.worldometers.info/coronavirus/country/guatemala/
 #https://www.worldometers.info/coronavirus/country/el-salvador/
+#https://www.worldometers.info/coronavirus/country/nicaragua/
+#https://www.worldometers.info/coronavirus/country/honduras/
 
 from sklearn import tree
 from sklearn import preprocessing
 import matplotlib.pyplot as plt
-#prediccion de si esta bajando el nivel de porcentaje de activo vs muertes
-pais = ['El Salvador', 'El Salvador', 'El Salvador', 'El Salvador', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala']
-activos = [2590, 8096,  10526, 4397, 18096,50979,79893,92409]
-death = [182,459,724,848,773,1959,2778,3261]
 
-range = ['si', 'si', 'si', 'no', 'no', 'no', 'si', 'si']
+#Meses Julio, Agosto, Septiembre, Octubre
+#prediccion de si esta bajando el nivel de porcentaje de activo vs muertes
+pais = ['El Salvador', 'El Salvador', 'El Salvador', 'El Salvador',
+ 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala',
+  'Nicaragua', 'Nicaragua','Nicaragua', 'Nicaragua',
+    'Honduras','Honduras','Honduras','Honduras']
+
+#Casos    
+activos = [2590, 8096,  10526, 4397,
+ 18096, 50979, 79893, 92409,
+  2519, 3672, 4668, 5170,
+  19558,42014,61014,76900]
+#Muertes
+death = [182,459,724,848 
+,773,1959,2778,3261,
+83,116,141,151,
+497,1337,1873,2353]
+
+#Rango
+range = ['si', 'si', 'si', 'no',
+ 'no', 'no', 'si', 'si',
+  'no', 'no', 'si', 'si',
+  'si','no','no', 'si']
 
 # Crear el codificador de etiquetas
 le = preprocessing.LabelEncoder()
