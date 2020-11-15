@@ -46,13 +46,16 @@ Cases = [
 X = np.array(range(len(Cases)))
 sequencia = np.linspace(X.min(), X.max(), len(Cases)).reshape(-1, 1)
 
+#grade
 grade = 6
+#grade = 10
 polyreg=make_pipeline(PolynomialFeatures(grade), LinearRegression())
 polyreg.fit(X[:, np.newaxis], Cases)
-
+#grafica
 grafica.figure()
-grafica.scatter(X, Cases)
-grafica.plot(sequencia, polyreg.predict(sequencia), color = "red")
+grafica.scatter(X, Cases) #Forming the graph 
+grafica.plot(sequencia, polyreg.predict(sequencia), color = "red") # prediction line
 grafica.title("Linear Regression Grade 6")
 grafica.savefig('Covid Graph')
+#view
 grafica.show()
