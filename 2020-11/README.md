@@ -18,8 +18,8 @@ All the data collected and displayed have been extracted from the public databas
 
 **Table of Contents**
 
-- [Covid-19 infection trend in Guatemala](#Covid-19 infection trend in Guatemala)
-- [Prediction of infecteds in Costa Rica] (#Prediction of infecteds in Costa Rica)
+- [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
+- [Prediction of infecteds in Costa Rica] (#prediction-of-infecteds-in-costa-rica)
 - [References](#References)
 
 
