@@ -16,6 +16,13 @@ The following report deals with how the covid-19 pandemic has evolved since the 
 
 All the data collected and displayed have been extracted from the public databases of each country that keep track of this information. With this information and using the python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown next.
 
+**Table of Contents**
+
+- [Covid-19 infection trend in Guatemala](#Covid-19 infection trend in Guatemala)
+- [Prediction of infecteds in Costa Rica] (#Prediction of infecteds in Costa Rica)
+- [References](#References)
+
+
 ### Covid-19 infection trend in Guatemala
 
 The trend of infections is carried out through two perspectives: one having 30 days of information on infections in Guatemala at the beginning of the pandemic and the trend will be shown at different times.
