@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo. (students)
+Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo, Yoselin Lemus. (students)
 
 ### Resume
 
@@ -312,6 +312,16 @@ taken by the Chinese government were stricter and a began a decrease in daily ca
 The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201602656.py)
 
 According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
+
+### Clusters: Deceased according to regions of Guatemala - Covid 19
+
+The x-axis shown in the graph represents the regions in which Guatemala is divided.
+
+The y-axis represents the number of deaths.
+
+There is a cluster divided into 3 classes, within which there is an anomalous region, since this is where the largest number of deaths is concentrated.
+
+![Cluster_Regiones_Guatemala](https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png)
 
 ### References
 
