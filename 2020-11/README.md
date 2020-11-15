@@ -222,7 +222,8 @@ Y = 0.0805811339388978X + 7.712448377581117
 <img src="https://user-images.githubusercontent.com/15852159/99107552-a7378100-25ab-11eb-8a23-c19c7d36b849.png" width="400">
 </p>
 
-The data used and the graphs presented for the analysis of cases of covid 19 in the usa can be found here: [201403624.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201403624.py).
+The data used and the graphs presented for the analysis of cases of covid 19 in Guatemala can be found here: [201403624.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201403624.py) and [201403624_data.csv](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201403624_data.csv).
+
 
 ---
 
