@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Melgar James, Morales Mario, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo, Yoselin Lemus, Luis Lizama. (students)
+Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Melgar James, Morales Mario, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo, Yoselin Lemus, Luis Lizama, Guarchaj Ottoniel. (students)
 
 ### Resume
 
@@ -368,6 +368,30 @@ The data collected can be found in this repository at [201504394.xlsx](https://g
 - [Investment in health](https://datosmacro.expansion.com/estado/gasto/salud)
 - [Population density](https://datosmacro.expansion.com/demografia/poblacion)
 - [Increase in cases](https://news.google.com/covid19/map?hl=es-419&gl=US&ceid=US%3Aes-419)
+
+
+
+# Behavioral rate of active cases in relation to the number of deaths in some Caribbean countries
+
+This approach is a little different from the others, since on this occasion we connected in seeing the behavior of active cases with respect to the number of deaths in some Caribbean countries, such as the following that we will mention below.
+
+This time, we will use the Gaussian algorithm to predict whether or not the data we will send as parameters (country, number of active cases, number of deaths) will show an improvement in the country. This would be another way of alerting countries to the behavior of the virus in their region, where they can know whether they have been improving or getting worse in order to take the necessary measures, this with respect to the rate of active cases versus deaths for each month.
+For this specific case we use data from the cases registered in:
+https://www.worldometers.info/coronavirus/#countries
+
+The months we take into account are from June, July, August, September and October, for the countries of Jamaica, Haiti and Cuba.
+
+For example: In Jamaica in the month of June there are 266 active cases with 9 deaths per covid registered. Therefore, the rate we manage by dividing the 266 active cases into 9 deaths, which gives us a value of 29.55 active cases/deaths. (266/9=29.55). And in Cuba we have recorded that by the month of June there were 174 active cases and 83 deaths, which gives a value of 2.09. So here we can say that the lower the number the more alarming the cases are, because most of the active cases are ending in death.
+
+
+| COUNTRY          | AVERAGE | 
+| ---------------- | ------- |
+| Jamaica          | 34.3%   | 
+| Haiti      	   | 31.6%   | 
+| Cuba        	   | 3.1%    |  
+
+In the table we can see that Haiti has a lower average, this is due to the fact that in the data taken from the reference, we see a drastic change in the counts of active cases, between the month of June, July and August. This makes the case look alarming there, just as in the rest most active cases end in death. Jamaica, on the other hand, has a higher average number of active cases, since there are more cases registered in that country and only a small number of them end in death.
+
 
 ### References
 
