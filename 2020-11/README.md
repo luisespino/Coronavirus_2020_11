@@ -392,6 +392,27 @@ For example: In Jamaica in the month of June there are 266 active cases with 9 d
 
 In the table we can see that Haiti has a lower average, this is due to the fact that in the data taken from the reference, we see a drastic change in the counts of active cases, between the month of June, July and August. This makes the case look alarming there, just as in the rest most active cases end in death. Jamaica, on the other hand, has a higher average number of active cases, since there are more cases registered in that country and only a small number of them end in death.
 
+### Confirmed cases by Latin American countries
+The trend of coronavirus infections in Latin America is very important to know its impact.
+The original dataset is converted into a regression dataset using multilayer perceptron artificial neural networks. These results describe a model capable of predicting the number of confirmed cases on a date and country in Latin America.
+
+#### Dataset
+Dataset used in the model is obtained from a [publicly available repository](https://github.com/CSSEGISandData/COVID-19) operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). It contains the data which describe the number of cases defined by province/state, country/region, latitude and longitude for each day since the start of the COVID-19 infections (01-22-2020). It use only the time series confirmed cases global. The dataset that use the model (obtained by the original dataset) contain the data for latin american countries.
+
+#### Model
+According to the file [201602822.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602822.py), it use the scikit-learn library with pickle, matplotlib, pandas and numpy packages.
+The model use the ReLU activation function and the L-BFGS solver. Consist of four hidden layers and 40 total hidden reurons distributed equally among layers. This model takes the latitude, longitude and days since first case as input data and the number of confirmed cases as output data.
+
+#### Results
+The figure shows the comparison of real data and the data predicted by model. It presents a number of cases in a given group (location and date).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34287415/99181391-d1945600-26f3-11eb-9b75-4491e42bc3b6.png" width="400">
+</p>
+
+The maximum of each daily count is plotted.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34287415/99180350-1d8ecd00-26eb-11eb-9847-d8bdeae445bc.png" width="400">
+</p>
 
 ### References
 
