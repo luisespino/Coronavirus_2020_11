@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo, Yoselin Lemus. (students)
+Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Melgar James, Morales Mario, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo, Yoselin Lemus, Luis Lizama. (students)
 
 ### Resume
 
@@ -20,13 +20,14 @@ All the data collected and displayed have been extracted from the public databas
 
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
+- [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [References](#References)
 
 ### Covid-19 infection trend in Guatemala
 
 The trend of infections is carried out through two perspectives: one having 30 days of information on infections in Guatemala at the beginning of the pandemic and the trend will be shown at different times.
 
-According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
+According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/66042898/98481436-d327c080-21bf-11eb-852a-39c27f8c5cf0.jpg" width="400">
@@ -121,7 +122,7 @@ frequency is only correct if the duration of clinical disease is known. In this 
 
 ### Mortality prediction due to COVID - 19 in Honduras
 
-The prediction was made on the 293rd day and deals with the number of deaths predicted for the 350th day after the COVID-19 in Honduras. According to the file [201313819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201313819.py), it can be seen that the death curve has not been flattened and if the necessary measures are not taken, it may follow the flow of this prediction and on day 350 the mortality figure due to the virus would reach 500,000.
+The prediction was made on the 293rd day and deals with the number of deaths predicted for the 350th day after the COVID-19 in Honduras. According to the file [201313819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201313819.py), it can be seen that the death curve has not been flattened and if the necessary measures are not taken, it may follow the flow of this prediction and on day 350 the mortality figure due to the virus would reach 500,000.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6562969/98753311-a6bfa000-2389-11eb-9e90-9cd0d67d7794.png" width="400">
@@ -219,6 +220,8 @@ In the predictions given, it will be observed that whenever it is increasing, un
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6568351/98974867-02e60980-24db-11eb-8bc6-95284beba521.png" width="400">
 </p>
+
+The degree is 6, which is used to control the number of features added so that the prediction is correct and specified.
 
 ### Percentage of men infected by covid-19 in Guatemala since the first active case
 
@@ -322,9 +325,9 @@ taken by the Chinese government were stricter and a began a decrease in daily ca
 <img src="https://user-images.githubusercontent.com/34200816/99139374-9283d900-25fd-11eb-9cc9-955d600e031a.png" width="400">
 </p>
 
-The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201602656.py)
+The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201602656.py)
 
-According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
+According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
 ### Clusters: Deceased according to regions of Guatemala - Covid 19
 
@@ -335,6 +338,36 @@ The y-axis represents the number of deaths.
 There is a cluster divided into 3 classes, within which there is an anomalous region, since this is where the largest number of deaths is concentrated.
 
 ![Cluster_Regiones_Guatemala](https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png)
+
+# Percentage of Deaths vs. total cases in Central America
+
+This study looks at the percentage of Covid-19 cases in total divided by the number of deaths in each Central American country (Guatemala, Honduras, Nicaragua and El Salvador), each country has a different percentage for example:
+
+In El Salvador the month of July had a number of cases of 18096 and a number of deaths of 773 when making the division gives us a total of 23.4%, making the division of each month the average is 26.2% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
+
+This analysis has the purpose of being able to enter the data from other months and that this through skelearn does not say if there is an improvement in the number of deaths or if, on the contrary, the country had a greater amount than the average.
+
+Each country has a different average, which is the following:
+
+|     country      | average | 
+| ---------------- | ------- |
+| Guatemala        | 36%     | 
+| El Salvador      | 26.2%   | 
+| Nicaragua        | 32%     | 
+| Honduras         | 32.9%   | 
+
+For this study we used the months of July, August, September and October.
+
+### Rise in COVID cases base on 4 values for country
+
+Based on the theory that the increase in COVID cases depends on the days of initial quarantine, travel restrictions, the percentage of investment in public spending on health, and the population density, I set myself the task of knowing if an increase could occur in Guatemala. in the cases with a model trained with the Bayes algorithm in the file [201504394.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201504394.py).
+
+The data collected can be found in this repository at [201504394.xlsx](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201504394.xlsx). The sources for the data used to train the model are at:
+- [Initial quarantine days](https://es.wikipedia.org/wiki/Cuarentena_por_la_pandemia_de_COVID-19)
+- [Travel restrictions](https://www.kayak.com.gt/restricciones-de-viaje)
+- [Investment in health](https://datosmacro.expansion.com/estado/gasto/salud)
+- [Population density](https://datosmacro.expansion.com/demografia/poblacion)
+- [Increase in cases](https://news.google.com/covid19/map?hl=es-419&gl=US&ceid=US%3Aes-419)
 
 ### References
 
