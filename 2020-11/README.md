@@ -207,6 +207,8 @@ In the predictions given, it will be observed that whenever it is increasing, un
 <img src="https://user-images.githubusercontent.com/6568351/98974867-02e60980-24db-11eb-8bc6-95284beba521.png" width="400">
 </p>
 
+The degree is 6, which is used to control the number of features added so that the prediction is correct and specified.
+
 ### Percentage of men infected by covid-19 in Guatemala since the first active case
 
 The graphic below shows up how infected cases in mens are increasing and decreasing during the days, we can see how infected cases are shown by blue dots in the graph,
