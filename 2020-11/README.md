@@ -22,14 +22,6 @@ All the data collected and displayed have been extracted from the public databas
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
-- [Mortality prediction due to COVID - 19 in Honduras](#Mortality-prediction-due-to-COVID-19-in-Honduras)
-- [Trend of number of infected per day in Guatemala](#Trend-of-number-of-infected-per-day-in-Guatemala)
-- [Number of cases per day of covid 19 in the US for 218 days](#Number-of-cases-per-day-of-covid-19-in-the-US-for-218-days)
-- [Analysis of the number of deaths from coronavirus in Guatemala](#Analysis-of-the-number-of-deaths-from-coronavirus-in-Guatemala)
-- [Covid-19 in Guatemala, cases, predictions for 2021](#Covid-19-in-Guatemala,-cases,-predictions-for-2021)
-- [Percentage of men infected by covid-19 in Guatemala since the first active case](#Percentage-of-men-infected-by-covid-19-in-Guatemala-since-the-first-active-case)
-- [Comparative between Guatemala, Central America and Japan](#Comparative-between-Guatemala,-Central-America-and-Japan)
-- [Average deaths from confirmed cases and age of covid 19 in Guatemala](#Average-deaths-from-confirmed-cases-and-age-of-covid-19-in-Guatemala)
 - [References](#References)
 
 ### Covid-19 infection trend in Guatemala
@@ -287,9 +279,6 @@ With these related data we could predict active cases in Guatemalan men by day 3
 <img src="https://user-images.githubusercontent.com/20606917/99028199-ca731980-2534-11eb-9b42-be27b8432845.png" width="400">
 </p>
 
-
-This prediction was made by using this file [201314285.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201314285.py), where we will achieve that the first execution was made by means of a linear regression trend and with a polynomial of degree 4, obtaining in this way a valid data correlation that allows us to predict the next events that will happen in Guatemala with respect to the percentage of men infected with respect to total covid-19 infections.
-
 ### Comparative between Guatemala, Central America and Japan
 
 As we can apretiate in the graphs above, we notice a trend between Guatemala and Countries in Central when it comes to covid stats, which is somehow expected
@@ -403,6 +392,16 @@ There is a cluster divided into 3 classes.
 The sources for the data used are at:
 - [Regions](https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/)
 - [Number of deceased](https://tablerocovid.mspas.gob.gt/)
+
+# Trend of confirmed Coronavirus cases in the department of Guatemala
+
+Something important to know, before making this prediction, is that all that can be analyzed and known is the infection status of those who have undergone a test. All other people who have a laboratory confirmed infection are counted as confirmed cases.
+
+To interpret data on confirmed cases in the department of Guatemala, we need to know how many COVID-19 tests the country actually does.
+
+To realize this trend of confirmed cases, the tests are our window to the pandemic and how it is spreading. Without data on who is infected by the virus, we have no way of understanding the pandemic. Without these data, we cannot know if they are doing well and which ones are not reporting cases and deaths.
+
+The prediction will be made using Machine Learning knowledge implementing predictions using Python Scikit-learn in order to see the trend of confirmed cases in the department of Guatemala.
 
 # Percentage of Deaths vs. total cases in Central America
 
