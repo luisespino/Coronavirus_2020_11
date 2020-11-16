@@ -384,21 +384,37 @@ The data used for this analysis can be found in [this link](https://github.com/L
 
 According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
-### Clusters: Deceased according to regions of Guatemala - Covid 19
+### Clusters: Deaths according to regions of Guatemala - Covid 19
 
 According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
 
-The x-axis shown in the graph represents the regions in which Guatemala is divided.
+The Metropolitan region was the first to report the first case of covid. Since then the number of deceased people has increased to all other departments.
+
+The x-axis shown in the graph represents the regions into which Guatemala is divided. The regions are numbered as follows:
+
+- Metropolitan region
+- North Region
+- North-East Region
+- South-East Region
+- Central Region
+- South-West Region
+- North-West Region
+- Region Peten
 
 The y-axis represents the number of deaths.
 
-There is a cluster divided into 3 classes.
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png" width="400">
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png" width = "400">
 </p>
 
-The sources for the data used are at:
+The cluster is divided into three classes, according to the number of registered deaths. The centers of these three classes are presented below
+
+- [3.25 54.1875]
+- [5. 2000.]
+- [2.6 188.2]
+
+
+The sources of the data used are in:
 - [Regions](https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/)
 - [Number of deceased](https://tablerocovid.mspas.gob.gt/)
 
@@ -663,6 +679,20 @@ After applying the k-means algorithm, the following graph and the information of
 | Cluster 1 would be the countries of Europe          | Green          |
 | Cluster 2 would be the countries of South America   | Red            |
 
+it was determined that the analysis clusters are
+
+| Clusters | Growth rate cases | Number of daily infections | Growth rate deaths |
+| -------- | ----------------- | -------------------------- | ------------------ |
+|Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
+|Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
+|Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
+
+## Analysis
+
+The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
+
+We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
+
 ## World wide cases and deaths predictions - Neural Network MLPRegressor
 According to the information obtained at https://ourworldindata.org/coronavirus, the expansion of covid-19 has been massive, every day there are tens of thousands of cases, so it is necessary to know the global behavior of infections like this also of deaths.
 
@@ -694,22 +724,6 @@ The prediction made for deaths starting on day 320 and ending on day 410 in step
 Deaths are complemented with infections, the decrease in deaths will be accompanied by a decrease in cases.
 
 
-it was determined that the analysis clusters are
-
-| Clusters | Growth rate cases | Number of daily infections | Growth rate deaths |
-| -------- | ----------------- | -------------------------- | ------------------ |
-|Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
-|Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
-|Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
-
-## Analysis
-
-The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
-
-We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
-
-
-=======
 # Coronavirus (COVID-19) Mortality Rate in Guatemala
 
 To calculate the mortality we need:
