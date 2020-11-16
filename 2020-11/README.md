@@ -381,7 +381,17 @@ taken by the Chinese government were stricter and a began a decrease in daily ca
 <img src="https://user-images.githubusercontent.com/34200816/99139374-9283d900-25fd-11eb-9cc9-955d600e031a.png" width="400">
 </p>
 
-The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201602656.py)
+The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602656.py)
+
+### Italy, one of the first affected 
+
+Italy was one of the first countries affected by the Covid-19 pandemic. Italy, like China at the beginning of the year, is experiencing a second wave in which more cases are recorded than there were at the peak of the pandemic. Currently the Italian government is beginning to take actions to reduce the number of infections and flatten the curve again. In the following graph we can see how the curve is taking an exponential behavior.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34200816/99212743-7fa20d80-2791-11eb-8b62-39fe828d1953.png" width="400">
+</p>
+
+The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602656.py)
 
 According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
