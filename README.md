@@ -13,11 +13,36 @@ All the data collected and displayed have been extracted from the public databas
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala) 
 - [The Epidemic Progression Index](#The-Epidemic-Progression-Index)
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
-- [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
+- [Mortality prediction due to COVID - 19 in Honduras] (#mortality-prediction-due-to-covid---19-in-honduras)
+- [Trend of number of infected per day in Guatemala] (#trend-of-number-of-infected-per-day-in-guatemala)
+
+ 
+- [Number of cases per day of covid 19 in the US for 218 days] (#number-of-cases-per-day-of-covid-19-in-the-us-for-218-days)
+- [Analysis of the number of deaths from coronavirus in Guatemala] (#analysis-of-the-number-of-deaths-from-coronavirus-in-guatemala)
+- [Covid-19 in Guatemala, cases, predictions for 2021] (#covid-19-in-guatemala-cases-predictions-for-2021)
+- [Percentage of men infected by covid-19 in Guatemala since the first active case]  (#percentage-of-men-infected-by-covid-19-in-guatemala-since-the-first-active-case)
+- [Average deaths from confirmed cases and age of covid 19 in Guatemala]  (#average-deaths-from-confirmed-cases-and-age-of-covid-19-in-guatemala)
+- [Clusters: Deaths according to regions of Guatemala - Covid 19] (#clusters-deaths-according-to-regions-of-guatemala---covid-19)
+
+
+
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
-- [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
+- [Percentage of Deaths vs. total cases in Central America]  #percentage-of-deaths-vs-total-cases-in-central-america
+- [Behavioral rate of active cases in relation to the number of deaths in some Caribbean countries] (#behavioral-rate-of-active-cases-in-relation-to-the-number-of-deaths-in-some-caribbean-countries)
+- [Behavior and classification of people infected by COVID-19 by municipality in Guatemala]  (#behavior-and-classification-of-people-infected-by-covid-19-by-municipality-in-guatemala)
 - [Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19](#growth-rate-of-covid-19-cases-in-relation-to-new-daily-cases-and-death-rate-from-covid-19)
+- [World wide cases and deaths predictions - Neural Network MLPRegressor] (#world-wide-cases-and-deaths-predictions---neural-network-mlpregressor)
+- [Coronavirus (COVID-19) Mortality Rate in Guatemala]  (#coronavirus-covid-19-mortality-rate-in-guatemala)
+- [COVID-19 death factors in Mexico] (#covid-19-death-factors-in-mexico)
+- [Finding anomalies in confirmed and screened cases data] (#finding-anomalies-in-confirmed-and-screened-cases-data)
+- [Comparison between the number of cases detected and the number of tests – US]  (#comparison-between-the-number-of-cases-detected-and-the-number-of-tests--us)
+- [Prediction of deaths per month in the municipality of Chimaltenango] (#prediction-of-deaths-per-month-in-the-municipality-of-chimaltenango)
+- [PREDICTION OF CONFIRMED CASES PER DAY.]  (#prediction-of-confirmed-cases-per-day)
+- [Classification of the countries of the Americas according to their management of the pandemic]  (#classification-of-the-countries-of-the-americas-according-to-their-management-of-the-pandemic)
+
+- [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
+- [Confirmed cases of covid in El Salvador]  (#confirmed-cases-of-covid-in-el-salvador)
 - [References](#References)
 
 ## Covid-19 infection trend in Guatemala
@@ -476,82 +501,6 @@ All this prediction depends on how many people perform the test and with this it
 
 For this, it is recommended that new measures or forms can be taken to reduce contagion since the curve of this continues to grow.
 
-
-
-## Percentage of Deaths vs. total cases in Central America
-
-This study looks at the percentage of Covid-19 cases in total divided by the number of deaths in each Central American country (Guatemala, Honduras, Nicaragua and El Salvador), each country has a different percentage for example:
-
-In El Salvador the month of July had a number of cases of 18096 and a number of deaths of 773 when making the division gives us a total of 23.4%, making the division of each month the average is 26.2% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
-
-This analysis has the purpose of being able to enter the data from other months and that this through skelearn does not say if there is an improvement in the number of deaths or if, on the contrary, the country had a greater amount than the average.
-
-Each country has a different average, which is the following:
-
-|     country      | average | 
-| ---------------- | ------- |
-| Guatemala        | 36%     | 
-| El Salvador      | 26.2%   | 
-| Nicaragua        | 32%     | 
-| Honduras         | 32.9%   | 
-
-For this study we used the months of July, August, September and October.
-
-### Rise in COVID cases base on 4 values for country
-
-Based on the theory that the increase in COVID cases depends on the days of initial quarantine, travel restrictions, the percentage of investment in public spending on health, and the population density, I set myself the task of knowing if an increase could occur in Guatemala. in the cases with a model trained with the Bayes algorithm in the file [201504394.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201504394.py).
-
-The data collected can be found in this repository at [201504394.xlsx](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201504394.xlsx). The sources for the data used to train the model are at:
-- [Initial quarantine days](https://es.wikipedia.org/wiki/Cuarentena_por_la_pandemia_de_COVID-19)
-- [Travel restrictions](https://www.kayak.com.gt/restricciones-de-viaje)
-- [Investment in health](https://datosmacro.expansion.com/estado/gasto/salud)
-- [Population density](https://datosmacro.expansion.com/demografia/poblacion)
-- [Increase in cases](https://news.google.com/covid19/map?hl=es-419&gl=US&ceid=US%3Aes-419)
-
-
-
-## Behavioral rate of active cases in relation to the number of deaths in some Caribbean countries
-
-This approach is a little different from the others, since on this occasion we connected in seeing the behavior of active cases with respect to the number of deaths in some Caribbean countries, such as the following that we will mention below.
-
-This time, we will use the Gaussian algorithm to predict whether or not the data we will send as parameters (country, number of active cases, number of deaths) will show an improvement in the country. This would be another way of alerting countries to the behavior of the virus in their region, where they can know whether they have been improving or getting worse in order to take the necessary measures, this with respect to the rate of active cases versus deaths for each month.
-For this specific case we use data from the cases registered in:
-https://www.worldometers.info/coronavirus/#countries
-
-The months we take into account are from June, July, August, September and October, for the countries of Jamaica, Haiti and Cuba.
-
-For example: In Jamaica in the month of June there are 266 active cases with 9 deaths per covid registered. Therefore, the rate we manage by dividing the 266 active cases into 9 deaths, which gives us a value of 29.55 active cases/deaths. (266/9=29.55). And in Cuba we have recorded that by the month of June there were 174 active cases and 83 deaths, which gives a value of 2.09. So here we can say that the lower the number the more alarming the cases are, because most of the active cases are ending in death.
-
-
-| COUNTRY          | AVERAGE | 
-| ---------------- | ------- |
-| Jamaica          | 34.3%   | 
-| Haiti      	   | 31.6%   | 
-| Cuba        	   | 3.1%    |  
-
-In the table we can see that Haiti has a lower average, this is due to the fact that in the data taken from the reference, we see a drastic change in the counts of active cases, between the month of June, July and August. This makes the case look alarming there, just as in the rest most active cases end in death. Jamaica, on the other hand, has a higher average number of active cases, since there are more cases registered in that country and only a small number of them end in death.
-
-### Confirmed cases by Latin American countries
-The trend of coronavirus infections in Latin America is very important to know its impact.
-The original dataset is converted into a regression dataset using multilayer perceptron artificial neural networks. These results describe a model capable of predicting the number of confirmed cases on a date and country in Latin America.
-
-#### Dataset
-Dataset used in the model is obtained from a [publicly available repository](https://github.com/CSSEGISandData/COVID-19) operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). It contains the data which describe the number of cases defined by province/state, country/region, latitude and longitude for each day since the start of the COVID-19 infections (01-22-2020). It use only the time series confirmed cases global. The dataset that use the model (obtained by the original dataset) contain the data for latin american countries.
-
-#### Model
-According to the file [201602822.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602822.py), it use the scikit-learn library with pickle, matplotlib, pandas and numpy packages.
-The model use the ReLU activation function and the L-BFGS solver. Consist of four hidden layers and 40 total hidden reurons distributed equally among layers. This model takes the latitude, longitude and days since first case as input data and the number of confirmed cases as output data.
-
-#### Results
-The figure shows the comparison of real data and the data predicted by model. It presents a number of cases in a given group (location and date).
-<p align="center">
-<img src="https://user-images.githubusercontent.com/34287415/99181391-d1945600-26f3-11eb-9b75-4491e42bc3b6.png" width="400">
-</p>
-
-The maximum of each daily count is plotted.
-<p align="center">
-<img src="https://user-images.githubusercontent.com/34287415/99180350-1d8ecd00-26eb-11eb-9847-d8bdeae445bc.png" width="400">
-</p>
 
 ## Percentage of Deaths vs. total cases in Central America
 
