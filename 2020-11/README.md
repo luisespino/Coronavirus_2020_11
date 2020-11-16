@@ -839,3 +839,20 @@ COVID-19 is an infectious disease, it creates severe damage in the lungs. COVID-
 - [k-means in python - Step by step](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/)
 
 - [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
+
+
+# PREDICTION OF CONFIRMED CASES PER DAY.
+
+Covid 19 has hit the world in a devastating way, both in the economic and health fields; Since the virus arrived in our country, cases began to be registered for each day, this number of cases can be found on [this site](https://tablerocovid.mspas.gob.gt) , in these data we can find the data confirmed with result delivered and cases without result delivered.
+
+## Prediction
+To carry out this analysis, the file [201113769.csv](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201113769.csv), in which column A, contains the data of the cases with no result delivered and in column B, the data with the result delivered, then, starting from the cases In column A, a prediction is made with a linear Sklearn regression, to determine the number of confirmed cases that should exist for each date. This generates a graph the following graph:
+
+<p align="center">
+<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201113769.py" width="400">
+</p>
+
+## Conclusion
+As can be seen in the image, the prediction takes a linear form (blue points) and the real data (red points), actually have very little correlation with the prediction, therefore, if we start from only this prediction, we can conclude that the data provided by the government regarding the Coronavirus are inconsistent in many ways, of course, depending on the algorithm used to make the prediction, the values ​​of this can vary and more closely resemble the real data.
+
+Source Code [201113769.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201113769.py)
