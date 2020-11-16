@@ -21,7 +21,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
-- [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
+- [Mortality prediction due to COVID 19 in the department of Guatemala](#mortality-prediction-due-to-covid-19-in-the-department-of-guatemala)
 - [References](#References)
 
 ### Covid-19 infection trend in Guatemala
@@ -97,7 +97,7 @@ The code was developed in Python using the Scikit Learn library, in this case a 
 
 For this case, first a grade 5 was used, and the fit was very good, but when interpreting that it is a pandemic, the behavior was not correct, therefore another grade was sought, in this case 4, which also presents a good fit, and its behavior in more similar to that of pandemics.
 
-### Mortality prediction due to COVID - 19 in the department of Guatemala
+### Mortality prediction due to COVID 19 in the department of Guatemala
 
 #### Resume
 
