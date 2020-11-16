@@ -943,7 +943,7 @@ In the following analysis, it is based on the municipality of Chimaltenango in t
 The following figure is presented where the orange points are the data obtained, while the green points are from the data of the model prediction.<br> 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/200915078.png" width="400">
+<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/200915078.png" width="400">
 </p> <br><br>
 
 # PREDICTION OF CONFIRMED CASES PER DAY.
