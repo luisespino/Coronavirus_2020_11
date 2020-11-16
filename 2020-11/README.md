@@ -617,6 +617,46 @@ According to the data collected, of the number of deaths per day, on the website
 <img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
 </p>
 
+# Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19
+
+During this global pandemic, it has been seen that in many countries different strategies have been had to deal with this global emergency, with the use of the K-means algorithm we can segment and analyze data of the different growth rates with respect to the number of people infected daily and the growth rate of deaths
+
+The analysis groups different data from Central American, South American and European countries, this to verify what difference there is between these 3 regions of the world
+
+The growth rate of cases was calculated from the growth with respect to the previous day taking data from the countries Guatemala, Costa Rica, Brazil, Spain and France with a range of dates from November 11 to October 12, the growth rate was determined with the formula ((total cases - total cases previous day) / total cases previous day) * 100
+
+After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/ivanLM2310/CoronavirusML/blob/main/2020-11/src/201122826.py) 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
+</p>
+
+| Description                                         | Color in graph | 
+| --------------------------------------------------- | -------------- |
+| Cluster 0 would be the countries of Central America | Purple         |
+| Cluster 1 would be the countries of Europe          | Green          |
+| Cluster 2 would be the countries of South America   | Red            |
+
+
+it was determined that the analysis clusters are
+
+| Clusters | Growth rate cases | Number of daily infections | Growth rate deaths |
+| -------- | ----------------- | -------------------------- | ------------------ |
+|Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
+|Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
+|Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
+
+
+
+
+## Analysis
+
+The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
+
+We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
+
+
+=======
 # Coronavirus (COVID-19) Mortality Rate in Guatemala
 
 To calculate the mortality we need:
