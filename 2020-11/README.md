@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado David, Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
+Alvarado David, Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Ichel Gustavo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Soto Celso, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -17,8 +17,8 @@ Next it will be about how the covid-19 pandemic has evolved since the first day 
 All the data collected and displayed have been extracted from the public databases of each country that track this information. With this information and using the Python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown below.
 
 ### Table of Contents
-
-- [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
+- [The Epidemic Progression Index](#The-Epidemic-Progression-Index)
+- [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala) 
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
@@ -34,7 +34,9 @@ All the data collected and displayed have been extracted from the public databas
 - .[Confirmed cases of covid in El Salvador](#Confirmed-cases-of-covid-in-El-Salvador)
 - [References](#References)
 
-
+## The Epidemic Progression Index
+The Epidemic Progression Index (EPI) is a measure of the percentage of infected people with respect to the number of swabs performed. Since swabs are done to people at risk, the EPI indicates how strong the spread of the epidemic is. The math behind the formula is as follows:
+Where np (i) represents the total number of positive cases of coronavirus on day i (for example, today), np (i-1) the total number of positive cases of coronavirus on day i-1 (for example, yesterday ), ts (i) the total number of swabs made on day i and ts (i-1) the total number of swabs on day i-1. EPI is a number between 0 and 1. When EPI is equal to 1, it means that all people who have had a swab are positive for the coronavirus. Therefore, the epidemics continue to advance. In contrast, an EPI value equal to 0 means that the epidemics stop, that is, all the people who had a swab are negative for the coronavirus.
 
 ### Covid-19 infection trend in Guatemala
 
@@ -214,6 +216,12 @@ Based on the previous conclusions, we can predict the number of infections that 
 
 ### Number of cases per day of covid 19 in the US for 218 days
 
+This study is carried out because the United States is the first country with the most registered cases of dovid 19, we talk about the fact that it represents 20% of the cases registered worldwide and taking into account that its population only represents 4%.
+
+In the country there is a record that cases have already been reported in more than 40 states.
+
+For this reason, the following study is carried out and explained on the cases presented in the country during the 218 days.
+
 The linear correlation graph using the polynomial characteristics shows us the behavior of the cases that have been registered in the US, in the first 218 days and we can clearly see the second wave of infections that the country is going through.
 
 <p align="center">
@@ -280,6 +288,7 @@ In the predictions given, it will be observed that whenever it is increasing, un
 </p>
 
 The degree is 10, which is used to control the number of features added so that the prediction is correct and specified.
+Reference of: [201313898.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201313898.py)
 
 ### Percentage of men infected by covid-19 in Guatemala since the first active case
 
@@ -355,7 +364,7 @@ _where each data refers to the mean of the grouped data_
 
 ### Graph of the previous data
 
-![Grafica de clusters ](https://user-images.githubusercontent.com/12839670/99020367-0ea9ee00-2524-11eb-9323-fff1fd87ca90.JPG)
+<img src="https://user-images.githubusercontent.com/12839670/99020367-0ea9ee00-2524-11eb-9323-fff1fd87ca90.JPG" width="400">
 
 The graph only shows the number of deaths in two dimensions on the "X" axis and the number of confirmed cases on the "Y" axis.
 
@@ -383,25 +392,56 @@ taken by the Chinese government were stricter and a began a decrease in daily ca
 <img src="https://user-images.githubusercontent.com/34200816/99139374-9283d900-25fd-11eb-9cc9-955d600e031a.png" width="400">
 </p>
 
-The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201602656.py)
+The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602656.py)
+
+### Italy, one of the first affected 
+
+Italy was one of the first countries affected by the Covid-19 pandemic. Italy, like China at the beginning of the year, is experiencing a second wave in which more cases are recorded than there were at the peak of the pandemic. Currently the Italian government is beginning to take actions to reduce the number of infections and flatten the curve again. In the following graph we can see how the curve is taking an exponential behavior.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34200816/99212743-7fa20d80-2791-11eb-8b62-39fe828d1953.png" width="400">
+</p>
+
+The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602656.py)
 
 According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
-### Clusters: Deceased according to regions of Guatemala - Covid 19
+### Clusters: Deaths according to regions of Guatemala - Covid 19
 
 According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
 
-The x-axis shown in the graph represents the regions in which Guatemala is divided.
+The Metropolitan region was the first to report the first case of covid. Since then the number of deceased people has increased to all other departments.
+
+The x-axis shown in the graph represents the regions into which Guatemala is divided. The regions are numbered as follows:
+
+- Metropolitan region
+- North Region
+- North-East Region
+- South-East Region
+- Central Region
+- South-West Region
+- North-West Region
+- Region Peten
 
 The y-axis represents the number of deaths.
 
-There is a cluster divided into 3 classes.
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png" width="400">
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png" width = "400">
 </p>
 
-The sources for the data used are at:
+The cluster is divided into three classes, according to the number of registered deaths. The centers of these three classes are presented below
+
+#### Centroid information
+
+Grouping the information in 3 clusters, the k-means algorithm gave us the following information using 3 centroids:
+
+- Centroid 1: [3.25    54.1875]
+- Centroid 2: [5.    2000.]
+- Centroid 3: [2.6    188.2]
+
+Based on the information, we can predict that the number of deaths from covid is most likely to belong to the second cluster according to the information entered.
+
+The sources of the data used are in:
 - [Regions](https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/)
 - [Number of deceased](https://tablerocovid.mspas.gob.gt/)
 
@@ -654,7 +694,7 @@ The analysis groups different data from Central American, South American and Eur
 
 The growth rate of cases was calculated from the growth with respect to the previous day taking data from the countries Guatemala, Costa Rica, Brazil, Spain and France with a range of dates from November 11 to October 12, the growth rate was determined with the formula ((total cases - total cases previous day) / total cases previous day) * 100
 
-After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/ivanLM2310/CoronavirusML/blob/main/2020-11/src/201122826.py) 
+After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201122826.py) 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
@@ -665,6 +705,20 @@ After applying the k-means algorithm, the following graph and the information of
 | Cluster 0 would be the countries of Central America | Purple         |
 | Cluster 1 would be the countries of Europe          | Green          |
 | Cluster 2 would be the countries of South America   | Red            |
+
+it was determined that the analysis clusters are
+
+| Clusters | Growth rate cases | Number of daily infections | Growth rate deaths |
+| -------- | ----------------- | -------------------------- | ------------------ |
+|Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
+|Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
+|Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
+
+## Analysis
+
+The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
+
+We could conclude that the pandemic tends to worsen in countries where the number of daily infections is high, so that the growth rate of daily infections tends to increase and the growth rate of deaths will also tend to increase, according to In the analysis we can say that the number of people infected daily is important to reduce them because it would decrease the rates of infection and the rate of deaths from COVID-19.
 
 ## World wide cases and deaths predictions - Neural Network MLPRegressor
 According to the information obtained at https://ourworldindata.org/coronavirus, the expansion of covid-19 has been massive, every day there are tens of thousands of cases, so it is necessary to know the global behavior of infections like this also of deaths.
@@ -695,7 +749,6 @@ The prediction made for deaths starting on day 320 and ending on day 410 in step
 </p>
 
 Deaths are complemented with infections, the decrease in deaths will be accompanied by a decrease in cases.
-
 
 it was determined that the analysis clusters are
 
@@ -819,8 +872,71 @@ The image above shows the graph of the accumulated cases from January 22 to Nove
 
 While the Central American countries relax their measures, such as in Guatemala, which decided to remove the state of emergency around the covid, restricting agglomerations such as public transport, shopping centers and opening hospitals with good sustenance, another point to take into account was the severe quarantine to which the country submitted.
 
+### Alma from Fundegua
 
-### References
+-Alma is a chatbot that offers helps a far away community at San Pedro la Laguna Guatemala, in order to take what happen with all members of community, Alma provides asistance and recommendations from Call Center and ChatBot web, in order to help a far away community.
+
+### World Health Organization (WHO)
+
+COVID-19 is an infectious disease, it creates severe damage in the lungs. COVID-19 causes illness in humans and has killed many people in the entire world. However, this virus is reported as a pandemic by the World Health Organization (WHO) and all countries are trying to control and lockdown all places.
+
+
+# Comparison between the number of cases detected and the number of tests – US
+
+api: https://covidtracking.com/data/api
+
+## Abstract
+COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world.
+
+In the following report, a comparison is made between the number of tests and the number of positive cases found to measure the effectiveness of the tests and the level of spread of the virus and how real the data from tests performed is.
+All the information used in this report is obtained from a free api, with the objective of having the most up-to-date information possible and as much information as possible in real time.
+
+## Number of cases detected VS the number of tests
+The number of positive cases of coronavirus in the United States increases every day, but what is the real number of infected?
+Of course, for this, it is necessary to evaluate asymptomatic cases (cases that do not present symptoms but do carry the virus), but this goes beyond the analysis of this report.
+
+To answer the question asked above it is necessary to see the following graph:
+<p align="center">
+    <img src="https://drive.google.com/uc?export=view&id=1R9CwINXZ1T8zP8blriAjl6RbzoiNg-xM" width="400">
+</p>
+
+
+In the previous graph you can see the increase in tests performed on the x axis and the increase in cases on the y axis.
+
+As you can see, both data have an acceptable relationship, but the first grouping (cyan color), you can see a small irregularity, an increase in cases while the increase in tests remained the same.
+If you continue with the analysis of the following grouping (red color), the same phenomenon can be observed, with less impact but longer duration.
+
+And in the last grouping (purple color), it is where there is a large number of tests and a large amount of increase in positive cases, even this grouping can be observed an increase in the growth of the data, but the data that increases with the faster the confirmed positive cases.
+
+### With the above data, 3 classifications can be made:
+
+1. Cluster 1 (cyan), in this phase a greater number of tests was necessary to obtain the exact number of cases and thus be able to take the necessary measures to contain the virus.
+The centroid of this phase would be: 107,376 infected and 12,850 tested.
+
+2. Cluster 2 (red), in this phase it can be classified as normal in which the number of tests grows as the number of positive cases grows.
+The centroid of this phase would be: 698,852 infected and 41,530 tested.
+
+
+3. Cluster 3 (purple), in this phase, due to the number of infected people that grow to a large extent, it is not possible to carry out all the tests you want, so it is recommended to maintain the number of tests and intensify precautionary measures, with the objective is that the number of cases decreases and to be able to obtain a more real infected result.
+The centroid of this phase would be: 1,185,272 infected and 73,454 tested.
+
+Below, you can see the centroids and the final graph:
+
+### Centroids:
+| Phase | Centroid                   |
+| ------| -------------------------- |
+| 1          | 107375.62, 12849.76   |
+| 2          |  698852.07, 41529.65  |
+| 3          | 1185272.05, 73453.52  |
+
+
+### Final Graph:
+<p align="center">
+    <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="400">
+</p>
+
+
+### References 
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 - C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
@@ -832,3 +948,20 @@ While the Central American countries relax their measures, such as in Guatemala,
 - [k-means in python - Step by step](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/)
 
 - [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
+
+
+# PREDICTION OF CONFIRMED CASES PER DAY.
+
+Covid 19 has hit the world in a devastating way, both in the economic and health fields; Since the virus arrived in our country, cases began to be registered for each day, this number of cases can be found on [this site](https://tablerocovid.mspas.gob.gt) , in these data we can find the data confirmed with result delivered and cases without result delivered.
+
+## Prediction
+To carry out this analysis, the file [201113769.csv](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201113769.csv), in which column A, contains the data of the cases with no result delivered and in column B, the data with the result delivered, then, starting from the cases In column A, a prediction is made with a linear Sklearn regression, to determine the number of confirmed cases that should exist for each date. This generates a graph the following graph:
+
+<p align="center">
+<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201113769.py" width="400">
+</p>
+
+## Conclusion
+As can be seen in the image, the prediction takes a linear form (blue points) and the real data (red points), actually have very little correlation with the prediction, therefore, if we start from only this prediction, we can conclude that the data provided by the government regarding the Coronavirus are inconsistent in many ways, of course, depending on the algorithm used to make the prediction, the values ​​of this can vary and more closely resemble the real data.
+
+Source Code [201113769.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201113769.py)
