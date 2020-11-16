@@ -30,6 +30,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Percentage of men infected by covid-19 in Guatemala since the first active case](#Percentage-of-men-infected-by-covid-19-in-Guatemala-since-the-first-active-case)
 - [Comparative between Guatemala, Central America and Japan](#Comparative-between-Guatemala,-Central-America-and-Japan)
 - [Average deaths from confirmed cases and age of covid 19 in Guatemala](#Average-deaths-from-confirmed-cases-and-age-of-covid-19-in-Guatemala)
+- .[Confirmed cases of covid in El Salvador](#Confirmed-cases-of-covid-in-El-Salvador)
 - [References](#References)
 
 ### Covid-19 infection trend in Guatemala
