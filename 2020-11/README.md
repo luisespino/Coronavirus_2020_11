@@ -852,9 +852,13 @@ We can identify at least six anomalies. This may occur for many factors like scr
 
 We could use another Machine Learning tools to get better results: verify the relationship between screened and confirmed cases, linear and polynomial models to validate the data sets, and so on.
 
-### Alma from Fundegua
+### Alma from Fundegua and Daily Deaths
 
 -Alma is a chatbot that offers helps a far away community at San Pedro la Laguna Guatemala, in order to take what happen with all members of community, Alma provides asistance and recommendations from Call Center and ChatBot web, in order to help a far away community.
+
+<div align="center">
+<img src="img/200312459.PNG" width="300">
+</div>
 
 ### World Health Organization (WHO)
 
