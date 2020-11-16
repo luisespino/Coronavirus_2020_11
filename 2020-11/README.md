@@ -423,7 +423,7 @@ According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/
 
 ### Clusters: Deaths according to regions of Guatemala - Covid 19
 
-According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
+According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
 
 The Metropolitan region was the first to report the first case of covid. Since then the number of deceased people has increased to all other departments.
 
