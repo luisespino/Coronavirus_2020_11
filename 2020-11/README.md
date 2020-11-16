@@ -277,6 +277,7 @@ In the predictions given, it will be observed that whenever it is increasing, un
 </p>
 
 The degree is 10, which is used to control the number of features added so that the prediction is correct and specified.
+Reference of: [201313898.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201313898.py)
 
 ### Percentage of men infected by covid-19 in Guatemala since the first active case
 
