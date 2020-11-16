@@ -352,7 +352,7 @@ _where each data refers to the mean of the grouped data_
 
 ### Graph of the previous data
 
-![Grafica de clusters ](https://user-images.githubusercontent.com/12839670/99020367-0ea9ee00-2524-11eb-9323-fff1fd87ca90.JPG)
+<img src="https://user-images.githubusercontent.com/12839670/99020367-0ea9ee00-2524-11eb-9323-fff1fd87ca90.JPG" width="400">
 
 The graph only shows the number of deaths in two dimensions on the "X" axis and the number of confirmed cases on the "Y" axis.
 
