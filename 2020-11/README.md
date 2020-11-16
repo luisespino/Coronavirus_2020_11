@@ -926,6 +926,14 @@ Below, you can see the centroids and the final graph:
     <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="400">
 </p>
 
+## Prediction of deaths per month in the municipality of Chimaltenango
+In the following analysis, it is based on the municipality of Chimaltenango in the department of Chimaltenango, according to the data provided by the Ministry of Public Health and Social Assistance, it indicates that the deaths began in the month of April, and are counted until November 2 . The main idea of this study is to use linear regression and establish a prediction based on the data obtained in eight months.
+The following figure is presented where the orange points are the data obtained, while the green points are from the data of the model prediction.<br> 
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/200915078.png" width="400">
+</p> <br><br>
+
 # PREDICTION OF CONFIRMED CASES PER DAY.
 
 Covid 19 has hit the world in a devastating way, both in the economic and health fields; Since the virus arrived in our country, cases began to be registered for each day, this number of cases can be found on [this site](https://tablerocovid.mspas.gob.gt) , in these data we can find the data confirmed with result delivered and cases without result delivered.
