@@ -596,7 +596,7 @@ According to the data collected, of the number of deaths per day, on the website
 <img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
 </p>
 
-#Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19
+# Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19
 
 During this global pandemic, it has been seen that in many countries different strategies have been had to deal with this global emergency, with the use of the K-means algorithm we can segment and analyze data of the different growth rates with respect to the number of people infected daily and the growth rate of deaths
 
