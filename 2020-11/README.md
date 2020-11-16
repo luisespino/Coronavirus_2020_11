@@ -23,7 +23,6 @@ All the data collected and displayed have been extracted from the public databas
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
-- [Comparison between the number of cases detected and the number of tests – US](#comparison-between-the-number-of-cases-detected-and-the-number-of-tests--us)
 - [References](#References)
 
 ## The Epidemic Progression Index
@@ -319,19 +318,27 @@ First we need to establish why Japan was the target, there are three main reason
 2. They way they have dealt with the pandemic has been outstanding, reflecting in the lowest numbers per capita world wide.
 3. Their social standards, which are regarded to be among the best in the world.
 
-So we start by reviewing this Graph created using the file  [201222567.py], where we seek a model beginning from start of the second wave, october 1st currently with 83010 confirmed cases, and aimed towards predicting using a polynomial regression model, the number of confirmed cases by november 30, the end of the month, since november is the
-scope of this research.
+So we start by analyzing a Graph which represents the present data, we can clearly see that it represents a steady increase resulting close to an even straight line, with this we can infer that the way covid spread is being controled is more efficient than in Central America.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/10952236/99139973-299f5f80-2603-11eb-9504-512953798b69.png" width="400">
 </p>
 
-As we can see, the numbers seem to similar to Guatemala, but we must also take into consideration that Japans population is 126.5 million as of 2018 and Guatemalas population
-is 17.25 million as of 2018 which is a staggering difference, this reflects in the behavior shown in the graphs, Japans seems to be more steady, while most of
-Central America is quite the oposite.
-So now we must ask ourselves which factors create this difference, and the one that stands out the most is the culture, considering our current situation
-perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can
-clearly see that Japan is a great example as we can see in this predicted outcome:
+Now we will analyze the graph created using the file [201222567.py], which makes a prediction aimed to the day 61 that represents november 30 which is the scope of this research, using a polynomial regression, to see if the nature of the previous graph persists or if it alters: 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/10952236/99216040-4752fd00-279a-11eb-9382-6208010cb32f.png" width="600">
+</p>
+
+According to the result we can infer that the increase rate represented indicates that the increase in confirmed cases will remain to have a steady growth barely surpassing the 140,000 mark. We can also see that the number of confirmd cases seem to be similar to Guatemala's, but we must take into consideration the population data: 
+
+|                  | Japan      | Guatemala  |
+| ---------------- | ---------- | ---------- |
+| Population       | 126,500,000| 17,250,000 |
+| Cases            | 108,983    | 113,543    |
+
+The population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys, indicating as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction describing that the pattern in which cases in Japan will arise in a more controlled manner.
+perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we can clearly  see that Japan is a great example as we can see in this predicted outcome.
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
@@ -876,8 +883,6 @@ Where np (i) represents the total number of positive cases of coronavirus on day
 The data and graphs shown in the following report are generated in the file: [201602959.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602959.py)
 
 API: https://covidtracking.com/data/api
-
-*All data and graphics were generated on November 15, 2020, to obtain real data it is necessary to execute the file specified above.*
 
 ## Abstract
 COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world.
