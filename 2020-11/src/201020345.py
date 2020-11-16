@@ -116,15 +116,15 @@ cl = kmeans.cluster_centers_
 print(cl)
 
 result_mes1 = np.array([[30,48826,1867]])
-print("Resultados Mes 1 Guatemala")
+print("Resultados Mes 1")
 print(kmeans.predict(result_mes1))
 
 result_mes2 = np.array([[60,73679,2728]])
-print("Resultados Mes 2 Guatemala")
+print("Resultados Mes 2")
 print(kmeans.predict(result_mes2))
 
 result_mes3 = np.array([[2.71,41978,2]])
-print("Resultados Mes 3 Guatemala")
+print("Resultados Mes 3")
 print(kmeans.predict(result_mes3))
 
 plt.scatter(x[:,0],x[:,1],c=kmeans.labels_,cmap='rainbow')
