@@ -753,7 +753,7 @@ According to figures taken by Morales, on 18 July 2020, Ministry of Health added
 Due to this adjustment, there is a lag of the cases in Guatemala, which can be observed in the following graph:
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/201020345.png" width="400">
+<img src="https://raw.githubusercontent.com/famt89/CoronavirusML/main/2020-11/img/201020345.png" width="400">
 </p>
 
 
