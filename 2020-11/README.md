@@ -604,6 +604,12 @@ The analysis groups different data from Central American, South American and Eur
 
 The growth rate of cases was calculated from the growth with respect to the previous day taking data from the countries Guatemala, Costa Rica, Brazil, Spain and France with a range of dates from November 11 to October 12, the growth rate was determined with the formula ((total cases - total cases previous day) / total cases previous day) * 100
 
+After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is 201122826.py
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
+</p>
+
 it was determined that the analysis clusters are
 
 | Clusters | growth rate cases | number of daily infections | growth rate deaths |
@@ -616,7 +622,11 @@ in cluster 0 would be the countries of Central America
 in cluster 1 would be the countries of Europe
 in cluster 2 would be the countries of South America
 
+## Analysis
 
+The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
+
+We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
 
 
 ### References
