@@ -1,9 +1,10 @@
 # Coronavirus Data Analysis with Machine Learning
 Universidad de San Carlos de Guatemala
+
 Technical Report
+
 November 2020
 
-## Authors
 Espino Barrios, Luis Fernando. (professor)
 
 Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David (students)
