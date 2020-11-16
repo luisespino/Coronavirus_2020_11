@@ -839,4 +839,3 @@ COVID-19 is an infectious disease, it creates severe damage in the lungs. COVID-
 - [k-means in python - Step by step](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/)
 
 - [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
-
