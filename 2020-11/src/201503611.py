@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Nov 15 15:26:13 2020
+Created on Wed Nov 11 15:26:13 2020
 
 @author: Pavel
 """
@@ -9,7 +9,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPRegressor
 import matplotlib.pyplot as plt
-data = pd.read_csv('201503611.csv')
+data = pd.read_csv('../data/201503611.csv')
 
 # Grouping data
 X = data.drop(columns=['casos', 'nuevos_casos','muertes','nuevas_muertes']) # For all days will be x-axis

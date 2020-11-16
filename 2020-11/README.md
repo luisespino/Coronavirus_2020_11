@@ -573,6 +573,28 @@ The first result row was an already known value (7) , this one was for control, 
 Source Code [200714832.py]
 Data File [200714832.xlsx]
 
+## World wide cases and deaths predictions - Neural Network MLPRegressor
+According to the information obtained at https://ourworldindata.org/coronavirus, the expansion of covid-19 has been massive, every day there are tens of thousands of cases, so it is necessary to know the global behavior of infections like this also of deaths.
+
+During the first 25 days we could say that the disease was controlled, having less than 1000 cases, but the following 5 days demonstrated the opposite, reaching 6000 cases, from this point the number of cases increased rapidly until reaching 320 days with a total of 53515055, this behavior is observed in the following graph
+
+
+With this information we start the estimation to determine the behavior of the cases worldwide, starting on day 320 in jumps from 5 to 410 we obtain the following
+
+
+With this, we observe that the infections will increase in the following months, we can support this with the fact that in some parts of the world there are new outbreaks, so it is uncertain when the contagion curve would decline.
+
+
+Continuing with the deaths worldwide, at the beginning we observed a late appearance of deaths, the first one until the 12th and it was increasing slowly, the first month with 6000 infections there were only 130 deaths
+
+It must be taken into account that not all cases of covid-19 mean death, so it is normal for the majority of the infected population to survive.
+
+The prediction made for deaths starting on day 320 and ending on day 410 in steps of 5, we observe the following
+
+
+Deaths are complemented with infections, the decrease in deaths will be accompanied by a decrease in cases.
+
+
 ### References
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
