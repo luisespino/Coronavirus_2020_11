@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José(students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Guzmán Andrés, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan,Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José(students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -23,7 +23,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
-- [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
+- [Using LSTM to predict positive covid-19 cases in Guatemala](#Using LSTM to predict positive covid-19 cases in Guatemala)
 - [References](#References)
 
 ## The Epidemic Progression Index
@@ -276,8 +276,6 @@ The data used and the graphs presented for the analysis of cases of covid 19 in 
 
 
 ---
-
-
 
 ### Covid-19 in Guatemala, cases, predictions for 2021
 
@@ -1047,45 +1045,21 @@ The countries of centroid 2 belong to the intermediate group, being those that h
 
 The countries in centroid 3 are the most affected, in these should be considered that actions proved the growing increase in the number of cases and deaths.
 
+# Using LSTM to predict positive covid-19 cases in Guatemala
 
-### Covid 19 in Mixco
+We tried to use neural networks to make a model that can predict the appearance of positive cases of Covid-19, if you want to predict deaths you can switch the number inside usecols at line 35 to 3. The data comes from the WHO database.
 
-Mixco is a town of the Department of Guatemala in Guatemala has a population of 494561 habitants and 
-actually has an accumulate incidence of positive cases in a relation of 1739.9 per 100,00 habitants
-that represents 1.7399 percent, this percent shows a disminution throw the days but we want to estimate
-how could be the tendence for the next days, as we know the Christmas time is just around the corner
-and this time much of us visit our family but the number of positive cases can increment, so for that
-i recolect the positive cases from the information provided by the Ministery of Public Health and Social
-Assistance in Guatemala [here](https://tablerocovid.mspas.gob.gt/) from February 13, until the November 
-14, in the Mixco town, i use an algorithm of machine learning called K-Nearest Neighbor, this takes the
-observations for the training i took the day of the year with the number of positive cases in Mixco town,
-and i try to plot this points in 3 clusters y identified these with "C1", "C2", "C3" classes, and i want
-the "C1" class represents the first 160 days of the year; this class is the lower in number of positive 
-cases reported, the "C2" class represents until the 210th day; this class takes the most high positive 
-cases of the 3 clusters reporting above 150 cases in a day, and the las class "C3" until the 320th day; 
-these are the medium class about the number of positive cases and actually we are in those days.
+A neural network LSTM (Long Short-Term Memory Models) was used to contrast them with the rest of the models already in the repository. As can be seen from the graph, the training data and the projected model fit the data quite well. Except for a peak whose explanation arises from poor communication and handling by the government.
 
-The next graph represents the 3 clusters of positive cases in Mixco, during this pandemy.
+For the prediction of future cases with respect to the day from the start of the outbreak, it is necessary to save the model and feed it with data in a specific format. This was not done in this file, but it is planned to add it later.
 
-[Positive cases in Mixco during COVID 19 Pandemy](https://user-images.githubusercontent.com/48579656/99218447-1c6ba780-27a0-11eb-87ea-75eb1897eb76.png)
+Finally, based on the mean squared error shown during the execution of each epoch, it is possible to say that the model fits correctly as each epoch passes. Care must be taken not to overfit the model, so the epoch parameter in line 63 must not be too high or too low.
 
-Well i want to determinate if the number of positive cases on December 25, could be above 100, using
-these algorithm, as we can see the graph if our prediction could be correct the class of the result 
-should be C2, so using the algorithm codified in python [here](src/201504448.py), we get the next result.
+The graph shows the actual data in blue, the trained model in orange and the projections in green, as can be seen there is an overlap of the graphs at certain points.
 
-```python
-# Centroides
- [[191.30379747  71.03797468]
- [ 95.14159292   4.26548673]
- [272.02380952  29.89285714]]
+There is a 353.77 RMSE in the training dataset and 301.13 RMSE in the test dataset, wich means that 353 persons are off in both sets.
 
-
-# Result of predict that the day 360 and the number of positive cases should be 100 is
-['C3']
-```
-
-The result shows C3 class, for that reason we can assume that on December 25, the number of 
-positive cases can't be 100.
+https://user-images.githubusercontent.com/40524706/99217882-b5012800-279e-11eb-80b8-f05a1509e74e.png
 
 
 ### References 
@@ -1094,6 +1068,8 @@ positive cases can't be 100.
 - C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
 - MLPRegressor — scikit-learn documentation. (s. f.). Scikit Learn. Retrieved November 13, 2020, https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html
 - A Beginner’s Guide to Neural Networks in Python. Retrieved November 13, 2020, https://www.springboard.com/blog/beginners-guide-neural-network-in-python-scikit-learn-0-18/
+
+- [A Quick Deep Learning Recipe: Time Series Forecasting with Keras in Python](https://towardsdatascience.com/a-quick-deep-learning-recipe-time-series-forecasting-with-keras-in-python-f759923ba64)
 
 - [scikit-learn - Machine Learning in Python](https://scikit-learn.org/stable/)
 
