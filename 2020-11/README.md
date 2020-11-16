@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Morales Oscar,  Ordoñez Bryan, Solares Cesar, Solares Omar, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -636,8 +636,47 @@ As of November 15, 3,932 people are estimated to have died out of a total popula
 
 According to the estimates made in [201213336.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201213336.py). for July 2021, it is estimated that Guatemala will have a total of 255,556 confirmed cumulative cases and a total of 8,844 deceased cases and using the formula of Infection Fatality Rate (IFR) = Deaths / Cases = 8,844/255,556 = 3.4 % we get the same mortality rate calculated above.
 
+# COVID-19 death factors in Mexico.
+It was used as a [dataset](https://www.kaggle.com/tanmoyx/covid19-patient-precondition-dataset) from the [Mexican Government](https://www.gob.mx/salud/documentos/datos-abiertos-152127), this contains patient-specific information regarding patients’ history and habits. It was filtered and presented like this:
+|     Sex    |     Age    |     Diabetes    |     Obesity    |     Tobacco    |     Death    |
+|------------|------------|-----------------|----------------|----------------|--------------|
+|     2      |     27     |     2           |     2          |     2          |     2        |
+|     2      |     24     |     2           |     2          |     2          |     2        |
+|     1      |     54     |     2           |     1          |     2          |     2        |
+|     2      |     30     |     2           |     2          |     2          |     2        |
+|     1      |     60     |     1           |     2          |     2          |     1        |
+
+The attribute sex represents the gender of the patient, 1 means the patient is female and 2 means the patient is a male. Age is how many years old is the patient. In the following attributes, 1 means yes and 1 means no, for example, 1 in tobacco represents that the patient is/was a smoker. 
+
+### Analysis
+|     Sex    |     Age    |     Diabetes    |     Obesity    |     Tobacco    |     Death    |
+|------------|------------|-----------------|----------------|----------------|--------------|
+|     2      |     27     |     2           |     2          |     2          |     **2**        |
+|     2      |     24     |     2           |     2          |     2          |    **2**        |
+|     1      |     54     |     2           |     1          |     2          |     **2**        |
+|     2      |     30     |     2           |     2          |     2          |     **2**        |
+|     1      |     60     |     1           |     2          |     2          |     **1**        |
+
+The death attribute means that the patient has died, it will be treated like the dependent variable that will be determined by another five independent variables: sex, age, diabetes, obesity, and tobacco. To make this, it will be applied the Bayes Method to make this binary classification.
+
+### Conclusion
+After applying this method using a 5000-record dataset with 80% of data to train and the rest to test, it has the following result: <br>
+Source Code: [201603014.py] <br>
+Confusion matrix: <br>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/201603014.png" width="400">
+</p>
+
+| Accuracy Rate: | 81.52% |
+|----------------|--------|
+
+| Error Rate:    | 18.48% |
+|----------------|--------|
+
+Given the accuracy rate, it is not possible to predict a death due COVID-19, but it is possible to estimate death risk with these attributes. Getting to these conclusion it’s a delicate matter but the data analysis and the machine learning can make an estimate prediction that make us easier the task of identify  patients with a higher risk, using the presented attributes we  can make a prediction if a patient is in risk of death. <br> <br>
+
 
 ### References
-
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 - C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
