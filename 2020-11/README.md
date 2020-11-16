@@ -21,8 +21,11 @@ All the data collected and displayed have been extracted from the public databas
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
-- [Mortality prediction due to COVID 19 in the department of Guatemala](#mortality-prediction-due-to-covid-19-in-the-department-of-guatemala)
+- [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
+- [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
 - [References](#References)
+
+
 
 ### Covid-19 infection trend in Guatemala
 
@@ -97,7 +100,7 @@ The code was developed in Python using the Scikit Learn library, in this case a 
 
 For this case, first a grade 5 was used, and the fit was very good, but when interpreting that it is a pandemic, the behavior was not correct, therefore another grade was sought, in this case 4, which also presents a good fit, and its behavior in more similar to that of pandemics.
 
-### Mortality prediction due to COVID 19 in the department of Guatemala
+### Mortality prediction due to COVID - 19 in the department of Guatemala
 
 #### Resume
 
@@ -402,6 +405,24 @@ To interpret data on confirmed cases in the department of Guatemala, we need to 
 To realize this trend of confirmed cases, the tests are our window to the pandemic and how it is spreading. Without data on who is infected by the virus, we have no way of understanding the pandemic. Without these data, we cannot know if they are doing well and which ones are not reporting cases and deaths.
 
 The prediction will be made using Machine Learning knowledge implementing predictions using Python Scikit-learn in order to see the trend of confirmed cases in the department of Guatemala.
+
+The prediction process was carried out through linear regression, where our data was taken from the department of Guatemala.
+
+In the file [201408603.py] https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201408603.py), it can be seen that the data of each municipality was taken from the database data from the Ministry of Public Health and Social Assistance (https://tablerocovid.mspas.gob.gt/).
+
+The data was obtained from March 13 to November 8, 2020, which gives us a trend graph based on the results and confirmed cases in that range.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20645904/99204956-d05b3b80-277c-11eb-8ff3-53c40ca1c898.png" width="400">
+</p>
+
+As can be seen in the prediction and in the graph, the predictions for the next days of confirmed cases will continue to grow for the department of Guatemala and for the entire country.
+
+All this prediction depends on how many people perform the test and with this it can be known if they are infected or not. If there is no evidence there is no information.
+
+For this, it is recommended that new measures or forms can be taken to reduce contagion since the curve of this continues to grow.
+
+
 
 # Percentage of Deaths vs. total cases in Central America
 
