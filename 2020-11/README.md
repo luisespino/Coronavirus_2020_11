@@ -609,10 +609,13 @@ The attribute sex represents the gender of the patient, 1 means the patient is f
 The death attribute means that the patient has died, it will be treated like the dependent variable that will be determined by another five independent variables: sex, age, diabetes, obesity, and tobacco. To make this, it will be applied the Bayes Method to make this binary classification.
 
 ### Conclusion
-After applying this method using a 5000-record dataset with 80% of data to train and the rest to test, it has the following result:
-Source Code: [201603014.py]
-Confusion matrix:
-Image
+After applying this method using a 5000-record dataset with 80% of data to train and the rest to test, it has the following result: <br>
+Source Code: [201603014.py] <br>
+Confusion matrix: <br>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/201603014.png" width="400">
+</p>
 
 | Accuracy Rate: | 81.52% |
 |----------------|--------|
