@@ -864,7 +864,7 @@ Covid 19 has hit the world in a devastating way, both in the economic and health
 To carry out this analysis, the file [201113769.csv](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201113769.csv), in which column A, contains the data of the cases with no result delivered and in column B, the data with the result delivered, then, starting from the cases In column A, a prediction is made with a linear Sklearn regression, to determine the number of confirmed cases that should exist for each date. This generates a graph the following graph:
 
 <p align="center">
-<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201113769.py" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML/main/2020-11/img/201113769.png" width="400">
 </p>
 
 ## Conclusion
