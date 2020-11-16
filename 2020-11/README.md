@@ -604,7 +604,7 @@ The analysis groups different data from Central American, South American and Eur
 
 The growth rate of cases was calculated from the growth with respect to the previous day taking data from the countries Guatemala, Costa Rica, Brazil, Spain and France with a range of dates from November 11 to October 12, the growth rate was determined with the formula ((total cases - total cases previous day) / total cases previous day) * 100
 
-After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is 201122826.py
+After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/ivanLM2310/CoronavirusML/blob/main/2020-11/src/201122826.py) 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
