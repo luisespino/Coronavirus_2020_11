@@ -830,6 +830,9 @@ COVID-19 is an infectious disease, it creates severe damage in the lungs. COVID-
 
 # Comparison between the number of cases detected and the number of tests – US
 
+api: https://covidtracking.com/data/api
+
+## Abstract
 COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world.
 
 In the following report, a comparison is made between the number of tests and the number of positive cases found to measure the effectiveness of the tests and the level of spread of the virus and how real the data from tests performed is.
