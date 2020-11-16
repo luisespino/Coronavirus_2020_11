@@ -205,6 +205,12 @@ Based on the previous conclusions, we can predict the number of infections that 
 
 ### Number of cases per day of covid 19 in the US for 218 days
 
+This study is carried out because the United States is the first country with the most registered cases of dovid 19, we talk about the fact that it represents 20% of the cases registered worldwide and taking into account that its population only represents 4%.
+
+In the country there is a record that cases have already been reported in more than 40 states.
+
+For this reason, the following study is carried out and explained on the cases presented in the country during the 218 days.
+
 The linear correlation graph using the polynomial characteristics shows us the behavior of the cases that have been registered in the US, in the first 218 days and we can clearly see the second wave of infections that the country is going through.
 
 <p align="center">
