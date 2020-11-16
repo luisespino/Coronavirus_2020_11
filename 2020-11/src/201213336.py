@@ -22,5 +22,5 @@ prediccionConfirmado = model.predict(predict)
 model.fit(X=X, y=z)
 prediccionesMuerto = model.predict(predict)
 
-print(prediccionConfirmado) #255,555
+print(prediccionConfirmado) #255,556
 print(prediccionesMuerto) #8844
