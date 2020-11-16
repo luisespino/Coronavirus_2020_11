@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -819,6 +819,14 @@ We can identify at least six anomalies. This may occur for many factors like scr
 
 We could use another Machine Learning tools to get better results: verify the relationship between screened and confirmed cases, linear and polynomial models to validate the data sets, and so on.
 
+### Alma from Fundegua
+
+-Alma is a chatbot that offers helps a far away community at San Pedro la Laguna Guatemala, in order to take what happen with all members of community, Alma provides asistance and recommendations from Call Center and ChatBot web, in order to help a far away community.
+
+### World Health Organization (WHO)
+
+COVID-19 is an infectious disease, it creates severe damage in the lungs. COVID-19 causes illness in humans and has killed many people in the entire world. However, this virus is reported as a pandemic by the World Health Organization (WHO) and all countries are trying to control and lockdown all places.
+
 ### References 
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
@@ -831,7 +839,3 @@ We could use another Machine Learning tools to get better results: verify the re
 - [k-means in python - Step by step](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/)
 
 - [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
-
-### Alma from Fundegua
-
--Alma is a chatbot that offers helps a far away community at San Pedro la Laguna Guatemala, in order to take what happen with all members of community, Alma provides asistance and recommendations from Call Center and ChatBot web, in order to help a far away community.
