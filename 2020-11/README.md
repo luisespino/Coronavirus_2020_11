@@ -286,12 +286,18 @@ scope of this research.
 <img src="https://user-images.githubusercontent.com/10952236/99139973-299f5f80-2603-11eb-9504-512953798b69.png" width="400">
 </p>
 
-As we can see, the numbers seem to similar to Guatemala, but we must also take into consideration that Japans population is 126.5 million as of 2018 and Guatemalas population
-is 17.25 million as of 2018 which is a staggering difference, this reflects in the behavior shown in the graphs, Japans seems to be more steady, while most of
-Central America is quite the oposite.
+As we can see, the number of confirmd cases seem to be similar to Guatemala's, but also: 
+
+|                  | Japan      | Guatemala  |
+| ---------------- | ---------- | ---------- |
+| Population       | 126,500,000| 17,250,000 |
+| Cases            | 108,983    | 113,543    |
+
+
+which taken into cosideration the population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction
+describing that the pattern in which cases in Japan will arise in a steady manner.
 So now we must ask ourselves which factors create this difference, and the one that stands out the most is the culture, considering our current situation
-perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can
-clearly see that Japan is a great example as we can see in this predicted outcome:
+perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we canclearly see that Japan is a great example as we can see in this predicted outcome.
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
