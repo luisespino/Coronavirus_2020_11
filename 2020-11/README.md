@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Ordoñez Bryan, Solares Cesar, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Ordoñez Bryan, Solares Cesar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -578,24 +578,34 @@ According to the information obtained at https://ourworldindata.org/coronavirus,
 
 During the first 25 days we could say that the disease was controlled, having less than 1000 cases, but the following 5 days demonstrated the opposite, reaching 6000 cases, from this point the number of cases increased rapidly until reaching 320 days with a total of 53515055, this behavior is observed in the following graph
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/PvasquezF/CoronavirusML/main/2020-11/img/201503611_4.png" width="400">
+</p>
 
 With this information we start the estimation to determine the behavior of the cases worldwide, starting on day 320 in jumps from 5 to 410 we obtain the following
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/PvasquezF/CoronavirusML/main/2020-11/img/201503611_2.png" width="400">
+</p>
 
 With this, we observe that the infections will increase in the following months, we can support this with the fact that in some parts of the world there are new outbreaks, so it is uncertain when the contagion curve would decline.
 
-
 Continuing with the deaths worldwide, at the beginning we observed a late appearance of deaths, the first one until the 12th and it was increasing slowly, the first month with 6000 infections there were only 130 deaths
+<p align="center">
+<img src="https://raw.githubusercontent.com/PvasquezF/CoronavirusML/main/2020-11/img/201503611_3.png" width="400">
+</p>
 
 It must be taken into account that not all cases of covid-19 mean death, so it is normal for the majority of the infected population to survive.
 
 The prediction made for deaths starting on day 320 and ending on day 410 in steps of 5, we observe the following
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/PvasquezF/CoronavirusML/main/2020-11/img/201503611_1.png" width="400">
+</p>
 
 Deaths are complemented with infections, the decrease in deaths will be accompanied by a decrease in cases.
-
 
 ### References
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 - C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
+- MLPRegressor — scikit-learn documentation. (s. f.). Scikit Learn. Retrieved November 13, 2020, https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html
+- A Beginner’s Guide to Neural Networks in Python. Retrieved November 13, 2020, https://www.springboard.com/blog/beginners-guide-neural-network-in-python-scikit-learn-0-18/
