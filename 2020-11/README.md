@@ -17,15 +17,17 @@ Next it will be about how the covid-19 pandemic has evolved since the first day 
 All the data collected and displayed have been extracted from the public databases of each country that track this information. With this information and using the Python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown below.
 
 ### Table of Contents
-
-- [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
+- [The Epidemic Progression Index](#The-Epidemic-Progression-Index)
+- [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala) 
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
 - [References](#References)
 
-
+## The Epidemic Progression Index
+The Epidemic Progression Index (EPI) is a measure of the percentage of infected people with respect to the number of swabs performed. Since swabs are done to people at risk, the EPI indicates how strong the spread of the epidemic is. The math behind the formula is as follows:
+Where np (i) represents the total number of positive cases of coronavirus on day i (for example, today), np (i-1) the total number of positive cases of coronavirus on day i-1 (for example, yesterday ), ts (i) the total number of swabs made on day i and ts (i-1) the total number of swabs on day i-1. EPI is a number between 0 and 1. When EPI is equal to 1, it means that all people who have had a swab are positive for the coronavirus. Therefore, the epidemics continue to advance. In contrast, an EPI value equal to 0 means that the epidemics stop, that is, all the people who had a swab are negative for the coronavirus.
 
 ### Covid-19 infection trend in Guatemala
 
