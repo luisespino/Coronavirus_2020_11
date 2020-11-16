@@ -1067,7 +1067,11 @@ these are the medium class about the number of positive cases and actually we ar
 
 The next graph represents the 3 clusters of positive cases in Mixco, during this pandemy.
 
-[Positive cases in Mixco during COVID 19 Pandemy](https://user-images.githubusercontent.com/48579656/99218447-1c6ba780-27a0-11eb-87ea-75eb1897eb76.png)
+<p align="center">
+    <h1>Positive cases in Mixco during COVID 19 Pandemy</h1>
+    <img src="https://user-images.githubusercontent.com/48579656/99218447-1c6ba780-27a0-11eb-87ea-75eb1897eb76.png" width="400">
+</p>
+
 
 Well i want to determinate if the number of positive cases on December 25, could be above 100, using
 these algorithm, as we can see the graph if our prediction could be correct the class of the result 
