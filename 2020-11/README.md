@@ -596,6 +596,29 @@ According to the data collected, of the number of deaths per day, on the website
 <img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
 </p>
 
+#Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19
+
+During this global pandemic, it has been seen that in many countries different strategies have been had to deal with this global emergency, with the use of the K-means algorithm we can segment and analyze data of the different growth rates with respect to the number of people infected daily and the growth rate of deaths
+
+The analysis groups different data from Central American, South American and European countries, this to verify what difference there is between these 3 regions of the world
+
+The growth rate of cases was calculated from the growth with respect to the previous day taking data from the countries Guatemala, Costa Rica, Brazil, Spain and France with a range of dates from November 11 to October 12, the growth rate was determined with the formula ((total cases - total cases previous day) / total cases previous day) * 100
+
+it was determined that the analysis clusters are
+
+| Clusters | growth rate cases | number of daily infections | growth rate deaths |
+| -------- | ----------------- | -------------------------- | ------------------ |
+|Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
+|Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
+|Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
+
+in cluster 0 would be the countries of Central America
+in cluster 1 would be the countries of Europe
+in cluster 2 would be the countries of South America
+
+
+
+
 ### References
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
