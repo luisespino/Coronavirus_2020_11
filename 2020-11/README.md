@@ -610,17 +610,23 @@ After applying the k-means algorithm, the following graph and the information of
 <img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
 </p>
 
+| Description                                         | Color in graph | 
+| --------------------------------------------------- | -------------- |
+| Cluster 0 would be the countries of Central America | Purple         |
+| Cluster 1 would be the countries of Europe          | Green          |
+| Cluster 2 would be the countries of South America   | Red            |
+
+
 it was determined that the analysis clusters are
 
-| Clusters | growth rate cases | number of daily infections | growth rate deaths |
+| Clusters | Growth rate cases | Number of daily infections | Growth rate deaths |
 | -------- | ----------------- | -------------------------- | ------------------ |
 |Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
 |Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
 |Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
 
-in cluster 0 would be the countries of Central America
-in cluster 1 would be the countries of Europe
-in cluster 2 would be the countries of South America
+
+
 
 ## Analysis
 
