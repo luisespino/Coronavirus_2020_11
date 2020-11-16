@@ -598,7 +598,17 @@ According to the data collected, of the number of deaths per day, on the website
 ## Confirmed cases of covid in El Salvador
 
 Countries in Central America have the covid disease relatively controlled, but most countries have not yet found the peak of the contagion of this disease.
-Countries with a good economy and a health system like Costa Rica are having problems controlling the disease, while a country like El Salvador with a population similar to that of Costa Rica has 35k infected with a population of 6M people
+Countries with a good economy and a health system like Costa Rica are having problems controlling the disease, while a country like El Salvador with a population similar to that of Costa Rica has 35k infected with a population of 6M people.
+<p align="center">
+<img src="https://raw.githubusercontent.com/Dresz/CoronavirusML/main/2020-11/img/201603166.png" width="400">
+</p>
+The image above shows the graph of the accumulated cases from January 22 to November 10 and the prediction of the graph 30 days later, approximately 320 days, we can see that the graph begins to fall, which shows that the disease reached its peak.
+### Possible reasons
+
+While the Central American countries relax their measures, such as in Guatemala, which decided to remove the state of emergency around the covid, restricting agglomerations such as public transport, shopping centers and opening hospitals with good sustenance, another point to take into account was the severe quarantine to which the country submitted.
+
+
+
 ### References
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
