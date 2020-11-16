@@ -841,7 +841,7 @@ Of course, for this, it is necessary to evaluate asymptomatic cases (cases that 
 
 To answer the question asked above it is necessary to see the following graph:
 <p align="center">
-<img src="https://drive.google.com/file/d/1R9CwINXZ1T8zP8blriAjl6RbzoiNg-xM/view?usp=sharing" width="400">
+    <img src="https://drive.google.com/uc?export=view&id=1R9CwINXZ1T8zP8blriAjl6RbzoiNg-xM" width="400">
 </p>
 
 
@@ -864,7 +864,7 @@ The centroid of this phase would be: 698,852 infected and 41,530 tested.
 3. Cluster 3 (purple), in this phase, due to the number of infected people that grow to a large extent, it is not possible to carry out all the tests you want, so it is recommended to maintain the number of tests and intensify precautionary measures, with the objective is that the number of cases decreases and to be able to obtain a more real infected result.
 The centroid of this phase would be: 1,185,272 infected and 73,454 tested.
 
-Below, you can see the centroids and the final graph
+Below, you can see the centroids and the final graph:
 
 ### Centroids:
 | Phase | Centroid                   |
@@ -874,8 +874,9 @@ Below, you can see the centroids and the final graph
 | 3          | 1185272.05, 73453.52  |
 
 
+### Final Graph:
 <p align="center">
-<img src=" https://drive.google.com/file/d/1JsINO_QxiYKAacpmn5-oTOyLD4btagHz/view?usp=sharing" width="400">
+    <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="400">
 </p>
 
 
