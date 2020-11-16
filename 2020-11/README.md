@@ -301,7 +301,7 @@ According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/
 
 # Percentage of Deaths vs. total cases in Central America
 
-This study looks at the percentage of Covid-19 cases in total divided by the number of deaths in each Central American country (Guatemala, Honduras, Nicaragua and El Salvador), each country has a different percentage for example:
+This study looks at the percentage of Covid-19 cases in total divided by the number of deaths in each Central American country (Guatemala, Honduras, Nicaragua, Costa Rica and El Salvador), each country has a different percentage for example:
 
 In El Salvador the month of July had a number of cases of 18096 and a number of deaths of 773 when making the division gives us a total of 23.4%, making the division of each month the average is 26.2% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
 
@@ -315,6 +315,7 @@ Each country has a different average, which is the following:
 | El Salvador      | 26.2%   | 
 | Nicaragua        | 32%     | 
 | Honduras         | 32.9%   | 
+| Costa Rica       | 4%      | 
 
 For this study we used the months of July, August, September and October.
 
