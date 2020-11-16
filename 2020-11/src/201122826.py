@@ -52,11 +52,5 @@ plt.scatter(result_america[:,0], result_america[:,1],color='orange')
 plt.scatter(result_europa[:,0], result_europa[:,1],color='yellow')
 plt.scatter(cl[:,0], cl[:,1],color='black')
 
-##eu,panama,argentina
-##result_test = np.array([[1.39,143231],[0.82,1162],[0.86,10880]])
-##print(kmeans.predict(result_test))
-##plt.scatter(result_test[:,0], result_test[:,1],color='green')
-
-
 
 plt.show()
