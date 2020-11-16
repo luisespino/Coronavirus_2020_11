@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
+Alvarado David, Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -23,6 +23,15 @@ All the data collected and displayed have been extracted from the public databas
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
+- [Mortality prediction due to COVID - 19 in Honduras](#Mortality-prediction-due-to-COVID-19-in-Honduras)
+- [Trend of number of infected per day in Guatemala](#Trend-of-number-of-infected-per-day-in-Guatemala)
+- [Number of cases per day of covid 19 in the US for 218 days](#Number-of-cases-per-day-of-covid-19-in-the-US-for-218-days)
+- [Analysis of the number of deaths from coronavirus in Guatemala](#Analysis-of-the-number-of-deaths-from-coronavirus-in-Guatemala)
+- [Covid-19 in Guatemala, cases, predictions for 2021](#Covid-19-in-Guatemala,-cases,-predictions-for-2021)
+- [Percentage of men infected by covid-19 in Guatemala since the first active case](#Percentage-of-men-infected-by-covid-19-in-Guatemala-since-the-first-active-case)
+- [Comparative between Guatemala, Central America and Japan](#Comparative-between-Guatemala,-Central-America-and-Japan)
+- [Average deaths from confirmed cases and age of covid 19 in Guatemala](#Average-deaths-from-confirmed-cases-and-age-of-covid-19-in-Guatemala)
+- .[Confirmed cases of covid in El Salvador](#Confirmed-cases-of-covid-in-El-Salvador)
 - [References](#References)
 
 
@@ -703,7 +712,6 @@ The differences between each of the clusters are observed, the Central American 
 We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
 
 
-=======
 # Coronavirus (COVID-19) Mortality Rate in Guatemala
 
 To calculate the mortality we need:
@@ -797,8 +805,22 @@ And the last one graph shows all previous graphs together.
 We can identify at least six anomalies. This may occur for many factors like screening time, human error as we said before, and many more.
 
 We could use another Machine Learning tools to get better results: verify the relationship between screened and confirmed cases, linear and polynomial models to validate the data sets, and so on.
+ 
+## Confirmed cases of covid in El Salvador
 
-### References 
+Countries in Central America have the covid disease relatively controlled, but most countries have not yet found the peak of the contagion of this disease.
+Countries with a good economy and a health system like Costa Rica are having problems controlling the disease, while a country like El Salvador with a population similar to that of Costa Rica has 35k infected with a population of 6M people.
+<p align="center">
+<img src="https://raw.githubusercontent.com/Dresz/CoronavirusML/main/2020-11/img/201603166.png" width="400">
+</p>
+The image above shows the graph of the accumulated cases from January 22 to November 10 and the prediction of the graph 30 days later, approximately 320 days, we can see that the graph begins to fall, which shows that the disease reached its peak.
+
+### Possible reasons
+
+While the Central American countries relax their measures, such as in Guatemala, which decided to remove the state of emergency around the covid, restricting agglomerations such as public transport, shopping centers and opening hospitals with good sustenance, another point to take into account was the severe quarantine to which the country submitted.
+
+
+### References
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 - C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
