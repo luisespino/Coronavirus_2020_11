@@ -18,6 +18,7 @@ All the data collected and displayed have been extracted from the public databas
 
 ### Table of Contents
 
+- [The Epidemic Progression Index](#The-Epidemic-Progression-Index)
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
@@ -25,7 +26,10 @@ All the data collected and displayed have been extracted from the public databas
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
 - [References](#References)
 
+### The Epidemic Progression Index
 
+The Epidemic Progression Index (EPI) is a measure of the percentage of infected people with respect to the number of swabs performed. Since swabs are done to people at risk, the EPI indicates how strong the spread of the epidemic is. The math behind the formula is as follows:
+Where np (i) represents the total number of positive cases of coronavirus on day i (for example, today), np (i-1) the total number of positive cases of coronavirus on day i-1 (for example, yesterday ), ts (i) the total number of swabs made on day i and ts (i-1) the total number of swabs on day i-1. EPI is a number between 0 and 1. When EPI is equal to 1, it means that all people who have had a swab are positive for the coronavirus. Therefore, the epidemics continue to advance. In contrast, an EPI value equal to 0 means that the epidemics stop, that is, all the people who had a swab are negative for the coronavirus.
 
 ### Covid-19 infection trend in Guatemala
 
@@ -381,17 +385,7 @@ taken by the Chinese government were stricter and a began a decrease in daily ca
 <img src="https://user-images.githubusercontent.com/34200816/99139374-9283d900-25fd-11eb-9cc9-955d600e031a.png" width="400">
 </p>
 
-The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602656.py)
-
-### Italy, one of the first affected 
-
-Italy was one of the first countries affected by the Covid-19 pandemic. Italy, like China at the beginning of the year, is experiencing a second wave in which more cases are recorded than there were at the peak of the pandemic. Currently the Italian government is beginning to take actions to reduce the number of infections and flatten the curve again. In the following graph we can see how the curve is taking an exponential behavior.
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/34200816/99212743-7fa20d80-2791-11eb-8b62-39fe828d1953.png" width="400">
-</p>
-
-The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602656.py)
+The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201602656.py)
 
 According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
@@ -420,15 +414,10 @@ The y-axis represents the number of deaths.
 
 The cluster is divided into three classes, according to the number of registered deaths. The centers of these three classes are presented below
 
-#### Centroid information
+- [3.25 54.1875]
+- [5. 2000.]
+- [2.6 188.2]
 
-Grouping the information in 3 clusters, the k-means algorithm gave us the following information using 3 centroids:
-
-- Centroid 1: [3.25    54.1875]
-- Centroid 2: [5.    2000.]
-- Centroid 3: [2.6    188.2]
-
-Based on the information, we can predict that the number of deaths from covid is most likely to belong to the second cluster according to the information entered.
 
 The sources of the data used are in:
 - [Regions](https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/)
@@ -683,7 +672,7 @@ The analysis groups different data from Central American, South American and Eur
 
 The growth rate of cases was calculated from the growth with respect to the previous day taking data from the countries Guatemala, Costa Rica, Brazil, Spain and France with a range of dates from November 11 to October 12, the growth rate was determined with the formula ((total cases - total cases previous day) / total cases previous day) * 100
 
-After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201122826.py) 
+After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/ivanLM2310/CoronavirusML/blob/main/2020-11/src/201122826.py) 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
@@ -707,7 +696,7 @@ it was determined that the analysis clusters are
 
 The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
 
-We could conclude that the pandemic tends to worsen in countries where the number of daily infections is high, so that the growth rate of daily infections tends to increase and the growth rate of deaths will also tend to increase, according to In the analysis we can say that the number of people infected daily is important to reduce them because it would decrease the rates of infection and the rate of deaths from COVID-19.
+We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
 
 ## World wide cases and deaths predictions - Neural Network MLPRegressor
 According to the information obtained at https://ourworldindata.org/coronavirus, the expansion of covid-19 has been massive, every day there are tens of thousands of cases, so it is necessary to know the global behavior of infections like this also of deaths.
