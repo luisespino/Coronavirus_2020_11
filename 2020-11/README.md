@@ -818,6 +818,90 @@ We can identify at least six anomalies. This may occur for many factors like scr
 
 We could use another Machine Learning tools to get better results: verify the relationship between screened and confirmed cases, linear and polynomial models to validate the data sets, and so on.
 
+# Classification of the countries of the Americas according to their management of the pandemic
+Each country has had its own management of how to deal with the Coronavirus. These graphs seek to classify the countries of America in 3 groups based on their number of cases per million and their number of deaths per million. Calculation of cases per million is related to the population of each country, so it represents a very useful value to understand the management of the pandemic.
+
+Original information used was retrieved from [this link](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv)
+and the data used for this analysis can be found [in](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201504480.py)
+## Centroid information
+ | Centroid   | total_cases_per_million | total_deaths_per_million |
+ | ---------- |      ------------------ |       ------------------ |
+ | Centroid 1 |             11545.36369 |                342.85992 | 
+ | Centroid 2 |             28973.02918 |                  642.631 | 
+ | Centroid 3 |              2445.64804 |                 55.99212 | 
+ 
+ | Centroid   |                                                    |
+ | ---------- |      --------------------------------------------- |
+ | Centroid 1 |             Less affected countries                | 
+ | Centroid 2 |             Countries with medium control          | 
+ | Centroid 3 |             Most affected countries                | 
+ 
+## Graph of the data
+<p align="center">
+<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201504480.PNG" width="400">
+</p>
+
+Source Code [201504480.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201504480.py)
+
+## Cluster Classification
+ |                        Country  | total_cases_per_million | total_deaths_per_million | cluster | 
+ |                ---------------- |      ------------------ |       ------------------ | ------- |
+ |                        Anguilla |                 199.973 |                    0.000 |       2 |
+ |             Antigua and Barbuda |                1368.352 |                   40.846 |       2 |
+ |                       Argentina |               28870.640 |                  781.201 |       0 |
+ |                           Aruba |               43628.121 |                  412.116 |       0 |
+ |                         Bahamas |               18214.969 |                  394.153 |       1 |
+ |                        Barbados |                 866.476 |                   24.359 |       2 |
+ |                          Belize |               12029.043 |                  221.316 |       1 |
+ |                         Bermuda |                3564.948 |                  144.525 |       2 |
+ |                         Bolivia |               12265.968 |                  757.387 |       1 |
+ | Bonaire Sint Eustatius and Saba |                5911.292 |                  114.412 |       2 |
+ |                          Brazil |               27516.820 |                  779.349 |       0 |
+ |          British Virgin Islands |                2381.189 |                   33.072 |       2 |
+ |                          Canada |                7734.879 |                  288.563 |       1 |
+ |                  Cayman Islands |                3864.881 |                   15.216 |       2 |
+ |                           Chile |               27708.213 |                  773.009 |       0 |
+ |                        Colombia |               23406.771 |                  664.840 |       0 |
+ |                      Costa Rica |               24189.290 |                  303.488 |       0 |
+ |                            Cuba |                 668.161 |                   11.566 |       2 |
+ |                         Curacao |                7964.656 |                   12.188 |       1 |
+ |                        Dominica |                 944.563 |                    0.000 |       2 |
+ |              Dominican Republic |               12281.174 |                  210.363 |       1 |
+ |                         Ecuador |               10181.170 |                  736.664 |       1 |
+ |                     El Salvador |                5605.438 |                  160.957 |       2 |
+ |                Falkland Islands |                4306.632 |                    0.000 |       2 |
+ |                       Greenland |                 299.443 |                    0.000 |       2 |
+ |                         Grenada |                 284.396 |                    0.000 |       2 |
+ |                       Guatemala |                6403.314 |                  218.804 |       2 |
+ |                          Guyana |                6094.902 |                  175.448 |       2 |
+ |                           Haiti |                 804.032 |                   20.346 |       2 |
+ |                        Honduras |               10354.271 |                  284.918 |       1 |
+ |                         Jamaica |                3302.759 |                   77.335 |       2 |
+ |                          Mexico |                7781.211 |                  762.095 |       1 |
+ |                      Montserrat |                2600.520 |                  200.040 |       2 |
+ |                       Nicaragua |                 854.548 |                   23.851 |       2 |
+ |                          Panama |               33677.129 |                  664.462 |       0 |
+ |                        Paraguay |                9963.505 |                  219.978 |       1 |
+ |                            Peru |               28354.463 |                 1066.880 |       0 |
+ |                     Puerto Rico |               26882.664 |                  321.933 |       0 |
+ |           Saint Kitts and Nevis |                 357.197 |                    0.000 |       2 |
+ |                     Saint Lucia |                 882.214 |                   10.892 |       2 |
+ |Saint Vincent and the Grenadines |                 703.038 |                    0.000 |       2 |
+ |       Sint Maarten (Dutch part) |               21524.183 |                  559.675 |       0 |
+ |                        Suriname |                8990.273 |                  194.329 |       1 |
+ |             Trinidad and Tobago |                4342.293 |                   80.029 |       2 |
+ |        Turks and Caicos Islands |               18596.002 |                  154.967 |       1 |
+ |                   United States |               32945.027 |                  741.988 |       0 |
+ |    United States Virgin Islands |               13732.607 |                  220.258 |       1 |
+ |                         Uruguay |                1139.122 |                   18.424 |       2 |
+ |                       Venezuela |                3391.518 |                   29.681 |       2 |
+## Analysis of data
+The countries that belong to centroid 1 are those that currently have a lower number of cases and deaths based on their population. These are countries that we must consider what actions they have taken against the pandemic and what they have achieved.
+
+The countries of centroid 2 belong to the intermediate group, being those that have not managed to completely control the Coronavirus, but haven't been affected as those of group 3.
+
+The countries in centroid 3 are the most affected, in these should be considered that actions proved the growing increase in the number of cases and deaths.
+ 
 ### References 
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
