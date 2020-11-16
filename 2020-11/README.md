@@ -595,6 +595,7 @@ According to the data collected, of the number of deaths per day, on the website
 <p align="center">
 <img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
 </p>
+
 ## Confirmed cases of covid in El Salvador
 
 Countries in Central America have the covid disease relatively controlled, but most countries have not yet found the peak of the contagion of this disease.
