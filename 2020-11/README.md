@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Guzmán Andrés, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan,Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José(students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Guzmán Andrés, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -23,7 +23,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
-- [Using LSTM to predict positive covid-19 cases in Guatemala](#Using LSTM to predict positive covid-19 cases in Guatemala)
+- [Using LSTM to predict COVID cases and mortality in Guatemala] (#Using LSTM to predict COVID infections and mortality in Guatemala)
 - [References](#References)
 
 ## The Epidemic Progression Index
@@ -82,22 +82,6 @@ With the above it is observed that by day 300, the number of infected will be cl
 The data used for the elaboration of the graph was obtained from [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19) In the case of Costa Rica, the first day for the graph is taken on March 5, 2020 with zero infected, and the final data of the graph is for November 8, 2020 with 116,363 infected, for a total of 249 days sample history.
 
 The code used to generate the graph is [201503821.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201503821.py), which is based on a linear regression, with a polynomial of degree 4.
-
-Control measures
-The government has declared a color coded alert system for the control and containment of the pandemic, as follows:
-
-Green (Information): No reported cases, but neighboring countries exposed.
-Yellow (Moderated): Accelerated increasing of epidemiological variables, high hospital occupancy, low control of cases.
-Orange (High): Increasing of epidemiological variables, medium hospital occupancy, acceptable control of cases.
-Red (Extreme): Extreme hospital occupancy.
-The epidemiological variables are:
-
-Canton risk by attack rate (weekly): New cases by canton population divided by new national cases, 66% of weight.
-Slope and variation coefficient (triweekly): Weekly increase or decrease in the active cases of a canton, 33% of weight.
-More specific details, formulas or algorithms for the alert color designation of the cantons or districts have been kept secret and has not been released as of July 2020, which has been contested by local government of the cantons, commerce associations, journalists and open data activists.
-
-As of August 2020, only Yellow Alert or Orange Alert has been used to designate the administrative areas of the country, with differentiated restrictions on each area.
-
 
 #### Comparative analysis of coronavirus cases between Costa Rica and Guatemala
 
@@ -277,6 +261,8 @@ The data used and the graphs presented for the analysis of cases of covid 19 in 
 
 ---
 
+
+
 ### Covid-19 in Guatemala, cases, predictions for 2021
 
 In Guatemala it was predicted that at the end of this year we were going to see the peak of contagions, We have been in November 12 days and cases are seen in a small increase due to the opening of more shops, sales on the street and not the restriction of schedule.
@@ -317,27 +303,19 @@ First we need to establish why Japan was the target, there are three main reason
 2. They way they have dealt with the pandemic has been outstanding, reflecting in the lowest numbers per capita world wide.
 3. Their social standards, which are regarded to be among the best in the world.
 
-So we start by analyzing a Graph which represents the present data, we can clearly see that it represents a steady increase resulting close to an even straight line, with this we can infer that the way covid spread is being controled is more efficient than in Central America.
+So we start by reviewing this Graph created using the file  [201222567.py], where we seek a model beginning from start of the second wave, october 1st currently with 83010 confirmed cases, and aimed towards predicting using a polynomial regression model, the number of confirmed cases by november 30, the end of the month, since november is the
+scope of this research.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/10952236/99139973-299f5f80-2603-11eb-9504-512953798b69.png" width="400">
 </p>
 
-Now we will analyze the graph created using the file [201222567.py], which makes a prediction aimed to the day 61 that represents november 30 which is the scope of this research, using a polynomial regression, to see if the nature of the previous graph persists or if it alters: 
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/10952236/99216040-4752fd00-279a-11eb-9382-6208010cb32f.png" width="600">
-</p>
-
-According to the result we can infer that the increase rate represented indicates that the increase in confirmed cases will remain to have a steady growth barely surpassing the 140,000 mark. We can also see that the number of confirmd cases seem to be similar to Guatemala's, but we must take into consideration the population data: 
-
-|                  | Japan      | Guatemala  |
-| ---------------- | ---------- | ---------- |
-| Population       | 126,500,000| 17,250,000 |
-| Cases            | 108,983    | 113,543    |
-
-The population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys, indicating as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction describing that the pattern in which cases in Japan will arise in a more controlled manner.
-perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we can clearly  see that Japan is a great example as we can see in this predicted outcome.
+As we can see, the numbers seem to similar to Guatemala, but we must also take into consideration that Japans population is 126.5 million as of 2018 and Guatemalas population
+is 17.25 million as of 2018 which is a staggering difference, this reflects in the behavior shown in the graphs, Japans seems to be more steady, while most of
+Central America is quite the oposite.
+So now we must ask ourselves which factors create this difference, and the one that stands out the most is the culture, considering our current situation
+perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can
+clearly see that Japan is a great example as we can see in this predicted outcome:
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
@@ -422,7 +400,7 @@ According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/
 
 ### Clusters: Deaths according to regions of Guatemala - Covid 19
 
-According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
+According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
 
 The Metropolitan region was the first to report the first case of covid. Since then the number of deceased people has increased to all other departments.
 
@@ -859,33 +837,18 @@ We can identify at least six anomalies. This may occur for many factors like scr
 
 We could use another Machine Learning tools to get better results: verify the relationship between screened and confirmed cases, linear and polynomial models to validate the data sets, and so on.
 
-### Alma from Fundegua and Daily Deaths
+### Alma from Fundegua
 
 -Alma is a chatbot that offers helps a far away community at San Pedro la Laguna Guatemala, in order to take what happen with all members of community, Alma provides asistance and recommendations from Call Center and ChatBot web, in order to help a far away community.
-
-<div align="center">
-<img src="img/200312459.PNG" width="600">
-</div>
 
 ### World Health Organization (WHO)
 
 COVID-19 is an infectious disease, it creates severe damage in the lungs. COVID-19 causes illness in humans and has killed many people in the entire world. However, this virus is reported as a pandemic by the World Health Organization (WHO) and all countries are trying to control and lockdown all places.
 
-### The Epidemic Progression Index (EPI)
-
-The Epidemic Progression Index (EPI) is a measure of the percentage of infected people with respect to the number of swabs performed. Since swabs are done to people at risk, the EPI indicates how strong the spread of the epidemic is. The math behind the formula is as follows:
-
-<div align="center">
-<img src="img/9430901.jpg" width="300">
-</div>
-
-Where np (i) represents the total number of positive cases of coronavirus on day i (for example, today), np (i-1) the total number of positive cases of coronavirus on day i-1 (for example, yesterday ), ts (i) the total number of swabs made on day i and ts (i-1) the total number of swabs on day i-1. EPI is a number between 0 and 1. When EPI is equal to 1, it means that all people who have had a swab are positive for the coronavirus. Therefore, the epidemics continue to advance. In contrast, an EPI value equal to 0 means that the epidemics stop, that is, all the people who had a swab are negative for the coronavirus.
 
 # Comparison between the number of cases detected and the number of tests – US
 
-The data and graphs shown in the following report are generated in the file: [201602959.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602959.py)
-
-API: https://covidtracking.com/data/api
+api: https://covidtracking.com/data/api
 
 ## Abstract
 COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world.
@@ -937,14 +900,6 @@ Below, you can see the centroids and the final graph:
     <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="400">
 </p>
 
-## Prediction of deaths per month in the municipality of Chimaltenango
-In the following analysis, it is based on the municipality of Chimaltenango in the department of Chimaltenango, according to the data provided by the Ministry of Public Health and Social Assistance, it indicates that the deaths began in the month of April, and are counted until November 2 . The main idea of this study is to use linear regression and establish a prediction based on the data obtained in eight months.
-The following figure is presented where the orange points are the data obtained, while the green points are from the data of the model prediction.<br> 
-
-<p align="center">
-<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/200915078.png" width="400">
-</p> <br><br>
-
 # PREDICTION OF CONFIRMED CASES PER DAY.
 
 Covid 19 has hit the world in a devastating way, both in the economic and health fields; Since the virus arrived in our country, cases began to be registered for each day, this number of cases can be found on [this site](https://tablerocovid.mspas.gob.gt) , in these data we can find the data confirmed with result delivered and cases without result delivered.
@@ -953,7 +908,7 @@ Covid 19 has hit the world in a devastating way, both in the economic and health
 To carry out this analysis, the file [201113769.csv](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201113769.csv), in which column A, contains the data of the cases with no result delivered and in column B, the data with the result delivered, then, starting from the cases In column A, a prediction is made with a linear Sklearn regression, to determine the number of confirmed cases that should exist for each date. This generates a graph the following graph:
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML/main/2020-11/img/201113769.png" width="400">
+<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201113769.py" width="400">
 </p>
 
 ## Conclusion
@@ -961,106 +916,23 @@ As can be seen in the image, the prediction takes a linear form (blue points) an
 
 Source Code [201113769.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201113769.py)
 
-# Classification of the countries of the Americas according to their management of the pandemic
-Each country has had its own management of how to deal with the Coronavirus. These graphs seek to classify the countries of America in 3 groups based on their number of cases per million and their number of deaths per million. Calculation of cases per million is related to the population of each country, so it represents a very useful value to understand the management of the pandemic.
+# Using LSTM to predict COVID cases and mortality in Guatemala
 
-Original information used was retrieved from [this link](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv)
-and the data used for this analysis can be found [in](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201504480.py)
-## Centroid information
- | Centroid   | total_cases_per_million | total_deaths_per_million |
- | ---------- |      ------------------ |       ------------------ |
- | Centroid 1 |             11545.36369 |                342.85992 | 
- | Centroid 2 |             28973.02918 |                  642.631 | 
- | Centroid 3 |              2445.64804 |                 55.99212 | 
- 
- | Centroid   |                                                    |
- | ---------- |      --------------------------------------------- |
- | Centroid 1 |             Less affected countries                | 
- | Centroid 2 |             Countries with medium control          | 
- | Centroid 3 |             Most affected countries                | 
- 
-## Graph of the data
+The current approach uses LSTM (Long Short-Term Memory) to fit the data. I choose this type of ML algorithm because it achieves state of the art results, this will adapt better to understand the development of the infection.
+
+The problem is phrased as a regression problem, we transform the data from a single column of data into a two-column dataset: the first column containing the days (t) infection/death count and the second column containing next day’s (t+1) infection/date count, to be predicted.
+
+The dataset is divided into two subsets, in the chart we can see the real data in blue, and the predicted model for training data(orange) and test data (green). As we can see, the model did an excellent job of fitting both the training and the test datasets
+
 <p align="center">
-<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201504480.PNG" width="400">
+    <img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201010425.py" width="400">
 </p>
 
-Source Code [201504480.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201504480.py)
+Only problem is the spike that was a missreport from the government. The rest seems to fit quite well with 100 epochs. This graph shows positive cases, to fit deaths you must change usercols in line 39 of file [201010425.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201010425.py)
 
-## Cluster Classification
- |                        Country  | total_cases_per_million | total_deaths_per_million | cluster | 
- |                ---------------- |      ------------------ |       ------------------ | ------- |
- |                        Anguilla |                 199.973 |                    0.000 |       2 |
- |             Antigua and Barbuda |                1368.352 |                   40.846 |       2 |
- |                       Argentina |               28870.640 |                  781.201 |       0 |
- |                           Aruba |               43628.121 |                  412.116 |       0 |
- |                         Bahamas |               18214.969 |                  394.153 |       1 |
- |                        Barbados |                 866.476 |                   24.359 |       2 |
- |                          Belize |               12029.043 |                  221.316 |       1 |
- |                         Bermuda |                3564.948 |                  144.525 |       2 |
- |                         Bolivia |               12265.968 |                  757.387 |       1 |
- | Bonaire Sint Eustatius and Saba |                5911.292 |                  114.412 |       2 |
- |                          Brazil |               27516.820 |                  779.349 |       0 |
- |          British Virgin Islands |                2381.189 |                   33.072 |       2 |
- |                          Canada |                7734.879 |                  288.563 |       1 |
- |                  Cayman Islands |                3864.881 |                   15.216 |       2 |
- |                           Chile |               27708.213 |                  773.009 |       0 |
- |                        Colombia |               23406.771 |                  664.840 |       0 |
- |                      Costa Rica |               24189.290 |                  303.488 |       0 |
- |                            Cuba |                 668.161 |                   11.566 |       2 |
- |                         Curacao |                7964.656 |                   12.188 |       1 |
- |                        Dominica |                 944.563 |                    0.000 |       2 |
- |              Dominican Republic |               12281.174 |                  210.363 |       1 |
- |                         Ecuador |               10181.170 |                  736.664 |       1 |
- |                     El Salvador |                5605.438 |                  160.957 |       2 |
- |                Falkland Islands |                4306.632 |                    0.000 |       2 |
- |                       Greenland |                 299.443 |                    0.000 |       2 |
- |                         Grenada |                 284.396 |                    0.000 |       2 |
- |                       Guatemala |                6403.314 |                  218.804 |       2 |
- |                          Guyana |                6094.902 |                  175.448 |       2 |
- |                           Haiti |                 804.032 |                   20.346 |       2 |
- |                        Honduras |               10354.271 |                  284.918 |       1 |
- |                         Jamaica |                3302.759 |                   77.335 |       2 |
- |                          Mexico |                7781.211 |                  762.095 |       1 |
- |                      Montserrat |                2600.520 |                  200.040 |       2 |
- |                       Nicaragua |                 854.548 |                   23.851 |       2 |
- |                          Panama |               33677.129 |                  664.462 |       0 |
- |                        Paraguay |                9963.505 |                  219.978 |       1 |
- |                            Peru |               28354.463 |                 1066.880 |       0 |
- |                     Puerto Rico |               26882.664 |                  321.933 |       0 |
- |           Saint Kitts and Nevis |                 357.197 |                    0.000 |       2 |
- |                     Saint Lucia |                 882.214 |                   10.892 |       2 |
- |Saint Vincent and the Grenadines |                 703.038 |                    0.000 |       2 |
- |       Sint Maarten (Dutch part) |               21524.183 |                  559.675 |       0 |
- |                        Suriname |                8990.273 |                  194.329 |       1 |
- |             Trinidad and Tobago |                4342.293 |                   80.029 |       2 |
- |        Turks and Caicos Islands |               18596.002 |                  154.967 |       1 |
- |                   United States |               32945.027 |                  741.988 |       0 |
- |    United States Virgin Islands |               13732.607 |                  220.258 |       1 |
- |                         Uruguay |                1139.122 |                   18.424 |       2 |
- |                       Venezuela |                3391.518 |                   29.681 |       2 |
-## Analysis of data
-The countries that belong to centroid 1 are those that currently have a lower number of cases and deaths based on their population. These are countries that we must consider what actions they have taken against the pandemic and what they have achieved.
+To use this model to predict values we must pass the X-values as an 3-dimension array with values scaled. This will be added in the next release. 
 
-The countries of centroid 2 belong to the intermediate group, being those that have not managed to completely control the Coronavirus, but haven't been affected as those of group 3.
-
-The countries in centroid 3 are the most affected, in these should be considered that actions proved the growing increase in the number of cases and deaths.
-
-# Using LSTM to predict positive covid-19 cases in Guatemala
-
-We tried to use neural networks to make a model that can predict the appearance of positive cases of Covid-19, if you want to predict deaths you can switch the number inside usecols at line 35 to 3. The data comes from the WHO database.
-
-A neural network LSTM (Long Short-Term Memory Models) was used to contrast them with the rest of the models already in the repository. As can be seen from the graph, the training data and the projected model fit the data quite well. Except for a peak whose explanation arises from poor communication and handling by the government.
-
-For the prediction of future cases with respect to the day from the start of the outbreak, it is necessary to save the model and feed it with data in a specific format. This was not done in this file, but it is planned to add it later.
-
-Finally, based on the mean squared error shown during the execution of each epoch, it is possible to say that the model fits correctly as each epoch passes. Care must be taken not to overfit the model, so the epoch parameter in line 63 must not be too high or too low.
-
-The graph shows the actual data in blue, the trained model in orange and the projections in green, as can be seen there is an overlap of the graphs at certain points.
-
-There is a 353.77 RMSE in the training dataset and 301.13 RMSE in the test dataset, wich means that 353 persons are off in both sets.
-
-https://user-images.githubusercontent.com/40524706/99217882-b5012800-279e-11eb-80b8-f05a1509e74e.png
-
+The error is of 300 persons in testing and 350 in training set.
 
 ### References 
 
@@ -1069,11 +941,11 @@ https://user-images.githubusercontent.com/40524706/99217882-b5012800-279e-11eb-8
 - MLPRegressor — scikit-learn documentation. (s. f.). Scikit Learn. Retrieved November 13, 2020, https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html
 - A Beginner’s Guide to Neural Networks in Python. Retrieved November 13, 2020, https://www.springboard.com/blog/beginners-guide-neural-network-in-python-scikit-learn-0-18/
 
-- [A Quick Deep Learning Recipe: Time Series Forecasting with Keras in Python](https://towardsdatascience.com/a-quick-deep-learning-recipe-time-series-forecasting-with-keras-in-python-f759923ba64)
-
 - [scikit-learn - Machine Learning in Python](https://scikit-learn.org/stable/)
 
 - [k-means in python - Step by step](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/)
 
 - [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
+
+- [Predicting Stock Price with LSTM ](https://towardsdatascience.com/predicting-stock-price-with-lstm-13af86a74944)
 
