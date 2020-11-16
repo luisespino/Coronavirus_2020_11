@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado David, Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Ichel Gustavo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Soto Celso, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
+Alvarado David, Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Ichel Gustavo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Soto Celso, Vasquez Pavel, Vega Daniel, Veliz Jorge, Velíz José, Villatoro Kherson. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -880,10 +880,21 @@ While the Central American countries relax their measures, such as in Guatemala,
 
 COVID-19 is an infectious disease, it creates severe damage in the lungs. COVID-19 causes illness in humans and has killed many people in the entire world. However, this virus is reported as a pandemic by the World Health Organization (WHO) and all countries are trying to control and lockdown all places.
 
+### The Epidemic Progression Index (EPI)
+
+The Epidemic Progression Index (EPI) is a measure of the percentage of infected people with respect to the number of swabs performed. Since swabs are done to people at risk, the EPI indicates how strong the spread of the epidemic is. The math behind the formula is as follows:
+
+<div align="center">
+<img src="img/9430901.jpg" width="300">
+</div>
+
+Where np (i) represents the total number of positive cases of coronavirus on day i (for example, today), np (i-1) the total number of positive cases of coronavirus on day i-1 (for example, yesterday ), ts (i) the total number of swabs made on day i and ts (i-1) the total number of swabs on day i-1. EPI is a number between 0 and 1. When EPI is equal to 1, it means that all people who have had a swab are positive for the coronavirus. Therefore, the epidemics continue to advance. In contrast, an EPI value equal to 0 means that the epidemics stop, that is, all the people who had a swab are negative for the coronavirus.
 
 # Comparison between the number of cases detected and the number of tests – US
 
-api: https://covidtracking.com/data/api
+The data and graphs shown in the following report are generated in the file: [201602959.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602959.py)
+
+API: https://covidtracking.com/data/api
 
 ## Abstract
 COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world.
@@ -935,21 +946,6 @@ Below, you can see the centroids and the final graph:
     <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="400">
 </p>
 
-
-### References 
-
-- Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
-- C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
-- MLPRegressor — scikit-learn documentation. (s. f.). Scikit Learn. Retrieved November 13, 2020, https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html
-- A Beginner’s Guide to Neural Networks in Python. Retrieved November 13, 2020, https://www.springboard.com/blog/beginners-guide-neural-network-in-python-scikit-learn-0-18/
-
-- [scikit-learn - Machine Learning in Python](https://scikit-learn.org/stable/)
-
-- [k-means in python - Step by step](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/)
-
-- [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
-
-
 # PREDICTION OF CONFIRMED CASES PER DAY.
 
 Covid 19 has hit the world in a devastating way, both in the economic and health fields; Since the virus arrived in our country, cases began to be registered for each day, this number of cases can be found on [this site](https://tablerocovid.mspas.gob.gt) , in these data we can find the data confirmed with result delivered and cases without result delivered.
@@ -965,3 +961,17 @@ To carry out this analysis, the file [201113769.csv](https://github.com/LuisEspi
 As can be seen in the image, the prediction takes a linear form (blue points) and the real data (red points), actually have very little correlation with the prediction, therefore, if we start from only this prediction, we can conclude that the data provided by the government regarding the Coronavirus are inconsistent in many ways, of course, depending on the algorithm used to make the prediction, the values ​​of this can vary and more closely resemble the real data.
 
 Source Code [201113769.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201113769.py)
+
+### References 
+
+- Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
+- C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
+- MLPRegressor — scikit-learn documentation. (s. f.). Scikit Learn. Retrieved November 13, 2020, https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html
+- A Beginner’s Guide to Neural Networks in Python. Retrieved November 13, 2020, https://www.springboard.com/blog/beginners-guide-neural-network-in-python-scikit-learn-0-18/
+
+- [scikit-learn - Machine Learning in Python](https://scikit-learn.org/stable/)
+
+- [k-means in python - Step by step](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/)
+
+- [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
+
