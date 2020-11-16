@@ -827,6 +827,60 @@ We could use another Machine Learning tools to get better results: verify the re
 
 COVID-19 is an infectious disease, it creates severe damage in the lungs. COVID-19 causes illness in humans and has killed many people in the entire world. However, this virus is reported as a pandemic by the World Health Organization (WHO) and all countries are trying to control and lockdown all places.
 
+
+# Comparison between the number of cases detected and the number of tests – US
+
+COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world.
+
+In the following report, a comparison is made between the number of tests and the number of positive cases found to measure the effectiveness of the tests and the level of spread of the virus and how real the data from tests performed is.
+All the information used in this report is obtained from a free api, with the objective of having the most up-to-date information possible and as much information as possible in real time.
+
+## Number of cases detected VS the number of tests
+The number of positive cases of coronavirus in the United States increases every day, but what is the real number of infected?
+Of course, for this, it is necessary to evaluate asymptomatic cases (cases that do not present symptoms but do carry the virus), but this goes beyond the analysis of this report.
+
+To answer the question asked above it is necessary to see the following graph:
+<p align="center">
+<img src="https://drive.google.com/file/d/1R9CwINXZ1T8zP8blriAjl6RbzoiNg-xM/view?usp=sharing" width="400">
+</p>
+
+
+In the previous graph you can see the increase in tests performed on the x axis and the increase in cases on the y axis.
+
+As you can see, both data have an acceptable relationship, but the first grouping (cyan color), you can see a small irregularity, an increase in cases while the increase in tests remained the same.
+If you continue with the analysis of the following grouping (red color), the same phenomenon can be observed, with less impact but longer duration.
+
+And in the last grouping (purple color), it is where there is a large number of tests and a large amount of increase in positive cases, even this grouping can be observed an increase in the growth of the data, but the data that increases with the faster the confirmed positive cases.
+
+### With the above data, 3 classifications can be made:
+
+1. Cluster 1 (cyan), in this phase a greater number of tests was necessary to obtain the exact number of cases and thus be able to take the necessary measures to contain the virus.
+The centroid of this phase would be: 107,376 infected and 12,850 tested.
+
+2. Cluster 2 (red), in this phase it can be classified as normal in which the number of tests grows as the number of positive cases grows.
+The centroid of this phase would be: 698,852 infected and 41,530 tested.
+
+
+3. Cluster 3 (purple), in this phase, due to the number of infected people that grow to a large extent, it is not possible to carry out all the tests you want, so it is recommended to maintain the number of tests and intensify precautionary measures, with the objective is that the number of cases decreases and to be able to obtain a more real infected result.
+The centroid of this phase would be: 1,185,272 infected and 73,454 tested.
+
+Below, you can see the centroids and the final graph
+
+### Centroids:
+| Phase | Centroid                   |
+| ------| -------------------------- |
+| 1          | 107375.62, 12849.76   |
+| 2          |  698852.07, 41529.65  |
+| 3          | 1185272.05, 73453.52  |
+
+
+<p align="center">
+<img src=" https://drive.google.com/file/d/1JsINO_QxiYKAacpmn5-oTOyLD4btagHz/view?usp=sharing" width="400">
+</p>
+
+
+
+
 ### References 
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
