@@ -1,5 +1,5 @@
 # Coronavirus Data Analysis with Machine Learning
-Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David.\
+Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan.\
 Universidad de San Carlos de Guatemala\
 Technical Report November 2020
 
@@ -17,6 +17,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
 - [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
+- [Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19](#growth-rate-of-covid-19-cases-in-relation-to-new-daily-cases-and-death-rate-from-covid-19)
 - [References](#References)
 
 ### Covid-19 infection trend in Guatemala
