@@ -384,21 +384,37 @@ The data used for this analysis can be found in [this link](https://github.com/L
 
 According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
-### Clusters: Deceased according to regions of Guatemala - Covid 19
+### Clusters: Deaths according to regions of Guatemala - Covid 19
 
 According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
 
-The x-axis shown in the graph represents the regions in which Guatemala is divided.
+The Metropolitan region was the first to report the first case of covid. Since then the number of deceased people has increased to all other departments.
+
+The x-axis shown in the graph represents the regions into which Guatemala is divided. The regions are numbered as follows:
+
+- Metropolitan region
+- North Region
+- North-East Region
+- South-East Region
+- Central Region
+- South-West Region
+- North-West Region
+- Region Peten
 
 The y-axis represents the number of deaths.
 
-There is a cluster divided into 3 classes.
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png" width="400">
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png" width = "400">
 </p>
 
-The sources for the data used are at:
+The cluster is divided into three classes, according to the number of registered deaths. The centers of these three classes are presented below
+
+- [3.25 54.1875]
+- [5. 2000.]
+- [2.6 188.2]
+
+
+The sources of the data used are in:
 - [Regions](https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/)
 - [Number of deceased](https://tablerocovid.mspas.gob.gt/)
 
