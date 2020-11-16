@@ -33,7 +33,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Behavior and classification of people infected by COVID-19 by municipality in Guatemala](#behavior-and-classification-of-people-infected-by-covid-19-by-municipality-in-guatemala)
 - [Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19](#growth-rate-of-covid-19-cases-in-relation-to-new-daily-cases-and-death-rate-from-covid-19)
 - [World wide cases and deaths predictions - Neural Network MLPRegressor](#world-wide-cases-and-deaths-predictions---neural-network-mlpregressor)
-- [Coronavirus (COVID-19) Mortality Rate in Guatemala] (#coronavirus-covid-19-mortality-rate-in-guatemala)
+- [Coronavirus (COVID-19) Mortality Rate in Guatemala](#coronavirus-covid-19-mortality-rate-in-guatemala)
 - [COVID-19 death factors in Mexico](#covid-19-death-factors-in-mexico)
 - [Finding anomalies in confirmed and screened cases data](#finding-anomalies-in-confirmed-and-screened-cases-data)
 - [Comparison between the number of cases detected and the number of tests – US](#comparison-between-the-number-of-cases-detected-and-the-number-of-tests--us)
