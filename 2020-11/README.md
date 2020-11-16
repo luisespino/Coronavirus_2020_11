@@ -1,4 +1,4 @@
-# Technical Report 2020-11
+﻿# Technical Report 2020-11
 
 Universidad de San Carlos de Guatemala
 
@@ -8,20 +8,24 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Cardona Berny, Galicia Nery, Alvarado Kevin, Giron Gary, Mejía Kevin, Melgar James, Morales Mario, Solares Cesar, Bryan Ordoñez, Villatoro Jerson, Veliz Jorge, Fernando Antonio Hernandez, Vega Daniel, Hevia Eduardo, Yoselin Lemus, Luis Lizama. (students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
 
 ### Resume
-
-The following report deals with how the covid-19 pandemic has evolved since the first day it arrived in Guatemala and some countries in America, such as Honduras, Costa Rica and the United States, dealing with issues about the death rate, number of people infected by day, percentage of dead people according to active cases.
-
-All the data collected and displayed have been extracted from the public databases of each country that keep track of this information. With this information and using the python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown next.
+In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
+factors that make comparisons between countries difficult, there are differences from one nation to another, as well as undetected or reported cases of the disease, in addition there are different types of tests, detection strategies, but this is limited by the different definitions and forms of classification, such as mild or asymptomatic cases that are not regularly accounted for, because they are not reported, so the quality of care can also be determining, even so it is important to have models with which it is possible to predict behavior of the disease in such a way that preventive measures can be taken at the population level to avoid contagion, as well as taking greater care with people at high risk, in said processes of determining characteristics and factors, different characteristics of the patients in the different analyzes carried out throughout the following report, age, sex, nationality, among others.
+Next it will be about how the covid-19 pandemic has evolved since the first day it arrived in Guatemala and some countries in America, such as Honduras, Costa Rica, the United States, and even a comparison with countries on the other side of the world such as China. , addressing questions about the mortality rate, number of people infected per day, percentage of deaths according to active cases.
+All the data collected and displayed have been extracted from the public databases of each country that track this information. With this information and using the Python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown below.
 
 ### Table of Contents
 
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
+- [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
+- [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
 - [References](#References)
+
+
 
 ### Covid-19 infection trend in Guatemala
 
@@ -47,7 +51,16 @@ For the department of Guatemala, it is projected that by the end of November, th
 
 In the case of Costa Rica, it had a different behavior since the growth curve of the infected behaved rather in the way of a polynomial of degree 4, that is, it can stabilize and begin a decline.
 
-The degree of the polynomial has an R2 of 0.998, that is, the data does fit the model. Also with grade 5 R2 is even closer to 0.999, but the behavior does not correspond to a pandemic, because it goes down too quickly, without stabilizing.
+The degree of the polynomial has an R2 of 0.9989, that is, the data does fit the model. Also with grade 5 R2 is even closer to 0.9998, but the behavior does not correspond to a pandemic, because it goes down too quickly, without stabilizing.
+
+| Polynomial | R2     | RMSE    |
+| ---------- | ------ | ------- |
+| Grade 4    | 0.9989 | 1184.62 |
+| Grade 5    | 0.9998 | 461.72  |
+
+It can be seen in the table that the mean square error RMSE is a lower value in the polynomial of degree 5, this means, that it is a better fit to the graph, also R2 is closer to 1, however, the behavior from a pandemic it cannot be taken down immediately, but the cases are decreasing little by little and the graph is gradually flattening out.
+
+With the above, it can be determined that the degree of the polynomial must be 4 and discard the degree of 5.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/37234131/99012300-a94e0100-2513-11eb-8a67-bcd93c686047.png" width="400">
@@ -55,9 +68,17 @@ The degree of the polynomial has an R2 of 0.998, that is, the data does fit the 
 
 According to the graph, we can observe that indeed, in the next 50 days, the advance of the infected will continue but could begin to stabilize, which is encouraging for the neighboring country.
 
-With the above it is observed that by day 300, the number of infected will be close to 160,000 people, that is, it will continue to increase.
+| Day  | Date      | Infecteds | Data       |
+| ---- | ----------| --------- | ---------- |
+| 1    | 06/03/20  | 1         | Real       |
+| 248  | 08/11/20  | 116,363   | Real       |
+| 300  | 31/12/20  | 160,000   | Prediction |
+
+With the above it is observed that by day 300, the number of infected will be close to 160,000 people, that is, it will continue to increase. That is, Costa Rica will close the year with about 160,000 infected.
 
 The data used for the elaboration of the graph was obtained from [COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19) In the case of Costa Rica, the first day for the graph is taken on March 5, 2020 with zero infected, and the final data of the graph is for November 8, 2020 with 116,363 infected, for a total of 249 days sample history.
+
+The code used to generate the graph is [201503821.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201503821.py), which is based on a linear regression, with a polynomial of degree 4.
 
 #### Comparative analysis of coronavirus cases between Costa Rica and Guatemala
 
@@ -76,6 +97,8 @@ It is evident that Costa Rica has more cases of infected compared to Guatemala, 
 - [201503821.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201503821.py)
 
 The code was developed in Python using the Scikit Learn library, in this case a linear regression model was used, through a polynomial function of degree 4. The idea is to find a trend of the currently existing points and fit to test and error one degree for the polynomial, that is, this degree will coincide with the input data, once done it is possible to extend the data over time and make a prediction of the infected.
+
+For this case, first a grade 5 was used, and the fit was very good, but when interpreting that it is a pandemic, the behavior was not correct, therefore another grade was sought, in this case 4, which also presents a good fit, and its behavior in more similar to that of pandemics.
 
 ### Mortality prediction due to COVID - 19 in the department of Guatemala
 
@@ -119,10 +142,32 @@ it does not have to be a subset of the denominator). The expression «risk of ca
 frequency is only correct if the duration of clinical disease is known. In this document we will use the expression
 «Case fatality ratio». "
 
+#### Description of the solution for predicting deaths from COVID-19
+The trend of deaths due to the COVID-19 pandemic is made with the information provided by the Ministry of Health of the Republic of Guatemala since March 13, the date on which the first case entered the country, for which there are several months of information retained within the solution as cases of deaths derived from this disease have been reported, with which a trend is set and the prediction can be made by means of a linear model.
+
+According to the 201403997.py file, if it is executed with a configuration to predict the next 30 days, a constant decrease in the number of deaths can be noticed with respect to how the behavior has come, derived from the fact that there has been a substantial drop in the infected and fatality in these last days of the disease, following this model linearly, we can define that cases will continue to decrease, unless there is a second wave of infections in the country, which surely would not be as aggressive as the first but would change the statistics with which they are working and therefore the results of the predictions, this behavior can be verified in the following graph, which shows how the number of deaths has been fluctuating, and was increasing at a certain time, but at the moment already It has decreased and as the days go by we see that the deaths in the capital city associated with SARS-CoV-2 will continue to decrease:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203859-7c9b2300-2779-11eb-9f6a-86d0242f0c04.PNG" width="400">
+</p>
+
+The sample taken from the Ministry of Health according to its data collected is from February 13, until November 8 inclusive, in which for the department of Guatemala it was placed in a cumulative way to be able to work with the linspace tool of the numpy library that provides a linear regression from the data entered, so that it could be verified how the death trend would be.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203898-99cff180-2779-11eb-87a6-0ae9d0dce015.png" width="400">
+</p>
+
+Additional in the code the information is mapped from February 13, until November 8 inclusive of the other departments where there is a list according to the days that the cases were reported, if at a certain moment you want to use the solution to handle a prediction of the other departments.
+It can be verified in the following image, which shows the results of the number of deaths due to:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203952-b4a26600-2779-11eb-8fc3-f56f7142bfed.PNG" width="400">
+</p>
+
+As is well known in the case of Guatemala in the month of November and what has been in recent weeks there has been a decreasing fall in cases that end in death, for which the model tends to decrease steadily, although it is always It should take into account that according to the data and reports available in Asian and European countries, there is a high probability that there is a second wave, in which case some adjustments would have to be made to the model so that its prediction follows its correct course.
+For now it is determined that in the department of Guatemala the number of deaths caused by COVID-19 is declining, in such a way that the country is entering what was defined from the beginning as the new normal.
+
 
 ### Mortality prediction due to COVID - 19 in Honduras
 
-The prediction was made on the 293rd day and deals with the number of deaths predicted for the 350th day after the COVID-19 in Honduras. According to the file [201313819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201313819.py), it can be seen that the death curve has not been flattened and if the necessary measures are not taken, it may follow the flow of this prediction and on day 350 the mortality figure due to the virus would reach 500,000.
+The prediction was made on the 293rd day and deals with the number of deaths predicted for the 350th day after the COVID-19 in Honduras. According to the file [201313819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201313819.py), it can be seen that the death curve has not been flattened and if the necessary measures are not taken, it may follow the flow of this prediction and on day 350 the mortality figure due to the virus would reach 500,000.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6562969/98753311-a6bfa000-2389-11eb-9e90-9cd0d67d7794.png" width="400">
@@ -153,9 +198,18 @@ Grouping the information in 3 clusters, the k-means algorithm gave us the follow
 - For centroid 2, it can be concluded approximately that within 120 days of the pandemic there were an average of 1067 cases per day. 
 - For centroid 3, it can be concluded approximately that within 163 days of the pandemic there were an average of 558 cases per day.
 
+With this information we can determine that in the middle of the pandemic it was where the maximum average number of infections per day was reached, being 1067 infected per day, later it presented a decrease to 558 infected per day that would approximately be a decrease of 52% of infections with respect to at average maximum peak.
+Based on the previous conclusions, we can predict the number of infections that there will be in a day because we can group it into any of the 3 clusters according to the information entered and determine an approximate average of infections per day.
+
 --- 
 
 ### Number of cases per day of covid 19 in the US for 218 days
+
+This study is carried out because the United States is the first country with the most registered cases of dovid 19, we talk about the fact that it represents 20% of the cases registered worldwide and taking into account that its population only represents 4%.
+
+In the country there is a record that cases have already been reported in more than 40 states.
+
+For this reason, the following study is carried out and explained on the cases presented in the country during the 218 days.
 
 The linear correlation graph using the polynomial characteristics shows us the behavior of the cases that have been registered in the US, in the first 218 days and we can clearly see the second wave of infections that the country is going through.
 
@@ -182,7 +236,14 @@ We can see that the situation is delicate in the country and that the infections
 
 ---
 
-Analysis of the number of deaths from coronavirus in Guatemala by means of a linear regression, which says when the reported deaths are far from what should be the real behavior of said event, the analysis was carried out from day 1 to be reported the first case until day 226, the day in which 548 cases and 17 deaths were reported.
+
+### Analysis of the number of deaths from coronavirus in Guatemala
+
+Simple linear regression is the most used technique, it is a way that allows modeling a relationship between two sets of variables. The result is an equation that can be used to make projections or estimates on the data.
+
+This model is considered a predictor x and a dependent variable or response Y. Suppose that the true relationship between Y and x is a straight line and that observation Y at each level x is a random variable.
+
+Analysis of the number of deaths from coronavirus in Guatemala through a linear regression, which says that when the reported deaths are far from what the actual behavior of said event should be, the analysis was carried out from day 1 to be reported the first case. Until day 226, the day on which 548 cases and 17 deaths were reported, all this always remembering the importance of the data regarding the pandemic and that they are not only numbers but also people who fall victims of this pandemic every day, always remembering the necessary prevention measures so that these types of graphs do not take the form they are taking due to so many deaths.
 
 The training result model is as follows:
 
@@ -191,6 +252,13 @@ Y = 0.0805811339388978X + 7.712448377581117
 <p align="center">
 <img src="https://user-images.githubusercontent.com/15852159/99107552-a7378100-25ab-11eb-8a23-c19c7d36b849.png" width="400">
 </p>
+
+The data used and the graphs presented for the analysis of cases of covid 19 in Guatemala can be found here: [201403624.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201403624.py) and [201403624_data.csv](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201403624_data.csv).
+
+
+---
+
+
 
 ### Covid-19 in Guatemala, cases, predictions for 2021
 
@@ -205,10 +273,10 @@ In the graph below you can see in red line how the first curve that is already w
 In the predictions given, it will be observed that whenever it is increasing, unless people take care of themselves, the curve will be able to go down in Guatemala.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/6568351/98974867-02e60980-24db-11eb-8bc6-95284beba521.png" width="400">
+<img src="https://user-images.githubusercontent.com/6568351/99194217-b6513700-2743-11eb-8604-190acbf69d13.png" width="400">
 </p>
 
-The degree is 6, which is used to control the number of features added so that the prediction is correct and specified.
+The degree is 10, which is used to control the number of features added so that the prediction is correct and specified.
 
 ### Percentage of men infected by covid-19 in Guatemala since the first active case
 
@@ -312,17 +380,71 @@ taken by the Chinese government were stricter and a began a decrease in daily ca
 <img src="https://user-images.githubusercontent.com/34200816/99139374-9283d900-25fd-11eb-9cc9-955d600e031a.png" width="400">
 </p>
 
-The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201602656.py)
+The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201602656.py)
 
-### Clusters: Deceased according to regions of Guatemala - Covid 19
+According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/20080862.py), the first execution was configured to predict infections at 50 days, the official number was 644 infected, although later the Guatemalan Ministry of Health corrected the number of infections by increasing them. So the prediction is approximately correct.
 
-The x-axis shown in the graph represents the regions in which Guatemala is divided.
+### Clusters: Deaths according to regions of Guatemala - Covid 19
+
+According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
+
+The Metropolitan region was the first to report the first case of covid. Since then the number of deceased people has increased to all other departments.
+
+The x-axis shown in the graph represents the regions into which Guatemala is divided. The regions are numbered as follows:
+
+- Metropolitan region
+- North Region
+- North-East Region
+- South-East Region
+- Central Region
+- South-West Region
+- North-West Region
+- Region Peten
 
 The y-axis represents the number of deaths.
 
-There is a cluster divided into 3 classes, within which there is an anomalous region, since this is where the largest number of deaths is concentrated.
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png" width = "400">
+</p>
 
-![Cluster_Regiones_Guatemala](https://user-images.githubusercontent.com/67341591/99140684-784ff800-2609-11eb-8135-519d8d31dc0c.png)
+The cluster is divided into three classes, according to the number of registered deaths. The centers of these three classes are presented below
+
+- [3.25 54.1875]
+- [5. 2000.]
+- [2.6 188.2]
+
+
+The sources of the data used are in:
+- [Regions](https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/)
+- [Number of deceased](https://tablerocovid.mspas.gob.gt/)
+
+# Trend of confirmed Coronavirus cases in the department of Guatemala
+
+Something important to know, before making this prediction, is that all that can be analyzed and known is the infection status of those who have undergone a test. All other people who have a laboratory confirmed infection are counted as confirmed cases.
+
+To interpret data on confirmed cases in the department of Guatemala, we need to know how many COVID-19 tests the country actually does.
+
+To realize this trend of confirmed cases, the tests are our window to the pandemic and how it is spreading. Without data on who is infected by the virus, we have no way of understanding the pandemic. Without these data, we cannot know if they are doing well and which ones are not reporting cases and deaths.
+
+The prediction will be made using Machine Learning knowledge implementing predictions using Python Scikit-learn in order to see the trend of confirmed cases in the department of Guatemala.
+
+The prediction process was carried out through linear regression, where our data was taken from the department of Guatemala.
+
+In the file [201408603.py] https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201408603.py), it can be seen that the data of each municipality was taken from the database data from the Ministry of Public Health and Social Assistance (https://tablerocovid.mspas.gob.gt/).
+
+The data was obtained from March 13 to November 8, 2020, which gives us a trend graph based on the results and confirmed cases in that range.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20645904/99204956-d05b3b80-277c-11eb-8ff3-53c40ca1c898.png" width="400">
+</p>
+
+As can be seen in the prediction and in the graph, the predictions for the next days of confirmed cases will continue to grow for the department of Guatemala and for the entire country.
+
+All this prediction depends on how many people perform the test and with this it can be known if they are infected or not. If there is no evidence there is no information.
+
+For this, it is recommended that new measures or forms can be taken to reduce contagion since the curve of this continues to grow.
+
+
 
 # Percentage of Deaths vs. total cases in Central America
 
@@ -354,7 +476,357 @@ The data collected can be found in this repository at [201504394.xlsx](https://g
 - [Population density](https://datosmacro.expansion.com/demografia/poblacion)
 - [Increase in cases](https://news.google.com/covid19/map?hl=es-419&gl=US&ceid=US%3Aes-419)
 
-### References
 
-... more articles from students (the order of the articles will be defined by the professor)
-...
+
+# Behavioral rate of active cases in relation to the number of deaths in some Caribbean countries
+
+This approach is a little different from the others, since on this occasion we connected in seeing the behavior of active cases with respect to the number of deaths in some Caribbean countries, such as the following that we will mention below.
+
+This time, we will use the Gaussian algorithm to predict whether or not the data we will send as parameters (country, number of active cases, number of deaths) will show an improvement in the country. This would be another way of alerting countries to the behavior of the virus in their region, where they can know whether they have been improving or getting worse in order to take the necessary measures, this with respect to the rate of active cases versus deaths for each month.
+For this specific case we use data from the cases registered in:
+https://www.worldometers.info/coronavirus/#countries
+
+The months we take into account are from June, July, August, September and October, for the countries of Jamaica, Haiti and Cuba.
+
+For example: In Jamaica in the month of June there are 266 active cases with 9 deaths per covid registered. Therefore, the rate we manage by dividing the 266 active cases into 9 deaths, which gives us a value of 29.55 active cases/deaths. (266/9=29.55). And in Cuba we have recorded that by the month of June there were 174 active cases and 83 deaths, which gives a value of 2.09. So here we can say that the lower the number the more alarming the cases are, because most of the active cases are ending in death.
+
+
+| COUNTRY          | AVERAGE | 
+| ---------------- | ------- |
+| Jamaica          | 34.3%   | 
+| Haiti      	   | 31.6%   | 
+| Cuba        	   | 3.1%    |  
+
+In the table we can see that Haiti has a lower average, this is due to the fact that in the data taken from the reference, we see a drastic change in the counts of active cases, between the month of June, July and August. This makes the case look alarming there, just as in the rest most active cases end in death. Jamaica, on the other hand, has a higher average number of active cases, since there are more cases registered in that country and only a small number of them end in death.
+
+### Confirmed cases by Latin American countries
+The trend of coronavirus infections in Latin America is very important to know its impact.
+The original dataset is converted into a regression dataset using multilayer perceptron artificial neural networks. These results describe a model capable of predicting the number of confirmed cases on a date and country in Latin America.
+
+#### Dataset
+Dataset used in the model is obtained from a [publicly available repository](https://github.com/CSSEGISandData/COVID-19) operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). It contains the data which describe the number of cases defined by province/state, country/region, latitude and longitude for each day since the start of the COVID-19 infections (01-22-2020). It use only the time series confirmed cases global. The dataset that use the model (obtained by the original dataset) contain the data for latin american countries.
+
+#### Model
+According to the file [201602822.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602822.py), it use the scikit-learn library with pickle, matplotlib, pandas and numpy packages.
+The model use the ReLU activation function and the L-BFGS solver. Consist of four hidden layers and 40 total hidden reurons distributed equally among layers. This model takes the latitude, longitude and days since first case as input data and the number of confirmed cases as output data.
+
+#### Results
+The figure shows the comparison of real data and the data predicted by model. It presents a number of cases in a given group (location and date).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34287415/99181391-d1945600-26f3-11eb-9b75-4491e42bc3b6.png" width="400">
+</p>
+
+The maximum of each daily count is plotted.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34287415/99180350-1d8ecd00-26eb-11eb-9847-d8bdeae445bc.png" width="400">
+</p>
+
+# Percentage of Deaths vs. total cases in Central America
+
+This study looks at the percentage of Covid-19 cases in total divided by the number of deaths in each Central American country (Guatemala, Honduras, Nicaragua and El Salvador), each country has a different percentage for example:
+
+In El Salvador the month of July had a number of cases of 18096 and a number of deaths of 773 when making the division gives us a total of 23.4%, making the division of each month the average is 26.2% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
+
+This analysis has the purpose of being able to enter the data from other months and that this through skelearn does not say if there is an improvement in the number of deaths or if, on the contrary, the country had a greater amount than the average.
+
+Each country has a different average, which is the following:
+
+|     country      | average | 
+| ---------------- | ------- |
+| Guatemala        | 36%     | 
+| El Salvador      | 26.2%   | 
+| Nicaragua        | 32%     | 
+| Honduras         | 32.9%   | 
+
+For this study we used the months of July, August, September and October.
+
+### Rise in COVID cases base on 4 values for country
+
+Based on the theory that the increase in COVID cases depends on the days of initial quarantine, travel restrictions, the percentage of investment in public spending on health, and the population density, I set myself the task of knowing if an increase could occur in Guatemala. in the cases with a model trained with the Bayes algorithm in the file [201504394.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201504394.py).
+
+The data collected can be found in this repository at [201504394.xlsx](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201504394.xlsx). The sources for the data used to train the model are at:
+- [Initial quarantine days](https://es.wikipedia.org/wiki/Cuarentena_por_la_pandemia_de_COVID-19)
+- [Travel restrictions](https://www.kayak.com.gt/restricciones-de-viaje)
+- [Investment in health](https://datosmacro.expansion.com/estado/gasto/salud)
+- [Population density](https://datosmacro.expansion.com/demografia/poblacion)
+- [Increase in cases](https://news.google.com/covid19/map?hl=es-419&gl=US&ceid=US%3Aes-419)
+
+
+
+# Behavioral rate of active cases in relation to the number of deaths in some Caribbean countries
+
+This approach is a little different from the others, since on this occasion we connected in seeing the behavior of active cases with respect to the number of deaths in some Caribbean countries, such as the following that we will mention below.
+
+This time, we will use the Gaussian algorithm to predict whether or not the data we will send as parameters (country, number of active cases, number of deaths) will show an improvement in the country. This would be another way of alerting countries to the behavior of the virus in their region, where they can know whether they have been improving or getting worse in order to take the necessary measures, this with respect to the rate of active cases versus deaths for each month.
+For this specific case we use data from the cases registered in:
+https://www.worldometers.info/coronavirus/#countries
+
+The months we take into account are from June, July, August, September and October, for the countries of Jamaica, Haiti and Cuba.
+
+For example: In Jamaica in the month of June there are 266 active cases with 9 deaths per covid registered. Therefore, the rate we manage by dividing the 266 active cases into 9 deaths, which gives us a value of 29.55 active cases/deaths. (266/9=29.55). And in Cuba we have recorded that by the month of June there were 174 active cases and 83 deaths, which gives a value of 2.09. So here we can say that the lower the number the more alarming the cases are, because most of the active cases are ending in death.
+
+
+| COUNTRY          | AVERAGE | 
+| ---------------- | ------- |
+| Jamaica          | 34.3%   | 
+| Haiti      	   | 31.6%   | 
+| Cuba        	   | 3.1%    |  
+
+In the table we can see that Haiti has a lower average, this is due to the fact that in the data taken from the reference, we see a drastic change in the counts of active cases, between the month of June, July and August. This makes the case look alarming there, just as in the rest most active cases end in death. Jamaica, on the other hand, has a higher average number of active cases, since there are more cases registered in that country and only a small number of them end in death.
+
+### Confirmed cases by Latin American countries
+The trend of coronavirus infections in Latin America is very important to know its impact.
+The original dataset is converted into a regression dataset using multilayer perceptron artificial neural networks. These results describe a model capable of predicting the number of confirmed cases on a date and country in Latin America.
+
+#### Dataset
+Dataset used in the model is obtained from a [publicly available repository](https://github.com/CSSEGISandData/COVID-19) operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). It contains the data which describe the number of cases defined by province/state, country/region, latitude and longitude for each day since the start of the COVID-19 infections (01-22-2020). It use only the time series confirmed cases global. The dataset that use the model (obtained by the original dataset) contain the data for latin american countries.
+
+#### Model
+According to the file [201602822.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201602822.py), it use the scikit-learn library with pickle, matplotlib, pandas and numpy packages.
+The model use the ReLU activation function and the L-BFGS solver. Consist of four hidden layers and 40 total hidden reurons distributed equally among layers. This model takes the latitude, longitude and days since first case as input data and the number of confirmed cases as output data.
+
+#### Results
+The figure shows the comparison of real data and the data predicted by model. It presents a number of cases in a given group (location and date).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34287415/99181391-d1945600-26f3-11eb-9b75-4491e42bc3b6.png" width="400">
+</p>
+
+The maximum of each daily count is plotted.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/34287415/99180350-1d8ecd00-26eb-11eb-9847-d8bdeae445bc.png" width="400">
+</p>
+
+# Behavior and classification of people infected by COVID-19 by municipality in Guatemala
+
+The following prediction, rather than a prediction, is focused on classifying into "groups" the most infected sectors within the departments of Guatemala, in this case, its municipalities.
+
+## Preliminaries
+Since last March 13, when the first COVID-19 contagion was detected in Guatemala, the pandemic has been growing steadily in the country until the second week of April, when there was a peak of 39 cases in a single day , and then continue with the marked trend of a score of daily cases. However, since the second week of May, infections began to increase exponentially, from 68 daily cases on May 8 to 370 new cases in a single day on May 24. In June the cases already exceeded a thousand cases a day. And in July, with a new dashboard, the numbers have become even less reliable.
+
+The president, to evaluate his decisions focused on the reopening of the country before the population, paradoxically showed the data of a country with more municipalities on maximum alert, with a red light for more than half of the country.
+
+These indicators come from the COVID19 dashboard that the Ministry of Health and Social Assistance (MSPAS) feeds daily. However, what the president ignored in his presentation was that, although the number of daily infections has decreased compared to previous weeks, the deceased are a figure that is increasing. Deaths from coronavirus have become the biggest challenge in the region.
+
+## Analysis
+Based on the foregoing, it can be determined that for the information provided by the country's high command to have logic to be able to make the traffic light classification, they had to group the municipalities based on their infected.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/6531771/99190774-1ccb5a80-272e-11eb-8f6b-649e7d43a3d0.png" width="400">
+</p>
+
+This can clearly be done with a prediction using a machine learning algorithm to create the necessary clusters (in this case, the lights of a traffic light) to be able to identify the measures that a municipality can count on depending on its number of infected .
+
+This prediction has the advantage that it is not only based on the data of the day but can also work preventively in order to find a pattern in the data in the future.
+
+## Guatemala Goverment Alert Level System - Bayes Naive Classification
+
+The government of Guatemala manages the restrictions that are applied in each municipality and economic activity according to a system called "Semaforo". This system is based on 3 factors which are: Rate per 100k inhabitants, Percentage of positive tests and Rate of tests per 1k inhabitants. So, depending on this 3 factor the goverment set the alert lavel and take measures.
+
+
+For example:
+
+| Rate per 100k inhabitans | % Positive tests | Rate of tests per 1k inhabitants | Alert Level |
+| ------------------------ | ---------------- | -------------------------------- | ----------- |
+| 14.65                    | 13.56            | 0.05                             | 5           |
+
+
+Using the data provided by the goverment on [this site](https://covid19.gob.gt/semaforo.html), We make a clasification model based on Naive Bayes (GaussianNB) algorithm to classify the alert level for future results of the 3 factors. 
+
+The alert level is in a scale from 1 to 10, according to the data, alert level can take levels in step of .5 meaning that can be levels like 4.5 or 9.5, thats why in we use LabelEncoder from Sklearn to make this values unique and have a more consistent scale.
+
+In our tests we get the following values:
+
+| Rate per 100k inhabitans | % Positive tests | Rate of tests per 1k inhabitants | Alert Level |
+| ------------------------ | ---------------- | -------------------------------- | ----------- |
+| 119.44                   | 11.50            | 0.74                             | 7           |
+| 25.65                    | 11.20            | 0.16                             | 6           |
+| 50.0                     | 5.0              | 0.20                             | 7           |
+
+| Precision |
+| --------- |
+| 0.6823529 |
+
+The first result row was an already known value (7) , this one was for control, the model have a precision on 68.23529%, we are aware that this model can be more precise but due to the actual data inconsitency on data capture we can not asure more precision.
+
+Source Code [200714832.py]
+Data File [200714832.xlsx]
+
+## Prediction of deaths on the last day of the first year of infections in Guatemala
+
+According to the data collected, of the number of deaths per day, on the website of the Ministry of Health and Social Assistance (https://tablerocovid.mspas.gob.gt/), such data is used in Python code from the file 201403981.py to apply an analysis and prediction of how many deaths may occur on the last day of the first year of infections in Guatemala, that is, on day 365 of the pandemic, for which a grade 4 polynomial regression was applied, which predicts a number of 262 deaths approximately by day 365 of the pandemic.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
+</p>
+
+# Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19
+
+During this global pandemic, it has been seen that in many countries different strategies have been had to deal with this global emergency, with the use of the K-means algorithm we can segment and analyze data of the different growth rates with respect to the number of people infected daily and the growth rate of deaths
+
+The analysis groups different data from Central American, South American and European countries, this to verify what difference there is between these 3 regions of the world
+
+The growth rate of cases was calculated from the growth with respect to the previous day taking data from the countries Guatemala, Costa Rica, Brazil, Spain and France with a range of dates from November 11 to October 12, the growth rate was determined with the formula ((total cases - total cases previous day) / total cases previous day) * 100
+
+After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/ivanLM2310/CoronavirusML/blob/main/2020-11/src/201122826.py) 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
+</p>
+
+| Description                                         | Color in graph | 
+| --------------------------------------------------- | -------------- |
+| Cluster 0 would be the countries of Central America | Purple         |
+| Cluster 1 would be the countries of Europe          | Green          |
+| Cluster 2 would be the countries of South America   | Red            |
+
+it was determined that the analysis clusters are
+
+| Clusters | Growth rate cases | Number of daily infections | Growth rate deaths |
+| -------- | ----------------- | -------------------------- | ------------------ |
+|Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
+|Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
+|Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
+
+## Analysis
+
+The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
+
+We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
+
+## World wide cases and deaths predictions - Neural Network MLPRegressor
+According to the information obtained at https://ourworldindata.org/coronavirus, the expansion of covid-19 has been massive, every day there are tens of thousands of cases, so it is necessary to know the global behavior of infections like this also of deaths.
+
+During the first 25 days we could say that the disease was controlled, having less than 1000 cases, but the following 5 days demonstrated the opposite, reaching 6000 cases, from this point the number of cases increased rapidly until reaching 320 days with a total of 53515055, this behavior is observed in the following graph
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/PvasquezF/CoronavirusML/main/2020-11/img/201503611_4.png" width="400">
+</p>
+
+With this information we start the estimation to determine the behavior of the cases worldwide, starting on day 320 in jumps from 5 to 410 we obtain the following
+<p align="center">
+<img src="https://raw.githubusercontent.com/PvasquezF/CoronavirusML/main/2020-11/img/201503611_2.png" width="400">
+</p>
+
+With this, we observe that the infections will increase in the following months, we can support this with the fact that in some parts of the world there are new outbreaks, so it is uncertain when the contagion curve would decline.
+
+Continuing with the deaths worldwide, at the beginning we observed a late appearance of deaths, the first one until the 12th and it was increasing slowly, the first month with 6000 infections there were only 130 deaths
+<p align="center">
+<img src="https://raw.githubusercontent.com/PvasquezF/CoronavirusML/main/2020-11/img/201503611_3.png" width="400">
+</p>
+
+It must be taken into account that not all cases of covid-19 mean death, so it is normal for the majority of the infected population to survive.
+
+The prediction made for deaths starting on day 320 and ending on day 410 in steps of 5, we observe the following
+<p align="center">
+<img src="https://raw.githubusercontent.com/PvasquezF/CoronavirusML/main/2020-11/img/201503611_1.png" width="400">
+</p>
+
+Deaths are complemented with infections, the decrease in deaths will be accompanied by a decrease in cases.
+
+
+# Coronavirus (COVID-19) Mortality Rate in Guatemala
+
+To calculate the mortality we need:
+1. The number of accumulated cases registered regardless of the current situation whether positive or negative.
+2. The total number of deceased cases.
+
+## Fatality Rate based on confirmed cases and deaths in Guatemala
+
+According to the data taken from the page of the Ministry of Public Health and Social Assistance (MSPAS) currently there are 114,885 confirmed accumulated cases and a total of 3,932 cases of registered deaths and using the formula of Infection Fatality Rate (IFR) = Deaths / Cases = 3,932/114,885 = 3.4 % (3.4% of people infected with SARS-CoV-2 have a fatal outcome, while 96.6% recover). This without taking into account that in addition to the cases recorded by the MSPAS there are many cases that have not been taken into account because they are asymptomatic (or present with very mild symptoms) and that testing has not been performed on the entire population, only a fraction of the SARS-CoV-2 infected population is detected, then this would significantly reduce the mortality rate.
+
+## Mortality Rate and Probability of Dying
+
+As of November 15, 3,932 people are estimated to have died out of a total population of 17,263,000 in Guatemala. This corresponds to 0.023% crude mortality rate to date, or 23 deaths per 100,000 population, or 1 death every 4,390 people.
+
+## Mortality Rate in one year 
+
+According to the estimates made in [201213336.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201213336.py). for July 2021, it is estimated that Guatemala will have a total of 255,556 confirmed cumulative cases and a total of 8,844 deceased cases and using the formula of Infection Fatality Rate (IFR) = Deaths / Cases = 8,844/255,556 = 3.4 % we get the same mortality rate calculated above.
+
+# COVID-19 death factors in Mexico.
+It was used as a [dataset](https://www.kaggle.com/tanmoyx/covid19-patient-precondition-dataset) from the [Mexican Government](https://www.gob.mx/salud/documentos/datos-abiertos-152127), this contains patient-specific information regarding patients’ history and habits. It was filtered and presented like this:
+|     Sex    |     Age    |     Diabetes    |     Obesity    |     Tobacco    |     Death    |
+|------------|------------|-----------------|----------------|----------------|--------------|
+|     2      |     27     |     2           |     2          |     2          |     2        |
+|     2      |     24     |     2           |     2          |     2          |     2        |
+|     1      |     54     |     2           |     1          |     2          |     2        |
+|     2      |     30     |     2           |     2          |     2          |     2        |
+|     1      |     60     |     1           |     2          |     2          |     1        |
+
+The attribute sex represents the gender of the patient, 1 means the patient is female and 2 means the patient is a male. Age is how many years old is the patient. In the following attributes, 1 means yes and 1 means no, for example, 1 in tobacco represents that the patient is/was a smoker. 
+
+### Analysis
+|     Sex    |     Age    |     Diabetes    |     Obesity    |     Tobacco    |     Death    |
+|------------|------------|-----------------|----------------|----------------|--------------|
+|     2      |     27     |     2           |     2          |     2          |     **2**        |
+|     2      |     24     |     2           |     2          |     2          |    **2**        |
+|     1      |     54     |     2           |     1          |     2          |     **2**        |
+|     2      |     30     |     2           |     2          |     2          |     **2**        |
+|     1      |     60     |     1           |     2          |     2          |     **1**        |
+
+The death attribute means that the patient has died, it will be treated like the dependent variable that will be determined by another five independent variables: sex, age, diabetes, obesity, and tobacco. To make this, it will be applied the Bayes Method to make this binary classification.
+
+### Conclusion
+After applying this method using a 5000-record dataset with 80% of data to train and the rest to test, it has the following result: <br>
+Source Code: [201603014.py] <br>
+Confusion matrix: <br>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/201603014.png" width="400">
+</p>
+
+| Accuracy Rate: | 81.52% |
+|----------------|--------|
+
+| Error Rate:    | 18.48% |
+|----------------|--------|
+
+Given the accuracy rate, it is not possible to predict a death due COVID-19, but it is possible to estimate death risk with these attributes. Getting to these conclusion it’s a delicate matter but the data analysis and the machine learning can make an estimate prediction that make us easier the task of identify  patients with a higher risk, using the presented attributes we  can make a prediction if a patient is in risk of death. <br> <br>
+
+## Finding anomalies in confirmed and screened cases data
+
+The public information about COVID-19 situation in Guatemala country, found on the [Official Government website](https://tablerocovid.mspas.gob.gt/), contains different amount of data classified by 'Confirmed cases per town and date of issuance of results', 'Confirmed cases per town and symptom onset date', 'Screened cases per town and date of issuance of results', 'Screened cases per town and symptom onset date', and so on.
+
+There are different tools, that are part of Machine Learning, useful for analizyng these data. k-means clustering is one of this tools, used to find anomalies on data sets. By anomaly we mean a value that does not follow the data set trend and it may occur for many factors: human errors, for example. 
+
+Using [Scikit-learn](https://scikit-learn.org/stable/), a powerful machine learning library for Python, k-means clustering included in Scikit-learn library and the data from 'Confirmed cases' and 'Screened cases' in a specific month we could found anomalies in the data set. For this example, we used the information between 15-03-2020 and 15-04-2020, we obtain the next graph generated by this [code](src/201114705.py).
+
+<div align="center">
+<img src="img/201114705_1.png" height="300" width="300">
+</div>
+
+The graph above shows the values on a plane. 
+
+The next graph shows the data arranged on three clusters; each cluster associated with one color. 
+
+<div align="center">
+<img src="img/201114705_2.png" height="300" width="300">
+</div>
+
+The next graph shows the centroids obtained with the library.
+
+<div align="center">
+<img src="img/201114705_3.png" height="75" width="150">
+</div>
+
+
+<div align="center">
+<img src="img/201114705_4.png" height="300" width="300">
+</div>
+
+And the last one graph shows all previous graphs together. 
+We can identify at least six anomalies. This may occur for many factors like screening time, human error as we said before, and many more.
+
+We could use another Machine Learning tools to get better results: verify the relationship between screened and confirmed cases, linear and polynomial models to validate the data sets, and so on.
+
+### References 
+
+- Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
+- C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
+- MLPRegressor — scikit-learn documentation. (s. f.). Scikit Learn. Retrieved November 13, 2020, https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html
+- A Beginner’s Guide to Neural Networks in Python. Retrieved November 13, 2020, https://www.springboard.com/blog/beginners-guide-neural-network-in-python-scikit-learn-0-18/
+
+- [scikit-learn - Machine Learning in Python](https://scikit-learn.org/stable/)
+
+- [k-means in python - Step by step](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/)
+
+- [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
