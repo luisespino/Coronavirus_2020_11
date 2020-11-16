@@ -409,10 +409,15 @@ The y-axis represents the number of deaths.
 
 The cluster is divided into three classes, according to the number of registered deaths. The centers of these three classes are presented below
 
-- [3.25 54.1875]
-- [5. 2000.]
-- [2.6 188.2]
+#### Centroid information
 
+Grouping the information in 3 clusters, the k-means algorithm gave us the following information using 3 centroids:
+
+- Centroid 1: [3.25    54.1875]
+- Centroid 2: [5.    2000.]
+- Centroid 3: [2.6    188.2]
+
+Based on the information, we can predict that the number of deaths from covid is most likely to belong to the second cluster according to the information entered.
 
 The sources of the data used are in:
 - [Regions](https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/)
