@@ -603,6 +603,7 @@ Countries with a good economy and a health system like Costa Rica are having pro
 <img src="https://raw.githubusercontent.com/Dresz/CoronavirusML/main/2020-11/img/201603166.png" width="400">
 </p>
 The image above shows the graph of the accumulated cases from January 22 to November 10 and the prediction of the graph 30 days later, approximately 320 days, we can see that the graph begins to fall, which shows that the disease reached its peak.
+
 ### Possible reasons
 
 While the Central American countries relax their measures, such as in Guatemala, which decided to remove the state of emergency around the covid, restricting agglomerations such as public transport, shopping centers and opening hospitals with good sustenance, another point to take into account was the severe quarantine to which the country submitted.
