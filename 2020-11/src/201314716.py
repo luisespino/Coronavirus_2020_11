@@ -3,6 +3,7 @@
 #https://www.worldometers.info/coronavirus/country/el-salvador/
 #https://www.worldometers.info/coronavirus/country/nicaragua/
 #https://www.worldometers.info/coronavirus/country/honduras/
+#https://www.worldometers.info/coronavirus/country/costa-rica/
 
 from sklearn import tree
 from sklearn import preprocessing

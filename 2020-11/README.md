@@ -319,6 +319,9 @@ Each country has a different average, which is the following:
 
 For this study we used the months of July, August, September and October.
 
+Document:
+[201314716.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201314716.py)
+
 ### References
 
 ... more articles from students (the order of the articles will be defined by the professor)
