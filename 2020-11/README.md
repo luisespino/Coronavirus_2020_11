@@ -23,6 +23,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
+- [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
 - [References](#References)
 
 ## The Epidemic Progression Index
@@ -1045,6 +1046,47 @@ The countries that belong to centroid 1 are those that currently have a lower nu
 The countries of centroid 2 belong to the intermediate group, being those that have not managed to completely control the Coronavirus, but haven't been affected as those of group 3.
 
 The countries in centroid 3 are the most affected, in these should be considered that actions proved the growing increase in the number of cases and deaths.
+
+
+### Covid 19 in Mixco
+
+Mixco is a town of the Department of Guatemala in Guatemala has a population of 494561 habitants and 
+actually has an accumulate incidence of positive cases in a relation of 1739.9 per 100,00 habitants
+that represents 1.7399 percent, this percent shows a disminution throw the days but we want to estimate
+how could be the tendence for the next days, as we know the Christmas time is just around the corner
+and this time much of us visit our family but the number of positive cases can increment, so for that
+i recolect the positive cases from the information provided by the Ministery of Public Health and Social
+Assistance in Guatemala [here](https://tablerocovid.mspas.gob.gt/) from February 13, until the November 
+14, in the Mixco town, i use an algorithm of machine learning called K-Nearest Neighbor, this takes the
+observations for the training i took the day of the year with the number of positive cases in Mixco town,
+and i try to plot this points in 3 clusters y identified these with "C1", "C2", "C3" classes, and i want
+the "C1" class represents the first 160 days of the year; this class is the lower in number of positive 
+cases reported, the "C2" class represents until the 210th day; this class takes the most high positive 
+cases of the 3 clusters reporting above 150 cases in a day, and the las class "C3" until the 320th day; 
+these are the medium class about the number of positive cases and actually we are in those days.
+
+The next graph represents the 3 clusters of positive cases in Mixco, during this pandemy.
+
+[Positive cases in Mixco during COVID 19 Pandemy](https://user-images.githubusercontent.com/48579656/99218447-1c6ba780-27a0-11eb-87ea-75eb1897eb76.png)
+
+Well i want to determinate if the number of positive cases on December 25, could be above 100, using
+these algorithm, as we can see the graph if our prediction could be correct the class of the result 
+should be C2, so using the algorithm codified in python [here](src/201504448.py), we get the next result.
+
+```python
+# Centroides
+ [[191.30379747  71.03797468]
+ [ 95.14159292   4.26548673]
+ [272.02380952  29.89285714]]
+
+
+# Result of predict that the day 360 and the number of positive cases should be 100 is
+['C3']
+```
+
+The result shows C3 class, for that reason we can assume that on December 25, the number of 
+positive cases can't be 100.
+
 
 ### References 
 
