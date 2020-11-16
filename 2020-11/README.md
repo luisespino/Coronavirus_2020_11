@@ -23,7 +23,6 @@ All the data collected and displayed have been extracted from the public databas
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
-- [Comparison between the number of cases detected and the number of tests – US](#comparison-between-the-number-of-cases-detected-and-the-number-of-tests--us)
 - [References](#References)
 
 ## The Epidemic Progression Index
@@ -319,19 +318,27 @@ First we need to establish why Japan was the target, there are three main reason
 2. They way they have dealt with the pandemic has been outstanding, reflecting in the lowest numbers per capita world wide.
 3. Their social standards, which are regarded to be among the best in the world.
 
-So we start by reviewing this Graph created using the file  [201222567.py], where we seek a model beginning from start of the second wave, october 1st currently with 83010 confirmed cases, and aimed towards predicting using a polynomial regression model, the number of confirmed cases by november 30, the end of the month, since november is the
-scope of this research.
+So we start by analyzing a Graph which represents the present data, we can clearly see that it represents a steady increase resulting close to an even straight line, with this we can infer that the way covid spread is being controled is more efficient than in Central America.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/10952236/99139973-299f5f80-2603-11eb-9504-512953798b69.png" width="400">
 </p>
 
-As we can see, the numbers seem to similar to Guatemala, but we must also take into consideration that Japans population is 126.5 million as of 2018 and Guatemalas population
-is 17.25 million as of 2018 which is a staggering difference, this reflects in the behavior shown in the graphs, Japans seems to be more steady, while most of
-Central America is quite the oposite.
-So now we must ask ourselves which factors create this difference, and the one that stands out the most is the culture, considering our current situation
-perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can
-clearly see that Japan is a great example as we can see in this predicted outcome:
+Now we will analyze the graph created using the file [201222567.py], which makes a prediction aimed to the day 61 that represents november 30 which is the scope of this research, using a polynomial regression, to see if the nature of the previous graph persists or if it alters: 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/10952236/99216040-4752fd00-279a-11eb-9382-6208010cb32f.png" width="600">
+</p>
+
+According to the result we can infer that the increase rate represented indicates that the increase in confirmed cases will remain to have a steady growth barely surpassing the 140,000 mark. We can also see that the number of confirmd cases seem to be similar to Guatemala's, but we must take into consideration the population data: 
+
+|                  | Japan      | Guatemala  |
+| ---------------- | ---------- | ---------- |
+| Population       | 126,500,000| 17,250,000 |
+| Cases            | 108,983    | 113,543    |
+
+The population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys, indicating as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction describing that the pattern in which cases in Japan will arise in a more controlled manner.
+perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we can clearly  see that Japan is a great example as we can see in this predicted outcome.
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
@@ -416,7 +423,7 @@ According to the file [20080862.py](https://github.com/LuisEspino/CoronavirusML/
 
 ### Clusters: Deaths according to regions of Guatemala - Covid 19
 
-According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
+According to the file [201403819.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201403819.py), there is an anomalous region, since this is where the largest number of deaths.
 
 The Metropolitan region was the first to report the first case of covid. Since then the number of deceased people has increased to all other departments.
 
@@ -881,8 +888,6 @@ The data and graphs shown in the following report are generated in the file: [20
 
 API: https://covidtracking.com/data/api
 
-*All data and graphics were generated on November 15, 2020, to obtain real data it is necessary to execute the file specified above.*
-
 ## Abstract
 COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world.
 
@@ -938,7 +943,7 @@ In the following analysis, it is based on the municipality of Chimaltenango in t
 The following figure is presented where the orange points are the data obtained, while the green points are from the data of the model prediction.<br> 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/200915078.png" width="400">
+<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/200915078.png" width="400">
 </p> <br><br>
 
 # PREDICTION OF CONFIRMED CASES PER DAY.
@@ -956,6 +961,90 @@ To carry out this analysis, the file [201113769.csv](https://github.com/LuisEspi
 As can be seen in the image, the prediction takes a linear form (blue points) and the real data (red points), actually have very little correlation with the prediction, therefore, if we start from only this prediction, we can conclude that the data provided by the government regarding the Coronavirus are inconsistent in many ways, of course, depending on the algorithm used to make the prediction, the values ​​of this can vary and more closely resemble the real data.
 
 Source Code [201113769.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201113769.py)
+
+# Classification of the countries of the Americas according to their management of the pandemic
+Each country has had its own management of how to deal with the Coronavirus. These graphs seek to classify the countries of America in 3 groups based on their number of cases per million and their number of deaths per million. Calculation of cases per million is related to the population of each country, so it represents a very useful value to understand the management of the pandemic.
+
+Original information used was retrieved from [this link](https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv)
+and the data used for this analysis can be found [in](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201504480.py)
+## Centroid information
+ | Centroid   | total_cases_per_million | total_deaths_per_million |
+ | ---------- |      ------------------ |       ------------------ |
+ | Centroid 1 |             11545.36369 |                342.85992 | 
+ | Centroid 2 |             28973.02918 |                  642.631 | 
+ | Centroid 3 |              2445.64804 |                 55.99212 | 
+ 
+ | Centroid   |                                                    |
+ | ---------- |      --------------------------------------------- |
+ | Centroid 1 |             Less affected countries                | 
+ | Centroid 2 |             Countries with medium control          | 
+ | Centroid 3 |             Most affected countries                | 
+ 
+## Graph of the data
+<p align="center">
+<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201504480.PNG" width="400">
+</p>
+
+Source Code [201504480.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201504480.py)
+
+## Cluster Classification
+ |                        Country  | total_cases_per_million | total_deaths_per_million | cluster | 
+ |                ---------------- |      ------------------ |       ------------------ | ------- |
+ |                        Anguilla |                 199.973 |                    0.000 |       2 |
+ |             Antigua and Barbuda |                1368.352 |                   40.846 |       2 |
+ |                       Argentina |               28870.640 |                  781.201 |       0 |
+ |                           Aruba |               43628.121 |                  412.116 |       0 |
+ |                         Bahamas |               18214.969 |                  394.153 |       1 |
+ |                        Barbados |                 866.476 |                   24.359 |       2 |
+ |                          Belize |               12029.043 |                  221.316 |       1 |
+ |                         Bermuda |                3564.948 |                  144.525 |       2 |
+ |                         Bolivia |               12265.968 |                  757.387 |       1 |
+ | Bonaire Sint Eustatius and Saba |                5911.292 |                  114.412 |       2 |
+ |                          Brazil |               27516.820 |                  779.349 |       0 |
+ |          British Virgin Islands |                2381.189 |                   33.072 |       2 |
+ |                          Canada |                7734.879 |                  288.563 |       1 |
+ |                  Cayman Islands |                3864.881 |                   15.216 |       2 |
+ |                           Chile |               27708.213 |                  773.009 |       0 |
+ |                        Colombia |               23406.771 |                  664.840 |       0 |
+ |                      Costa Rica |               24189.290 |                  303.488 |       0 |
+ |                            Cuba |                 668.161 |                   11.566 |       2 |
+ |                         Curacao |                7964.656 |                   12.188 |       1 |
+ |                        Dominica |                 944.563 |                    0.000 |       2 |
+ |              Dominican Republic |               12281.174 |                  210.363 |       1 |
+ |                         Ecuador |               10181.170 |                  736.664 |       1 |
+ |                     El Salvador |                5605.438 |                  160.957 |       2 |
+ |                Falkland Islands |                4306.632 |                    0.000 |       2 |
+ |                       Greenland |                 299.443 |                    0.000 |       2 |
+ |                         Grenada |                 284.396 |                    0.000 |       2 |
+ |                       Guatemala |                6403.314 |                  218.804 |       2 |
+ |                          Guyana |                6094.902 |                  175.448 |       2 |
+ |                           Haiti |                 804.032 |                   20.346 |       2 |
+ |                        Honduras |               10354.271 |                  284.918 |       1 |
+ |                         Jamaica |                3302.759 |                   77.335 |       2 |
+ |                          Mexico |                7781.211 |                  762.095 |       1 |
+ |                      Montserrat |                2600.520 |                  200.040 |       2 |
+ |                       Nicaragua |                 854.548 |                   23.851 |       2 |
+ |                          Panama |               33677.129 |                  664.462 |       0 |
+ |                        Paraguay |                9963.505 |                  219.978 |       1 |
+ |                            Peru |               28354.463 |                 1066.880 |       0 |
+ |                     Puerto Rico |               26882.664 |                  321.933 |       0 |
+ |           Saint Kitts and Nevis |                 357.197 |                    0.000 |       2 |
+ |                     Saint Lucia |                 882.214 |                   10.892 |       2 |
+ |Saint Vincent and the Grenadines |                 703.038 |                    0.000 |       2 |
+ |       Sint Maarten (Dutch part) |               21524.183 |                  559.675 |       0 |
+ |                        Suriname |                8990.273 |                  194.329 |       1 |
+ |             Trinidad and Tobago |                4342.293 |                   80.029 |       2 |
+ |        Turks and Caicos Islands |               18596.002 |                  154.967 |       1 |
+ |                   United States |               32945.027 |                  741.988 |       0 |
+ |    United States Virgin Islands |               13732.607 |                  220.258 |       1 |
+ |                         Uruguay |                1139.122 |                   18.424 |       2 |
+ |                       Venezuela |                3391.518 |                   29.681 |       2 |
+## Analysis of data
+The countries that belong to centroid 1 are those that currently have a lower number of cases and deaths based on their population. These are countries that we must consider what actions they have taken against the pandemic and what they have achieved.
+
+The countries of centroid 2 belong to the intermediate group, being those that have not managed to completely control the Coronavirus, but haven't been affected as those of group 3.
+
+The countries in centroid 3 are the most affected, in these should be considered that actions proved the growing increase in the number of cases and deaths.
 
 ### References 
 
