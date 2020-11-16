@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Ordoñez Bryan, Solares Cesar, Vega Daniel, Veliz Jorge, Villatoro Kherson, Solares Omar, Morales Oscar. (students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Morales Oscar,  Ordoñez Bryan, Solares Cesar, Solares Omar, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -146,6 +146,28 @@ which is absent in the case of the CFR. Some authors have tried to rectify this 
 it does not have to be a subset of the denominator). The expression «risk of case fatality», used with less
 frequency is only correct if the duration of clinical disease is known. In this document we will use the expression
 «Case fatality ratio». "
+
+#### Description of the solution for predicting deaths from COVID-19
+The trend of deaths due to the COVID-19 pandemic is made with the information provided by the Ministry of Health of the Republic of Guatemala since March 13, the date on which the first case entered the country, for which there are several months of information retained within the solution as cases of deaths derived from this disease have been reported, with which a trend is set and the prediction can be made by means of a linear model.
+
+According to the 201403997.py file, if it is executed with a configuration to predict the next 30 days, a constant decrease in the number of deaths can be noticed with respect to how the behavior has come, derived from the fact that there has been a substantial drop in the infected and fatality in these last days of the disease, following this model linearly, we can define that cases will continue to decrease, unless there is a second wave of infections in the country, which surely would not be as aggressive as the first but would change the statistics with which they are working and therefore the results of the predictions, this behavior can be verified in the following graph, which shows how the number of deaths has been fluctuating, and was increasing at a certain time, but at the moment already It has decreased and as the days go by we see that the deaths in the capital city associated with SARS-CoV-2 will continue to decrease:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203859-7c9b2300-2779-11eb-9f6a-86d0242f0c04.PNG" width="400">
+</p>
+
+The sample taken from the Ministry of Health according to its data collected is from February 13, until November 8 inclusive, in which for the department of Guatemala it was placed in a cumulative way to be able to work with the linspace tool of the numpy library that provides a linear regression from the data entered, so that it could be verified how the death trend would be.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203898-99cff180-2779-11eb-87a6-0ae9d0dce015.png" width="400">
+</p>
+
+Additional in the code the information is mapped from February 13, until November 8 inclusive of the other departments where there is a list according to the days that the cases were reported, if at a certain moment you want to use the solution to handle a prediction of the other departments.
+It can be verified in the following image, which shows the results of the number of deaths due to:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203952-b4a26600-2779-11eb-8fc3-f56f7142bfed.PNG" width="400">
+</p>
+
+As is well known in the case of Guatemala in the month of November and what has been in recent weeks there has been a decreasing fall in cases that end in death, for which the model tends to decrease steadily, although it is always It should take into account that according to the data and reports available in Asian and European countries, there is a high probability that there is a second wave, in which case some adjustments would have to be made to the model so that its prediction follows its correct course.
+For now it is determined that in the department of Guatemala the number of deaths caused by COVID-19 is declining, in such a way that the country is entering what was defined from the beginning as the new normal.
 
 
 ### Mortality prediction due to COVID - 19 in Honduras
@@ -286,18 +308,12 @@ scope of this research.
 <img src="https://user-images.githubusercontent.com/10952236/99139973-299f5f80-2603-11eb-9504-512953798b69.png" width="400">
 </p>
 
-As we can see, the number of confirmd cases seem to be similar to Guatemala's, but also: 
-
-|                  | Japan      | Guatemala  |
-| ---------------- | ---------- | ---------- |
-| Population       | 126,500,000| 17,250,000 |
-| Cases            | 108,983    | 113,543    |
-
-
-which taken into cosideration the population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction
-describing that the pattern in which cases in Japan will arise in a steady manner.
+As we can see, the numbers seem to similar to Guatemala, but we must also take into consideration that Japans population is 126.5 million as of 2018 and Guatemalas population
+is 17.25 million as of 2018 which is a staggering difference, this reflects in the behavior shown in the graphs, Japans seems to be more steady, while most of
+Central America is quite the oposite.
 So now we must ask ourselves which factors create this difference, and the one that stands out the most is the culture, considering our current situation
-perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we canclearly see that Japan is a great example as we can see in this predicted outcome.
+perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can
+clearly see that Japan is a great example as we can see in this predicted outcome:
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
