@@ -663,6 +663,20 @@ After applying the k-means algorithm, the following graph and the information of
 | Cluster 1 would be the countries of Europe          | Green          |
 | Cluster 2 would be the countries of South America   | Red            |
 
+it was determined that the analysis clusters are
+
+| Clusters | Growth rate cases | Number of daily infections | Growth rate deaths |
+| -------- | ----------------- | -------------------------- | ------------------ |
+|Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
+|Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
+|Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
+
+## Analysis
+
+The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
+
+We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
+
 ## World wide cases and deaths predictions - Neural Network MLPRegressor
 According to the information obtained at https://ourworldindata.org/coronavirus, the expansion of covid-19 has been massive, every day there are tens of thousands of cases, so it is necessary to know the global behavior of infections like this also of deaths.
 
@@ -694,22 +708,6 @@ The prediction made for deaths starting on day 320 and ending on day 410 in step
 Deaths are complemented with infections, the decrease in deaths will be accompanied by a decrease in cases.
 
 
-it was determined that the analysis clusters are
-
-| Clusters | Growth rate cases | Number of daily infections | Growth rate deaths |
-| -------- | ----------------- | -------------------------- | ------------------ |
-|Cluster 0 | 0.72%             | 1758.66                    | 0.73%              |
-|Cluster 1 | 3.48%             | 47524.58                   | 1.11%              |
-|Cluster 2 | 1.35%             | 23633.27                   | 0.61%              |
-
-## Analysis
-
-The differences between each of the clusters are observed, the Central American cluster has a smaller number of contagion and the growth rates of daily infections and deaths are also smaller, and they grow more in the South American cluster and it grows even more in the europe cluster
-
-We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
-
-
-=======
 # Coronavirus (COVID-19) Mortality Rate in Guatemala
 
 To calculate the mortality we need:
