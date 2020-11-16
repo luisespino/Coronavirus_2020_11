@@ -82,6 +82,22 @@ The data used for the elaboration of the graph was obtained from [COVID-19 Data 
 
 The code used to generate the graph is [201503821.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201503821.py), which is based on a linear regression, with a polynomial of degree 4.
 
+Control measures
+The government has declared a color coded alert system for the control and containment of the pandemic, as follows:
+
+Green (Information): No reported cases, but neighboring countries exposed.
+Yellow (Moderated): Accelerated increasing of epidemiological variables, high hospital occupancy, low control of cases.
+Orange (High): Increasing of epidemiological variables, medium hospital occupancy, acceptable control of cases.
+Red (Extreme): Extreme hospital occupancy.
+The epidemiological variables are:
+
+Canton risk by attack rate (weekly): New cases by canton population divided by new national cases, 66% of weight.
+Slope and variation coefficient (triweekly): Weekly increase or decrease in the active cases of a canton, 33% of weight.
+More specific details, formulas or algorithms for the alert color designation of the cantons or districts have been kept secret and has not been released as of July 2020, which has been contested by local government of the cantons, commerce associations, journalists and open data activists.
+
+As of August 2020, only Yellow Alert or Orange Alert has been used to designate the administrative areas of the country, with differentiated restrictions on each area.
+
+
 #### Comparative analysis of coronavirus cases between Costa Rica and Guatemala
 
 Costa Rica has 5 million inhabitants, they have as of today, November 13, 2020, 120,939 cases of coronavirus, while Guatemala on the same day today with a population of 17 million inhabitants, have 113,543 cases of coronavirus. In other words, Costa Rica has more cases, when they are practically a third of the inhabitants that Guatemala has, this indicates that the sanitary measures taken by each of the people and the responsibility of each of them has made the difference between both countries to avoid contagions.
@@ -302,19 +318,27 @@ First we need to establish why Japan was the target, there are three main reason
 2. They way they have dealt with the pandemic has been outstanding, reflecting in the lowest numbers per capita world wide.
 3. Their social standards, which are regarded to be among the best in the world.
 
-So we start by reviewing this Graph created using the file  [201222567.py], where we seek a model beginning from start of the second wave, october 1st currently with 83010 confirmed cases, and aimed towards predicting using a polynomial regression model, the number of confirmed cases by november 30, the end of the month, since november is the
-scope of this research.
+So we start by analyzing a Graph which represents the present data, we can clearly see that it represents a steady increase resulting close to an even straight line, with this we can infer that the way covid spread is being controled is more efficient than in Central America.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/10952236/99139973-299f5f80-2603-11eb-9504-512953798b69.png" width="400">
 </p>
 
-As we can see, the numbers seem to similar to Guatemala, but we must also take into consideration that Japans population is 126.5 million as of 2018 and Guatemalas population
-is 17.25 million as of 2018 which is a staggering difference, this reflects in the behavior shown in the graphs, Japans seems to be more steady, while most of
-Central America is quite the oposite.
-So now we must ask ourselves which factors create this difference, and the one that stands out the most is the culture, considering our current situation
-perhaps the best way to mitigate the impact of the innevitable second wave might be benchamark the succesful way in which other countrys are fighting this, and we can
-clearly see that Japan is a great example as we can see in this predicted outcome:
+Now we will analyze the graph created using the file [201222567.py], which makes a prediction aimed to the day 61 that represents november 30 which is the scope of this research, using a polynomial regression, to see if the nature of the previous graph persists or if it alters: 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/10952236/99216040-4752fd00-279a-11eb-9382-6208010cb32f.png" width="600">
+</p>
+
+According to the result we can infer that the increase rate represented indicates that the increase in confirmed cases will remain to have a steady growth barely surpassing the 140,000 mark. We can also see that the number of confirmd cases seem to be similar to Guatemala's, but we must take into consideration the population data: 
+
+|                  | Japan      | Guatemala  |
+| ---------------- | ---------- | ---------- |
+| Population       | 126,500,000| 17,250,000 |
+| Cases            | 108,983    | 113,543    |
+
+The population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys, indicating as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction describing that the pattern in which cases in Japan will arise in a more controlled manner.
+perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we can clearly  see that Japan is a great example as we can see in this predicted outcome.
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
@@ -836,9 +860,13 @@ We can identify at least six anomalies. This may occur for many factors like scr
 
 We could use another Machine Learning tools to get better results: verify the relationship between screened and confirmed cases, linear and polynomial models to validate the data sets, and so on.
 
-### Alma from Fundegua
+### Alma from Fundegua and Daily Deaths
 
 -Alma is a chatbot that offers helps a far away community at San Pedro la Laguna Guatemala, in order to take what happen with all members of community, Alma provides asistance and recommendations from Call Center and ChatBot web, in order to help a far away community.
+
+<div align="center">
+<img src="img/200312459.PNG" width="600">
+</div>
 
 ### World Health Organization (WHO)
 
@@ -915,7 +943,7 @@ In the following analysis, it is based on the municipality of Chimaltenango in t
 The following figure is presented where the orange points are the data obtained, while the green points are from the data of the model prediction.<br> 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/200915078.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML/main/2020-11/img/200915078.png" width="400">
 </p> <br><br>
 
 # PREDICTION OF CONFIRMED CASES PER DAY.
@@ -926,7 +954,7 @@ Covid 19 has hit the world in a devastating way, both in the economic and health
 To carry out this analysis, the file [201113769.csv](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/data/201113769.csv), in which column A, contains the data of the cases with no result delivered and in column B, the data with the result delivered, then, starting from the cases In column A, a prediction is made with a linear Sklearn regression, to determine the number of confirmed cases that should exist for each date. This generates a graph the following graph:
 
 <p align="center">
-<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201113769.py" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML/main/2020-11/img/201113769.png" width="400">
 </p>
 
 ## Conclusion
