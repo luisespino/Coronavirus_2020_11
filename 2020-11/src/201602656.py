@@ -60,4 +60,23 @@ def plotCovid():
     pyplot.title("Covid-19 - Daily cases in china")
     pyplot.show()
 
+def plotItaly():
+    #Creacion de datasets
+    X = np.asarray(range(len(y_data)))
+    Y = np.asarray(y_data)
+    X = X[:, np.newaxis]
+    Y = Y[:, np.newaxis]
+    
+    # Creacion de la regresion    
+    pipeline = make_pipeline(PolynomialFeatures(6), LinearRegression())
+    pipeline.fit(X, Y)
+
+    #Graficas
+    seq = np.linspace(X.min(), X.max()).reshape(-1, 1)    
+    pyplot.scatter(X, Y)
+    pyplot.plot(seq, pipeline.predict(seq), color="orange")
+    pyplot.title("Covid-19 - Daily cases in Italy")
+    pyplot.show()
+
 plotCovid()
+plotItaly()
