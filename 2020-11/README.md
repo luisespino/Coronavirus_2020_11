@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Ordoñez Bryan, Solares Cesar, Vega Daniel, Veliz Jorge, Villatoro Kherson, Solares Omar. (students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vega Daniel, Veliz Jorge, Villatoro Kherson. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -21,15 +21,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala)
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
 - [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
-- [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
-- [Mortality prediction due to COVID - 19 in Honduras](#Mortality-prediction-due-to-COVID-19-in-Honduras)
-- [Trend of number of infected per day in Guatemala](#Trend-of-number-of-infected-per-day-in-Guatemala)
-- [Number of cases per day of covid 19 in the US for 218 days](#Number-of-cases-per-day-of-covid-19-in-the-US-for-218-days)
-- [Analysis of the number of deaths from coronavirus in Guatemala](#Analysis-of-the-number-of-deaths-from-coronavirus-in-Guatemala)
-- [Covid-19 in Guatemala, cases, predictions for 2021](#Covid-19-in-Guatemala,-cases,-predictions-for-2021)
-- [Percentage of men infected by covid-19 in Guatemala since the first active case](#Percentage-of-men-infected-by-covid-19-in-Guatemala-since-the-first-active-case)
-- [Comparative between Guatemala, Central America and Japan](#Comparative-between-Guatemala,-Central-America-and-Japan)
-- [Average deaths from confirmed cases and age of covid 19 in Guatemala](#Average-deaths-from-confirmed-cases-and-age-of-covid-19-in-Guatemala)
+- [Mortality prediction due to COVID 19 in the department of Guatemala](#mortality-prediction-due-to-covid-19-in-the-department-of-guatemala)
 - [References](#References)
 
 ### Covid-19 infection trend in Guatemala
@@ -105,7 +97,7 @@ The code was developed in Python using the Scikit Learn library, in this case a 
 
 For this case, first a grade 5 was used, and the fit was very good, but when interpreting that it is a pandemic, the behavior was not correct, therefore another grade was sought, in this case 4, which also presents a good fit, and its behavior in more similar to that of pandemics.
 
-### Mortality prediction due to COVID - 19 in the department of Guatemala
+### Mortality prediction due to COVID 19 in the department of Guatemala
 
 #### Resume
 
@@ -146,6 +138,28 @@ which is absent in the case of the CFR. Some authors have tried to rectify this 
 it does not have to be a subset of the denominator). The expression «risk of case fatality», used with less
 frequency is only correct if the duration of clinical disease is known. In this document we will use the expression
 «Case fatality ratio». "
+
+#### Description of the solution for predicting deaths from COVID-19
+The trend of deaths due to the COVID-19 pandemic is made with the information provided by the Ministry of Health of the Republic of Guatemala since March 13, the date on which the first case entered the country, for which there are several months of information retained within the solution as cases of deaths derived from this disease have been reported, with which a trend is set and the prediction can be made by means of a linear model.
+
+According to the 201403997.py file, if it is executed with a configuration to predict the next 30 days, a constant decrease in the number of deaths can be noticed with respect to how the behavior has come, derived from the fact that there has been a substantial drop in the infected and fatality in these last days of the disease, following this model linearly, we can define that cases will continue to decrease, unless there is a second wave of infections in the country, which surely would not be as aggressive as the first but would change the statistics with which they are working and therefore the results of the predictions, this behavior can be verified in the following graph, which shows how the number of deaths has been fluctuating, and was increasing at a certain time, but at the moment already It has decreased and as the days go by we see that the deaths in the capital city associated with SARS-CoV-2 will continue to decrease:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203859-7c9b2300-2779-11eb-9f6a-86d0242f0c04.PNG" width="400">
+</p>
+
+The sample taken from the Ministry of Health according to its data collected is from February 13, until November 8 inclusive, in which for the department of Guatemala it was placed in a cumulative way to be able to work with the linspace tool of the numpy library that provides a linear regression from the data entered, so that it could be verified how the death trend would be.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203898-99cff180-2779-11eb-87a6-0ae9d0dce015.png" width="400">
+</p>
+
+Additional in the code the information is mapped from February 13, until November 8 inclusive of the other departments where there is a list according to the days that the cases were reported, if at a certain moment you want to use the solution to handle a prediction of the other departments.
+It can be verified in the following image, which shows the results of the number of deaths due to:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/20587564/99203952-b4a26600-2779-11eb-8fc3-f56f7142bfed.PNG" width="400">
+</p>
+
+As is well known in the case of Guatemala in the month of November and what has been in recent weeks there has been a decreasing fall in cases that end in death, for which the model tends to decrease steadily, although it is always It should take into account that according to the data and reports available in Asian and European countries, there is a high probability that there is a second wave, in which case some adjustments would have to be made to the model so that its prediction follows its correct course.
+For now it is determined that in the department of Guatemala the number of deaths caused by COVID-19 is declining, in such a way that the country is entering what was defined from the beginning as the new normal.
 
 
 ### Mortality prediction due to COVID - 19 in Honduras
@@ -265,9 +279,6 @@ With these related data we could predict active cases in Guatemalan men by day 3
 <img src="https://user-images.githubusercontent.com/20606917/99028199-ca731980-2534-11eb-9b42-be27b8432845.png" width="400">
 </p>
 
-
-This prediction was made by using this file [201314285.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201314285.py), where we will achieve that the first execution was made by means of a linear regression trend and with a polynomial of degree 4, obtaining in this way a valid data correlation that allows us to predict the next events that will happen in Guatemala with respect to the percentage of men infected with respect to total covid-19 infections.
-
 ### Comparative between Guatemala, Central America and Japan
 
 As we can apretiate in the graphs above, we notice a trend between Guatemala and Countries in Central when it comes to covid stats, which is somehow expected
@@ -381,6 +392,16 @@ There is a cluster divided into 3 classes.
 The sources for the data used are at:
 - [Regions](https://aprende.guatemala.com/historia/geografia/regiones-de-guatemala/)
 - [Number of deceased](https://tablerocovid.mspas.gob.gt/)
+
+# Trend of confirmed Coronavirus cases in the department of Guatemala
+
+Something important to know, before making this prediction, is that all that can be analyzed and known is the infection status of those who have undergone a test. All other people who have a laboratory confirmed infection are counted as confirmed cases.
+
+To interpret data on confirmed cases in the department of Guatemala, we need to know how many COVID-19 tests the country actually does.
+
+To realize this trend of confirmed cases, the tests are our window to the pandemic and how it is spreading. Without data on who is infected by the virus, we have no way of understanding the pandemic. Without these data, we cannot know if they are doing well and which ones are not reporting cases and deaths.
+
+The prediction will be made using Machine Learning knowledge implementing predictions using Python Scikit-learn in order to see the trend of confirmed cases in the department of Guatemala.
 
 # Percentage of Deaths vs. total cases in Central America
 
@@ -635,7 +656,66 @@ The differences between each of the clusters are observed, the Central American 
 We could conclude that the pandemic tends to be worse in countries where the number of daily infections is high, because the rate of growth of daily infections is increasing and the rate of growth of deaths is also increasing.
 
 
-### References
+=======
+# Coronavirus (COVID-19) Mortality Rate in Guatemala
 
+To calculate the mortality we need:
+1. The number of accumulated cases registered regardless of the current situation whether positive or negative.
+2. The total number of deceased cases.
+
+## Fatality Rate based on confirmed cases and deaths in Guatemala
+
+According to the data taken from the page of the Ministry of Public Health and Social Assistance (MSPAS) currently there are 114,885 confirmed accumulated cases and a total of 3,932 cases of registered deaths and using the formula of Infection Fatality Rate (IFR) = Deaths / Cases = 3,932/114,885 = 3.4 % (3.4% of people infected with SARS-CoV-2 have a fatal outcome, while 96.6% recover). This without taking into account that in addition to the cases recorded by the MSPAS there are many cases that have not been taken into account because they are asymptomatic (or present with very mild symptoms) and that testing has not been performed on the entire population, only a fraction of the SARS-CoV-2 infected population is detected, then this would significantly reduce the mortality rate.
+
+## Mortality Rate and Probability of Dying
+
+As of November 15, 3,932 people are estimated to have died out of a total population of 17,263,000 in Guatemala. This corresponds to 0.023% crude mortality rate to date, or 23 deaths per 100,000 population, or 1 death every 4,390 people.
+
+## Mortality Rate in one year 
+
+According to the estimates made in [201213336.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201213336.py). for July 2021, it is estimated that Guatemala will have a total of 255,556 confirmed cumulative cases and a total of 8,844 deceased cases and using the formula of Infection Fatality Rate (IFR) = Deaths / Cases = 8,844/255,556 = 3.4 % we get the same mortality rate calculated above.
+
+# COVID-19 death factors in Mexico.
+It was used as a [dataset](https://www.kaggle.com/tanmoyx/covid19-patient-precondition-dataset) from the [Mexican Government](https://www.gob.mx/salud/documentos/datos-abiertos-152127), this contains patient-specific information regarding patients’ history and habits. It was filtered and presented like this:
+|     Sex    |     Age    |     Diabetes    |     Obesity    |     Tobacco    |     Death    |
+|------------|------------|-----------------|----------------|----------------|--------------|
+|     2      |     27     |     2           |     2          |     2          |     2        |
+|     2      |     24     |     2           |     2          |     2          |     2        |
+|     1      |     54     |     2           |     1          |     2          |     2        |
+|     2      |     30     |     2           |     2          |     2          |     2        |
+|     1      |     60     |     1           |     2          |     2          |     1        |
+
+The attribute sex represents the gender of the patient, 1 means the patient is female and 2 means the patient is a male. Age is how many years old is the patient. In the following attributes, 1 means yes and 1 means no, for example, 1 in tobacco represents that the patient is/was a smoker. 
+
+### Analysis
+|     Sex    |     Age    |     Diabetes    |     Obesity    |     Tobacco    |     Death    |
+|------------|------------|-----------------|----------------|----------------|--------------|
+|     2      |     27     |     2           |     2          |     2          |     **2**        |
+|     2      |     24     |     2           |     2          |     2          |    **2**        |
+|     1      |     54     |     2           |     1          |     2          |     **2**        |
+|     2      |     30     |     2           |     2          |     2          |     **2**        |
+|     1      |     60     |     1           |     2          |     2          |     **1**        |
+
+The death attribute means that the patient has died, it will be treated like the dependent variable that will be determined by another five independent variables: sex, age, diabetes, obesity, and tobacco. To make this, it will be applied the Bayes Method to make this binary classification.
+
+### Conclusion
+After applying this method using a 5000-record dataset with 80% of data to train and the rest to test, it has the following result: <br>
+Source Code: [201603014.py] <br>
+Confusion matrix: <br>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/2020-11/img/201603014.png" width="400">
+</p>
+
+| Accuracy Rate: | 81.52% |
+|----------------|--------|
+
+| Error Rate:    | 18.48% |
+|----------------|--------|
+
+Given the accuracy rate, it is not possible to predict a death due COVID-19, but it is possible to estimate death risk with these attributes. Getting to these conclusion it’s a delicate matter but the data analysis and the machine learning can make an estimate prediction that make us easier the task of identify  patients with a higher risk, using the presented attributes we  can make a prediction if a patient is in risk of death. <br> <br>
+
+
+### References
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
 - C. (s. f.). CSSEGISandData/COVID-19. GitHub. Retrieved November 08, 2020, https://github.com/CSSEGISandData/COVID-19
