@@ -8,7 +8,7 @@ Universidad de San Carlos de Guatemala
 
 Espino Barrios, Luis Fernando. (professor)
 
-Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Ordoñez Bryan, Solares Cesar, Vega Daniel, Veliz Jorge, Villatoro Kherson, Solares Omar. (students)
+Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Lizama Luis, Melgar James, Morales Mario, Ordoñez Bryan, Solares Cesar, Vega Daniel, Veliz Jorge, Villatoro Kherson, Solares Omar, David Alvarado. (students)
 
 ### Resume
 In the current pandemic that the world is experiencing, COVID-19 has had great variations and tends to be misleading due to the new waves derived from social relaxation, today, there are several
@@ -595,7 +595,10 @@ According to the data collected, of the number of deaths per day, on the website
 <p align="center">
 <img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
 </p>
+## Confirmed cases of covid in El Salvador
 
+Countries in Central America have the covid disease relatively controlled, but most countries have not yet found the peak of the contagion of this disease.
+Countries with a good economy and a health system like Costa Rica are having problems controlling the disease, while a country like El Salvador with a population similar to that of Costa Rica has 35k infected with a population of 6M people
 ### References
 
 - Supervised learning — scikit-learn 0.23.2 documentation. (s. f.). Scikit Learn. Retrieved November 08, 2020, https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
