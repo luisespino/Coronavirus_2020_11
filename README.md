@@ -39,6 +39,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Confirmed cases of covid in El Salvador](#confirmed-cases-of-covid-in-el-salvador)
 - [References](#References)
 
+
 ## Covid-19 infection trend in Guatemala
 
 The trend of infections is carried out through two perspectives: one having 30 days of information on infections in Guatemala at the beginning of the pandemic and the trend will be shown at different times.
