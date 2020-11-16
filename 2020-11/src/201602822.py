@@ -10,8 +10,8 @@ import io
 import os
 from datetime import datetime, timedelta
 
-training = False
-model_path = '../data/201602822.model'
+training = False #Variable to define training or predicting
+model_path = '../data/201602822.model' #Model filename
 data_path = os.path.join(
     'https://raw.githubusercontent.com',
     'CSSEGISandData',
@@ -21,11 +21,12 @@ data_path = os.path.join(
     'csse_covid_19_time_series'
 )
 
-URL_CONFIRMED = os.path.join(data_path, 'time_series_covid19_confirmed_global.csv')
+URL_CONFIRMED = os.path.join(data_path, 'time_series_covid19_confirmed_global.csv') #Source data repo
 print('Confirmed Cases Source URL:', URL_CONFIRMED)
 data_confirmed = requests.get(URL_CONFIRMED).content #Need internet connection
-df_cases_contries = pd.read_csv(io.StringIO(data_confirmed.decode('utf-8')))
+df_cases_contries = pd.read_csv(io.StringIO(data_confirmed.decode('utf-8'))) #Reading source as csv
 
+# Listing LATAM country names
 la_country_names = [
     'Guatemala', 
     'Belize', 
@@ -72,10 +73,12 @@ for _, row in df_cases_countries.iterrows():
 data_cases_countries = np.delete(data_cases_countries, 0, 0)
 data_cases_countries = data_cases_countries[data_cases_countries[:, 2].argsort()] #By date
 
+# INPUT AND OUTPUT DATA
 input_data = data_cases_countries[:, :-1]
 output_data = data_cases_countries[:, -1]
 input_train, _, output_train, _ = train_test_split(input_data, output_data)
 
+# TRAINING OR PREDICTING
 print(datetime.now())
 if not training:
     regr = pickle.load(open(model_path, 'rb'))
@@ -92,6 +95,7 @@ else:
 predicted_data = regr.predict(input_data)
 print(datetime.now())
 
+# TESTING
 test = [15.7835, -90.2308, 297] # 297 = 11/14/2020 - 01/22/20
 print('Lat:', test[0], 'Long:', test[1], 
         'Date:', (first_case_date + timedelta(days=test[2])).strftime('%m/%d/%y'),
@@ -99,6 +103,7 @@ print('Lat:', test[0], 'Long:', test[1],
 
 real_data = output_data
 
+# INSTANCES PLOT
 plt.plot(real_data, label='Real')
 plt.plot(predicted_data, label='Predicted')
 plt.legend()
@@ -108,6 +113,7 @@ plt.grid()
 plt.title('Confirmed cases by Latin America countries')
 plt.show()
 
+# TREND PLOT
 iday = 0
 confirmed_list = []
 real_data_trend = []
