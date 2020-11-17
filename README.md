@@ -1047,7 +1047,7 @@ positive cases can't be 100.
 Countries in Central America have the covid disease relatively controlled, but most countries have not yet found the peak of the contagion of this disease.
 Countries with a good economy and a health system like Costa Rica are having problems controlling the disease, while a country like El Salvador with a population similar to that of Costa Rica has 35k infected with a population of 6M people.
 <p align="center">
-<img src="https://raw.githubusercontent.com/Dresz/CoronavirusML/main/img/201603166.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201603166.png" width="400">
 </p>
 The image above shows the graph of the accumulated cases from January 22 to November 10 and the prediction of the graph 30 days later, approximately 320 days, we can see that the graph begins to fall, which shows that the disease reached its peak.
 
