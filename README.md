@@ -1,5 +1,5 @@
 # Coronavirus Data Analysis with Machine Learning
-Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan, Calderón Marvin.\
+Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan, Mazariegos Fernando, Calderón Marvin.\
 Universidad de San Carlos de Guatemala\
 Technical Report November 2020
 
@@ -33,7 +33,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Finding anomalies in confirmed and screened cases data](#finding-anomalies-in-confirmed-and-screened-cases-data)
 - [Comparison between the number of cases detected and the number of tests – US](#comparison-between-the-number-of-cases-detected-and-the-number-of-tests--us)
 - [Prediction of deaths per month in the municipality of Chimaltenango](#prediction-of-deaths-per-month-in-the-municipality-of-chimaltenango)
-- [PREDICTION OF CONFIRMED CASES PER DAY.](#prediction-of-confirmed-cases-per-day)
+- [Prediction Of Confirmed Cases Per Day](#prediction-of-confirmed-cases-per-day)
 - [Classification of the countries of the Americas according to their management of the pandemic](#classification-of-the-countries-of-the-americas-according-to-their-management-of-the-pandemic)
 - [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
 - [Confirmed cases of covid in El Salvador](#confirmed-cases-of-covid-in-el-salvador)
@@ -216,7 +216,8 @@ According to the file 201212596.py, It can be seen in the image that 3 groups we
 With these data we can categorize based on the current day of the year and the number of infected of the day to which group it belongs and obtain an estimate of infections for that day.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
+<
+   src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
 </p>
 
 ### Centroid information
@@ -349,6 +350,8 @@ According to the result we can infer that the increase rate represented indicate
 
 The population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys, indicating as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction describing that the pattern in which cases in Japan will arise in a more controlled manner.
 perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we can clearly  see that Japan is a great example as we can see in this predicted outcome.
+I Would also like to make a shout out to https://www.worldometers.info/coronavirus/ which is the main source of the data, they have plenty of other cathegories
+and it is constantly being updated, so we can always have a trusty source of information at hand.
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
@@ -487,7 +490,7 @@ In the file [201408603.py] https://github.com/LuisEspino/CoronavirusML/blob/main
 The data was obtained from March 13 to November 8, 2020, which gives us a trend graph based on the results and confirmed cases in that range.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/20645904/99204956-d05b3b80-277c-11eb-8ff3-53c40ca1c898.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201408603.png" width="400">
 </p>
 
 As can be seen in the prediction and in the graph, the predictions for the next days of confirmed cases will continue to grow for the department of Guatemala and for the entire country.
@@ -501,7 +504,7 @@ For this, it is recommended that new measures or forms can be taken to reduce co
 
 This study looks at the percentage of Covid-19 cases in total divided by the number of deaths in each Central American country (Guatemala, Honduras, Nicaragua and El Salvador), each country has a different percentage for example:
 
-In El Salvador the month of July had a number of cases of 18096 and a number of deaths of 773 when making the division gives us a total of 23.4%, making the division of each month the average is 26.2% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
+In El Salvador, the month of July had a number of cases of 18096 and a number of deaths of 773 when dividing the total number of cases by 100, giving us a total of 2.70%, dividing each month the average is 2.77% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
 
 This analysis has the purpose of being able to enter the data from other months and that this through skelearn does not say if there is an improvement in the number of deaths or if, on the contrary, the country had a greater amount than the average.
 
@@ -509,12 +512,17 @@ Each country has a different average, which is the following:
 
 |     country      | average | 
 | ---------------- | ------- |
-| Guatemala        | 36%     | 
-| El Salvador      | 26.2%   | 
-| Nicaragua        | 32%     | 
-| Honduras         | 32.9%   | 
+| Guatemala        | 3.78%   | 
+| El Salvador      | 2.77%   | 
+| Nicaragua        | 3.09%   | 
+| Honduras         | 2.96%   | 
+| Costa Rica       | 4%      | 
+| Panama           | 2.06%   | 
 
 For this study we used the months of July, August, September and October.
+
+Document:
+[201314716.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201314716.py)
 
 ### Rise in COVID cases base on 4 values for country
 
@@ -627,9 +635,9 @@ The first result row was an already known value (7) , this one was for control, 
 Source Code [200714832.py]
 Data File [200714832.xlsx]
 
-### Prediction of deaths on the last day of the first year of infections in Guatemala
+## Prediction of deaths on the last day of the first year of infections in Guatemala
 
-According to the data collected, of the number of deaths per day, on the website of the Ministry of Health and Social Assistance (https://tablerocovid.mspas.gob.gt/), such data is used in Python code from the file 201403981.py to apply an analysis and prediction of how many deaths may occur on the last day of the first year of infections in Guatemala, that is, on day 365 of the pandemic, for which a grade 4 polynomial regression was applied, which predicts a number of 262 deaths approximately by day 365 of the pandemic.
+According to the data collected, of the number of deaths per day, on the website of the Ministry of Health and Social Assistance (https://tablerocovid.mspas.gob.gt/), such data is used in Python code from the file [201403981.py] to apply an analysis and prediction of how many deaths may occur on the last day of the first year of infections in Guatemala, that is, on day 365 of the pandemic, for which a grade 4 polynomial regression was applied, which predicts a number of 262 deaths approximately by day 365 of the pandemic.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
@@ -646,7 +654,7 @@ The growth rate of cases was calculated from the growth with respect to the prev
 After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/LuisEspino/CoronavirusML/blob/main/src/201122826.py) 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201122826.png" width="500">
 </p>
 
 | Description                                         | Color in graph | 
@@ -819,6 +827,7 @@ Where np (i) represents the total number of positive cases of coronavirus on day
 ## Comparison between the number of cases detected and the number of tests – US
 
 The data and graphs shown in the following report are generated in the file: [201602959.py](https://github.com/LuisEspino/CoronavirusML/blob/main/src/201602959.py)
+*All data and graphics were generated on November 15, 2020, to obtain real data it is necessary to execute the file specified above.*
 
 API: https://covidtracking.com/data/api
 
@@ -872,6 +881,9 @@ Below, you can see the centroids and the final graph:
     <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="400">
 </p>
 
+### conclusions:
+- The amount of evidence in relation to the number of positive cases is quite good, but in some phases it could be intensified to obtain a more realistic data.
+
 ## Prediction of deaths per month in the municipality of Chimaltenango
 In the following analysis, it is based on the municipality of Chimaltenango in the department of Chimaltenango, according to the data provided by the Ministry of Public Health and Social Assistance, it indicates that the deaths began in the month of April, and are counted until November 2 . The main idea of this study is to use linear regression and establish a prediction based on the data obtained in eight months.
 The following figure is presented where the orange points are the data obtained, while the green points are from the data of the model prediction.<br> 
@@ -880,7 +892,7 @@ The following figure is presented where the orange points are the data obtained,
 <img src="https://github.com/LuisEspino/CoronavirusML/blob/main/img/200915078.png" width="400">
 </p> <br><br>
 
-## PREDICTION OF CONFIRMED CASES PER DAY.
+# Prediction Of Confirmed Cases Per Day
 
 Covid 19 has hit the world in a devastating way, both in the economic and health fields; Since the virus arrived in our country, cases began to be registered for each day, this number of cases can be found on [this site](https://tablerocovid.mspas.gob.gt) , in these data we can find the data confirmed with result delivered and cases without result delivered.
 
@@ -1039,6 +1051,23 @@ While the Central American countries relax their measures, such as in Guatemala,
 
 The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/src/201603166.py)
 
+## Adjustment figures in Guatemala
+From 30 March 2020 until 18 July 2020, cases are recorded on the day before (March 29) it was reported to the media.
+
+On 18 July 2020, Ministry of Health added more than 3,000 cases to the reports due to errors in typing and reporting. Ministry of Health also adjusted the recovery figures, increasing Guatemala's recovery rates to over 60% (and increasing ever since). Deaths are not affected from adjustment of cases and recoveries.
+
+### Covid-19 data lag demonstration in Guatemala
+One of the most important aspects to evaluate in this global pandemic is the data, therefore when an error occurs, the data that is available can be detrimental to finding specific and accurate solutions to contain the pandemic
+
+From the first case of covid-19, March 14, 2020, until the cases of July 18, 2020, the records were presented to the media the next day, however they were not certain.
+
+Through machine learning and with the help of the k-means algorithm in [this link](https://github.com/famt89/CoronavirusML/blob/main/2020-11/src/201020345.py), a graph of the information was obtained in which the lag of this adjustment of July 18, 2020 can be observed, we can see that the data was grouped and it can be noted In the cluster for the month of July 2020, this mismatch in the covid-19 records in Guatemala.
+
+Due to a count and adjustment as of July 18, 2020, there is a lag of detected cases of covid-19 in Guatemala, which can be seen in the following graph:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/famt89/CoronavirusML/main/2020-11/img/201020345.png" width="400">
+</p>
 
 
 ## References 
