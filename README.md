@@ -349,6 +349,8 @@ According to the result we can infer that the increase rate represented indicate
 
 The population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys, indicating as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction describing that the pattern in which cases in Japan will arise in a more controlled manner.
 perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we can clearly  see that Japan is a great example as we can see in this predicted outcome.
+I Would also like to make a shout out to https://www.worldometers.info/coronavirus/ which is the main source of the data, they have plenty of other cathegories
+and it is constantly being updated, so we can always have a trusty source of information at hand.
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
