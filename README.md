@@ -1086,3 +1086,7 @@ Due to a count and adjustment as of July 18, 2020, there is a lag of detected ca
 
 - [Machine Learning - k-means](http://kunusoft.com/slides/ia1/ia109_ml3/index.php?pic=3)
 
+- [Undestanding regression](https://towardsdatascience.com/understanding-regression-using-covid-19-dataset-detailed-analysis-be7e319e3a50)
+
+- [Online datasets](https://www.worldometers.info/coronavirus/)
+
