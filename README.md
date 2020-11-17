@@ -1,5 +1,5 @@
 # Coronavirus Data Analysis with Machine Learning
-Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan, Mazariegos Fernando.\
+Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan, Mazariegos Fernando, Calderón Marvin.\
 Universidad de San Carlos de Guatemala\
 Technical Report November 2020
 
@@ -592,7 +592,7 @@ The president, to evaluate his decisions focused on the reopening of the country
 These indicators come from the COVID19 dashboard that the Ministry of Health and Social Assistance (MSPAS) feeds daily. However, what the president ignored in his presentation was that, although the number of daily infections has decreased compared to previous weeks, the deceased are a figure that is increasing. Deaths from coronavirus have become the biggest challenge in the region.
 
 ### Analysis
-Based on the foregoing, it can be determined that for the information provided by the country's high command to have logic to be able to make the traffic light classification, they had to group the municipalities based on their infected.
+Based on the foregoing [201213177.py](https://github.com/LuisEspino/CoronavirusML_2020_11/blob/main/src/201213177.py), it can be determined that for the information provided by the country's high command to have logic to be able to make the traffic light classification, they had to group the municipalities based on their infected.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/6531771/99190774-1ccb5a80-272e-11eb-8f6b-649e7d43a3d0.png" width="400">
