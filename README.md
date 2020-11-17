@@ -827,6 +827,7 @@ Where np (i) represents the total number of positive cases of coronavirus on day
 ## Comparison between the number of cases detected and the number of tests – US
 
 The data and graphs shown in the following report are generated in the file: [201602959.py](https://github.com/LuisEspino/CoronavirusML/blob/main/src/201602959.py)
+*All data and graphics were generated on November 15, 2020, to obtain real data it is necessary to execute the file specified above.*
 
 API: https://covidtracking.com/data/api
 
@@ -879,6 +880,9 @@ Below, you can see the centroids and the final graph:
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="400">
 </p>
+
+### conclusions:
+- The amount of evidence in relation to the number of positive cases is quite good, but in some phases it could be intensified to obtain a more realistic data.
 
 ## Prediction of deaths per month in the municipality of Chimaltenango
 In the following analysis, it is based on the municipality of Chimaltenango in the department of Chimaltenango, according to the data provided by the Ministry of Public Health and Social Assistance, it indicates that the deaths began in the month of April, and are counted until November 2 . The main idea of this study is to use linear regression and establish a prediction based on the data obtained in eight months.
