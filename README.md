@@ -26,6 +26,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Percentage of Deaths vs. total cases in Central America](#percentage-of-deaths-vs-total-cases-in-central-america)
 - [Behavioral rate of active cases in relation to the number of deaths in some Caribbean countries](#behavioral-rate-of-active-cases-in-relation-to-the-number-of-deaths-in-some-caribbean-countries)
 - [Behavior and classification of people infected by COVID-19 by municipality in Guatemala](#behavior-and-classification-of-people-infected-by-covid-19-by-municipality-in-guatemala)
+- [Prediction of deaths on the last day](#prediction-of-deaths-on-the-last-day-of-the-first-year-of-infections-in-guatemala)
 - [Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19](#growth-rate-of-covid-19-cases-in-relation-to-new-daily-cases-and-death-rate-from-covid-19)
 - [World wide cases and deaths predictions - Neural Network MLPRegressor](#world-wide-cases-and-deaths-predictions---neural-network-mlpregressor)
 - [Coronavirus (COVID-19) Mortality Rate in Guatemala](#coronavirus-covid-19-mortality-rate-in-guatemala)
@@ -639,7 +640,7 @@ Data File [200714832.xlsx]
 
 ## Prediction of deaths on the last day of the first year of infections in Guatemala
 
-According to the data collected, of the number of deaths per day, on the website of the Ministry of Health and Social Assistance (https://tablerocovid.mspas.gob.gt/), such data is used in Python code from the file [201403981.py] to apply an analysis and prediction of how many deaths may occur on the last day of the first year of infections in Guatemala, that is, on day 365 of the pandemic, for which a grade 4 polynomial regression was applied, which predicts a number of 262 deaths approximately by day 365 of the pandemic.
+According to the data collected, of the number of deaths per day, on the website of the Ministry of Health and Social Assistance (https://tablerocovid.mspas.gob.gt/), such data is used in Python code from the file [201403981.py](https://github.com/LuisEspino/CoronavirusML_2020_11/blob/main/src/201403981.py) to apply an analysis and prediction of how many deaths may occur on the last day of the first year of infections in Guatemala, that is, on day 365 of the pandemic, for which a grade 4 polynomial regression was applied, which predicts a number of 262 deaths approximately by day 365 of the pandemic.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/20620289/99195017-c91a3a80-2748-11eb-8b70-88af693cbec7.png" width="400">
