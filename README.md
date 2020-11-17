@@ -38,7 +38,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Classification of the countries of the Americas according to their management of the pandemic](#classification-of-the-countries-of-the-americas-according-to-their-management-of-the-pandemic)
 - [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
 - [Confirmed cases of covid in El Salvador](#confirmed-cases-of-covid-in-el-salvador)
-- [Using LSTM to predict COVID cases and mortality in Guatemala](#Using LSTM to predict COVID infections and mortality in Guatemala)
+- [Using LSTM to predict COVID cases and mortality in Guatemala](#using-lstm-to-predict-covid-cases-and-mortality-in-guatemala)
 - [References](#References)
 
 
