@@ -38,6 +38,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Classification of the countries of the Americas according to their management of the pandemic](#classification-of-the-countries-of-the-americas-according-to-their-management-of-the-pandemic)
 - [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
 - [Confirmed cases of covid in El Salvador](#confirmed-cases-of-covid-in-el-salvador)
+- [Using LSTM to predict COVID cases and mortality in Guatemala] (#Using LSTM to predict COVID infections and mortality in Guatemala)
 - [References](#References)
 
 
@@ -1074,6 +1075,24 @@ Due to a count and adjustment as of July 18, 2020, there is a lag of detected ca
 <img src="https://raw.githubusercontent.com/famt89/CoronavirusML/main/2020-11/img/201020345.png" width="400">
 </p>
 
+# Using LSTM to predict COVID cases and mortality in Guatemala
+
+The current approach uses LSTM (Long Short-Term Memory) to fit the data. I choose this type of ML algorithm because it achieves state of the art results, this will adapt better to understand the development of the infection.
+
+The problem is phrased as a regression problem, we transform the data from a single column of data into a two-column dataset: the first column containing the days (t) infection/death count and the second column containing next day’s (t+1) infection/date count, to be predicted.
+
+The dataset is divided into two subsets, in the chart we can see the real data in blue, and the predicted model for training data(orange) and test data (green). As we can see, the model did an excellent job of fitting both the training and the test datasets
+
+<p align="center">
+    <img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201010425.png" width="400">
+</p>
+
+Only problem is the spike that was a missreport from the government. The rest seems to fit quite well with 100 epochs. This graph shows positive cases, to fit deaths you must change usercols in line 39 of file [201010425.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201010425.py)
+
+To use this model to predict values we must pass the X-values as an 3-dimension array with values scaled. This will be added in the next release. 
+
+The error is of 300 persons in testing and 350 in training set.
+
 
 ## References 
 
@@ -1092,3 +1111,4 @@ Due to a count and adjustment as of July 18, 2020, there is a lag of detected ca
 
 - [Online datasets](https://www.worldometers.info/coronavirus/)
 
+- [Predicting Stock Price with LSTM ](https://towardsdatascience.com/predicting-stock-price-with-lstm-13af86a74944)
