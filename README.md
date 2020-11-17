@@ -545,7 +545,7 @@ This time, we will use the Gaussian algorithm to predict whether or not the data
 For this specific case we use data from the cases registered in:
 https://www.worldometers.info/coronavirus/#countries
 
-The months we take into account are from June, July, August, September and October, for the countries of Jamaica, Haiti and Cuba.
+The months we take into account are from June, July, August, September and October, for the countries of Jamaica, Haiti, Cuba and Bahamas.
 
 For example: In Jamaica in the month of June there are 266 active cases with 9 deaths per covid registered. Therefore, the rate we manage by dividing the 266 active cases into 9 deaths, which gives us a value of 29.55 active cases/deaths. (266/9=29.55). And in Cuba we have recorded that by the month of June there were 174 active cases and 83 deaths, which gives a value of 2.09. So here we can say that the lower the number the more alarming the cases are, because most of the active cases are ending in death.
 
@@ -554,9 +554,10 @@ For example: In Jamaica in the month of June there are 266 active cases with 9 d
 | ---------------- | ------- |
 | Jamaica          | 34.3%   | 
 | Haiti      	   | 31.6%   | 
-| Cuba        	   | 3.1%    |  
+| Cuba        	   | 3.1%    |
+| Bahamas          | 17.38%  |   
 
-In the table we can see that Haiti has a lower average, this is due to the fact that in the data taken from the reference, we see a drastic change in the counts of active cases, between the month of June, July and August. This makes the case look alarming there, just as in the rest most active cases end in death. Jamaica, on the other hand, has a higher average number of active cases, since there are more cases registered in that country and only a small number of them end in death.
+In the table we can see that Haiti has a lower average, this is due to the fact that in the data taken from the reference, we see a drastic change in the counts of active cases, between the month of June, July and August. This makes the case look alarming there, just as in the rest most active cases end in death. Jamaica, on the other hand, has a higher average number of active cases, since there are more cases registered in that country and only a small number of them end in death. The source code for this approach can be found in the file /src/201020975.py
 
 ### Confirmed cases by Latin American countries
 The trend of coronavirus infections in Latin America is very important to know its impact.
