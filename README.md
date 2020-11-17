@@ -216,7 +216,8 @@ According to the file 201212596.py, It can be seen in the image that 3 groups we
 With these data we can categorize based on the current day of the year and the number of infected of the day to which group it belongs and obtain an estimate of infections for that day.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
+<
+   src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
 </p>
 
 ### Centroid information
@@ -487,7 +488,7 @@ In the file [201408603.py] https://github.com/LuisEspino/CoronavirusML/blob/main
 The data was obtained from March 13 to November 8, 2020, which gives us a trend graph based on the results and confirmed cases in that range.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/20645904/99204956-d05b3b80-277c-11eb-8ff3-53c40ca1c898.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201408603.png" width="400">
 </p>
 
 As can be seen in the prediction and in the graph, the predictions for the next days of confirmed cases will continue to grow for the department of Guatemala and for the entire country.
