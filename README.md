@@ -646,7 +646,7 @@ The growth rate of cases was calculated from the growth with respect to the prev
 After applying the k-means algorithm, the following graph and the information of the clusters are obtained, the code with which said analysis was created is in the file [201122826.py](https://github.com/LuisEspino/CoronavirusML/blob/main/src/201122826.py) 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26233013/99204817-69d61d80-277c-11eb-92e8-e396d0e80de2.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201122826.png" width="500">
 </p>
 
 | Description                                         | Color in graph | 
