@@ -32,7 +32,7 @@ def run():
     # cargar el ds
     # como los datos de fechas no nos importan sólo tomamos la columna 2
     # si se desea hacer un fit de las muertes tomar columna 3
-    df = read_csv('../data/covid-19.csv', usecols=[2], engine='python')
+    df = read_csv('../data/201010425.csv', usecols=[2], engine='python')
     ds = df.values
     ds = ds.astype('float32')
 
