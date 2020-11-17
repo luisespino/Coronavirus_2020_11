@@ -11,12 +11,35 @@ All the data collected and displayed have been extracted from the public databas
 
 ## Table of Contents
 - [The Epidemic Progression Index](#The-Epidemic-Progression-Index)
-- [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala) 
-- [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
-- [Rise in COVID cases base on 4 values for country](#rise-in-covid-cases-base-on-4-values-for-country)
+- [Prediction of infecteds in Costa Rica](#Prediction-of-infecteds-in-Costa-Rica)
 - [Mortality prediction due to COVID - 19 in the department of Guatemala](#Mortality-prediction-due-to-COVID-19-in-the-department-of-Guatemala)
+- [Mortality prediction due to COVID - 19 in Honduras](#Mortality-prediction-due-to-COVID-19-in-Honduras)
+- [Trend of number of infected per day in Guatemala](#Trend-of-number-of-infected-per-day-in-Guatemala)
+- [Analysis of the number of deaths from coronavirus in Guatemala](#Analysis-of-the-number-of-deaths-from-coronavirus-in-Guatemala)
+- [Covid-19 in Guatemala, cases, predictions for 2021](#Covid-19-in-Guatemala,-cases,-predictions-for-2021)
+- [Percentage of men infected by covid-19 in Guatemala since the first active case](#Percentage-of-men-infected-by-covid-19-in-Guatemala-since-the-first-active-case)
+- [Comparative between Guatemala, Central America and Japan](#Comparative-between-Guatemala,-Central-America-and-Japan)
+- [Average deaths from confirmed cases and age of covid 19 in Guatemala](#Average-deaths-from-confirmed-cases-and-age-of-covid-19-in-Guatemala)
+- [Clusters: Deaths according to regions of Guatemala - Covid 19](#Clusters:-Deaths-according-to-regions-of-Guatemala-Covid-19)
 - [Trend of confirmed Coronavirus cases in the department of Guatemala](#Trend-of-confirmed-Coronavirus-cases-in-the-department-of-Guatemala)
-- [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
+- [Percentage of Deaths vs. total cases in Central America](#Percentage-of-Deaths-vs.-total-cases-in-Central-America)
+- [Behavioral rate of active cases in relation to the number of deaths in some Caribbean countries](#Behavioral-rate-of-active-cases-in-relation-to-the-number-of-deaths-in-some-Caribbean-countries)
+- [Confirmed cases by Latin American countries](#Confirmed-cases-by-Latin-American-countries)
+- [Percentage of Deaths vs. total cases in Central America](#Percentage-of-Deaths-vs.-total-cases-in-Central-America)
+- [Behavioral rate of active cases in relation to the number of deaths in some Caribbean countries](#Behavioral-rate-of-active-cases-in-relation-to-the-number-of-deaths-in-some-Caribbean-countries)
+- [Behavior and classification of people infected by COVID-19 by municipality in Guatemala](#Behavior-and-classification-of-people-infected-by-COVID-19-by-municipality-in-Guatemala)
+- [Guatemala Goverment Alert Level System - Bayes Naive Classification](#Guatemala-Goverment-Alert-Level-System-Bayes-Naive-Classification)
+- [Prediction of deaths on the last day of the first year of infections in Guatemala](#Prediction-of-deaths-on-the-last-day-of-the-first-year-of-infections-in-Guatemala)
+- [Growth rate of COVID-19 cases in relation to new daily cases and death rate from COVID-19](#Growth-rate-of-COVID-19-cases-in-relation-to-new-daily-cases-and-death-rate-from-COVID-19)
+- [World wide cases and deaths predictions - Neural Network MLPRegressor](#World-wide-cases-and-deaths-predictions-Neural-Network-MLPRegressor)
+- [Coronavirus (COVID-19) Mortality Rate in Guatemala](#Coronavirus-(COVID-19)-Mortality-Rate-in-Guatemala)
+- [COVID-19 death factors in Mexico](#COVID-19-death-factors-in-Mexico)
+- [Comparison between the number of cases detected and the number of tests – US](#Comparison-between-the-number-of-cases-detected-and-the-number-of-tests-US)
+- [Prediction of deaths per month in the municipality of Chimaltenango](#Prediction-of-deaths-per-month-in-the-municipality-of-Chimaltenango)
+- [Prediction Of Confirmed Cases Per Day](#Prediction-Of-Confirmed-Cases-Per-Day)
+- [Classification of the countries of the Americas according to their management of the pandemic](#Classification-of-the-countries-of-the-Americas-according-to-their-management-of-the-pandemic)
+- [Positive cases in Mixco during COVID 19 Pandemy](#Positive-cases-in-Mixco-during-COVID-19-Pandemy)
+- [Confirmed cases of covid in El Salvador](#Confirmed-cases-of-covid-in-El-Salvador)
 - [References](#References)
 
 ### Covid-19 infection trend in Guatemala
@@ -941,7 +964,7 @@ The following figure is presented where the orange points are the data obtained,
 <img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/200915078.png" width="400">
 </p> <br><br>
 
-# PREDICTION OF CONFIRMED CASES PER DAY.
+# Prediction Of Confirmed Cases Per Day
 
 Covid 19 has hit the world in a devastating way, both in the economic and health fields; Since the virus arrived in our country, cases began to be registered for each day, this number of cases can be found on [this site](https://tablerocovid.mspas.gob.gt) , in these data we can find the data confirmed with result delivered and cases without result delivered.
 
