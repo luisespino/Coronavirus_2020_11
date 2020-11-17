@@ -318,40 +318,41 @@ With these related data we could predict active cases in Guatemalan men by day 3
 <img src="https://user-images.githubusercontent.com/20606917/99028199-ca731980-2534-11eb-9b42-be27b8432845.png" width="400">
 </p>
 
-### Comparative between Guatemala, Central America and Japan
+## Comparative between Guatemala, Central America and Japan
 
-As we can apretiate in the graphs above, we notice a trend between Guatemala and Countries in Central when it comes to covid stats, which is somehow expected
+As we can appretiate in the graphs above, we notice a trend between Guatemala and Countries in Central when it comes to covid stats, which is somehow expected
 since we can find alot of cultural similarities between this countries, but now we will compare them to Japan.
 First we need to establish why Japan was the target, there are three main reasons:
 
 1. They started doing quarentine like the rest of the world, then they decided they were just going to have to learn to "live with it" and resumed their daily duties,
-   with some added restrictions of course, but this was done at an early stage; meanwhile in Guatemala the quarentine lasted for longer time, and restrictions were more severe.
-2. They way they have dealt with the pandemic has been outstanding, reflecting in the lowest numbers per capita world wide.
+   with some added restrictions of course, but this was done at an early stage; meanwhile in Guatemala the quarentine lasted for a longer time, and restrictions were more severe.
+2. They way they have dealt with the pandemic has been outstanding, reflecting in the lowest numbers per capita worldwide.
 3. Their social standards, which are regarded to be among the best in the world.
 
-So we start by analyzing a Graph which represents the present data, we can clearly see that it represents a steady increase resulting close to an even straight line, with this we can infer that the way covid spread is being controled is more efficient than in Central America.
+So we start by analyzing a Graph which represents the present data, we can clearly see that it represents a steady increase resulting close to an even straight line, with this we can infer that the way covid spread is being controlled is more efficient than in Central America.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/10952236/99139973-299f5f80-2603-11eb-9504-512953798b69.png" width="400">
 </p>
 
-Now we will analyze the graph created using the file [201222567.py], which makes a prediction aimed to the day 61 that represents november 30 which is the scope of this research, using a polynomial regression, to see if the nature of the previous graph persists or if it alters: 
+Now we will analyze the graph created using the file [201222567.py], which makes a prediction aimed to the day 61 that represents November 30 which is the scope of this research, using a polynomial regression, to see if the nature of the previous graph persists or if it alters: 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/10952236/99216040-4752fd00-279a-11eb-9382-6208010cb32f.png" width="600">
 </p>
 
-According to the result we can infer that the increase rate represented indicates that the increase in confirmed cases will remain to have a steady growth barely surpassing the 140,000 mark. We can also see that the number of confirmd cases seem to be similar to Guatemala's, but we must take into consideration the population data: 
+According to the result we can infer that the increase rate represented indicates that the increase in confirmed cases will remain to have a steady growth barely surpassing the 140,000 mark. We can also see that the number of confirmed cases seems to be similar to Guatemala's, but we must take into consideration the population data: 
 
 |                  | Japan      | Guatemala  |
 | ---------------- | ---------- | ---------- |
 | Population       | 126,500,000| 17,250,000 |
 | Cases            | 108,983    | 113,543    |
 
-The population ratio vs the confirmed cases of each country results in a staggering difference, this also reflects in the behavior shown in the graphs concerning central american countrys, indicating as to why Japans seems to be more steady while most of Central America is quite the oposite, also complementing the prediction describing that the pattern in which cases in Japan will arise in a more controlled manner.
-perhaps the best way to mitigate the impact of the most likely innevitable second wave might be benchamarking the succesful way in which other countrys are fighting this, and we can clearly  see that Japan is a great example as we can see in this predicted outcome.
-I Would also like to make a shout out to https://www.worldometers.info/coronavirus/ which is the main source of the data, they have plenty of other cathegories
-and it is constantly being updated, so we can always have a trusty source of information at hand.
+The population ratio vs the confirmed cases of each country result in a staggering difference, this is also reflected in the behavior shown in the graphs concerning central American countries, indicating as to why Japans seem to be more steady while most of Central America is quite the opposite, also complementing the prediction describing that the pattern in which cases in Japan will arise in a more controlled manner.
+
+Perhaps the best way to mitigate the impact of the most likely inevitable second wave might be benchmarking the successful way in which other countries are fighting this, and we can clearly  see that Japan is a great example according to the predicted outcome.
+I Would also like to make a shout out to https://www.worldometers.info/coronavirus/ which is the main source of the data, they have plenty of other categories
+and it is constantly being updated, so we can always have a trusted source of information at hand.
 
 ## Average deaths from confirmed cases and age of covid 19 in Guatemala
 
