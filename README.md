@@ -43,7 +43,7 @@ All the data collected and displayed have been extracted from the public databas
 - [Classification of the countries of the Americas according to their management of the pandemic](#classification-of-the-countries-of-the-americas-according-to-their-management-of-the-pandemic)
 - [Covid 19 in Mixco, Guatemala](#Covid-19-in-Mixco)
 - [Confirmed cases of covid in El Salvador](#confirmed-cases-of-covid-in-el-salvador)
-- [Using LSTM to predict COVID cases and mortality in Guatemala] (#Using LSTM to predict COVID infections and mortality in Guatemala)
+- [Using LSTM to predict COVID cases and mortality in Guatemala](#using-lstm-to-predict-covid-cases-and-mortality-in-guatemala)
 - [References](#References)
 
 ## General Concepts
@@ -1071,7 +1071,7 @@ positive cases can't be 100.
 Countries in Central America have the covid disease relatively controlled, but most countries have not yet found the peak of the contagion of this disease.
 Countries with a good economy and a health system like Costa Rica are having problems controlling the disease, while a country like El Salvador with a population similar to that of Costa Rica has 35k infected with a population of 6M people.
 <p align="center">
-<img src="https://raw.githubusercontent.com/Dresz/CoronavirusML/main/img/201603166.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201603166.png" width="400">
 </p>
 The image above shows the graph of the accumulated cases from January 22 to November 10 and the prediction of the graph 30 days later, approximately 320 days, we can see that the graph begins to fall, which shows that the disease reached its peak.
 
@@ -1108,10 +1108,10 @@ The problem is phrased as a regression problem, we transform the data from a sin
 The dataset is divided into two subsets, in the chart we can see the real data in blue, and the predicted model for training data(orange) and test data (green). As we can see, the model did an excellent job of fitting both the training and the test datasets
 
 <p align="center">
-    <img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201010425.png" width="400">
+    <img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201010425.png" width="400">
 </p>
 
-Only problem is the spike that was a missreport from the government. The rest seems to fit quite well with 100 epochs. This graph shows positive cases, to fit deaths you must change usercols in line 39 of file [201010425.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201010425.py)
+Only problem is the spike that was a missreport from the government. The rest seems to fit quite well with 100 epochs. This graph shows positive cases, to fit deaths you must change usercols in line 39 of file [201010425.py](https://github.com/LuisEspino/CoronavirusML_2020_11/blob/main/src/201010425.py)
 
 To use this model to predict values we must pass the X-values as an 3-dimension array with values scaled. This will be added in the next release. 
 
