@@ -15,28 +15,32 @@ pais = ['El Salvador', 'El Salvador', 'El Salvador', 'El Salvador',
  'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala',
   'Nicaragua', 'Nicaragua','Nicaragua', 'Nicaragua',
     'Honduras','Honduras','Honduras','Honduras',
-    'Costa Rica', 'Costa Rica','Costa Rica','Costa Rica']
+    'Costa Rica', 'Costa Rica','Costa Rica','Costa Rica',
+    'Panama','Panama','Panama','Panama']
 
 #Months July, August, September, October   
 activos = [2590, 8096,  10526, 4397,
  18096, 50979, 79893, 92409,
   2519, 3672, 4668, 5170,
   19558,42014,61014,76900,
-  3753,18187,42184,76828]
+  3753,18187,42184,76828,
+  34463,66256,93552,113342]
 
 #Months July, August, September, October
 death = [182,459,724,848 
 ,773,1959,2778,3261,
 83,116,141,151,
 497,1337,1873,2353,
-17,154,443,917]
+17,154,443,917,
+645,1449,2002,2387]
 
 #Months July, August, September, October
-range = ['si', 'si', 'si', 'no',
- 'no', 'no', 'si', 'si',
-  'no', 'no', 'si', 'si',
-  'si','no','no', 'si',
-  'si', 'si','si','si']
+range = ['no', 'no', 'si', 'si',
+ 'si', 'si', 'no', 'no',
+  'si', 'si', 'no', 'no',
+  'no','si','si', 'si',
+  'si', 'si','no','no',
+  'no','si','si','no']
 
 # Create the tag encoder
 le = preprocessing.LabelEncoder()

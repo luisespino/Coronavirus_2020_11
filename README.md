@@ -501,7 +501,7 @@ For this, it is recommended that new measures or forms can be taken to reduce co
 
 This study looks at the percentage of Covid-19 cases in total divided by the number of deaths in each Central American country (Guatemala, Honduras, Nicaragua and El Salvador), each country has a different percentage for example:
 
-In El Salvador the month of July had a number of cases of 18096 and a number of deaths of 773 when making the division gives us a total of 23.4%, making the division of each month the average is 26.2% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
+In El Salvador, the month of July had a number of cases of 18096 and a number of deaths of 773 when dividing the total number of cases by 100, giving us a total of 2.70%, dividing each month the average is 2.77% and with this average we classify each month as above average or below average, in this case the month of July is classified as (No) which means that it is not above average.
 
 This analysis has the purpose of being able to enter the data from other months and that this through skelearn does not say if there is an improvement in the number of deaths or if, on the contrary, the country had a greater amount than the average.
 
@@ -509,12 +509,17 @@ Each country has a different average, which is the following:
 
 |     country      | average | 
 | ---------------- | ------- |
-| Guatemala        | 36%     | 
-| El Salvador      | 26.2%   | 
-| Nicaragua        | 32%     | 
-| Honduras         | 32.9%   | 
+| Guatemala        | 3.78%   | 
+| El Salvador      | 2.77%   | 
+| Nicaragua        | 3.09%   | 
+| Honduras         | 2.96%   | 
+| Costa Rica       | 4%      | 
+| Panama           | 2.06%   | 
 
 For this study we used the months of July, August, September and October.
+
+Document:
+[201314716.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201314716.py)
 
 ### Rise in COVID cases base on 4 values for country
 
