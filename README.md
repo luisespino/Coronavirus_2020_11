@@ -151,7 +151,7 @@ The reason why the prediction of deaths in the department of Guatemala is releva
 
 As can be seen in the graph below, the level of contagion worldwide is high and despite being Central America a territory with populations not as dense as other parts of the world, it is possible to identify that there is a great increase and impact of the pandemic:
 <p align="center">
-<img src="https://user-images.githubusercontent.com/20587564/99157783-b264dc80-2691-11eb-888f-4125ad755628.jpg" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997.png" width="400">
 </p>
 
 ### Background
@@ -181,18 +181,18 @@ The trend of deaths due to the COVID-19 pandemic is made with the information pr
 
 According to the 201403997.py file, if it is executed with a configuration to predict the next 30 days, a constant decrease in the number of deaths can be noticed with respect to how the behavior has come, derived from the fact that there has been a substantial drop in the infected and fatality in these last days of the disease, following this model linearly, we can define that cases will continue to decrease, unless there is a second wave of infections in the country, which surely would not be as aggressive as the first but would change the statistics with which they are working and therefore the results of the predictions, this behavior can be verified in the following graph, which shows how the number of deaths has been fluctuating, and was increasing at a certain time, but at the moment already It has decreased and as the days go by we see that the deaths in the capital city associated with SARS-CoV-2 will continue to decrease:
 <p align="center">
-<img src="https://user-images.githubusercontent.com/20587564/99203859-7c9b2300-2779-11eb-9f6a-86d0242f0c04.PNG" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997_2.png" width="400">
 </p>
 
 The sample taken from the Ministry of Health according to its data collected is from February 13, until November 8 inclusive, in which for the department of Guatemala it was placed in a cumulative way to be able to work with the linspace tool of the numpy library that provides a linear regression from the data entered, so that it could be verified how the death trend would be.
 <p align="center">
-<img src="https://user-images.githubusercontent.com/20587564/99203898-99cff180-2779-11eb-87a6-0ae9d0dce015.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997_3.png" width="400">
 </p>
 
 Additional in the code the information is mapped from February 13, until November 8 inclusive of the other departments where there is a list according to the days that the cases were reported, if at a certain moment you want to use the solution to handle a prediction of the other departments.
 It can be verified in the following image, which shows the results of the number of deaths due to:
 <p align="center">
-<img src="https://user-images.githubusercontent.com/20587564/99203952-b4a26600-2779-11eb-8fc3-f56f7142bfed.PNG" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997_4.png" width="400">
 </p>
 
 As is well known in the case of Guatemala in the month of November and what has been in recent weeks there has been a decreasing fall in cases that end in death, for which the model tends to decrease steadily, although it is always It should take into account that according to the data and reports available in Asian and European countries, there is a high probability that there is a second wave, in which case some adjustments would have to be made to the model so that its prediction follows its correct course.
