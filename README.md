@@ -1,5 +1,5 @@
 # Coronavirus Data Analysis with Machine Learning
-Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan, Mazariegos Fernando, Calderón Marvin, Morejón Jose.\
+Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan, Mazariegos Fernando, Calderón Marvin, Morejón José.\
 Universidad de San Carlos de Guatemala\
 Technical Report November 2020
 
@@ -827,12 +827,13 @@ Where np (i) represents the total number of positive cases of coronavirus on day
 ## Comparison between the number of cases detected and the number of tests – US
 
 The data and graphs shown in the following report are generated in the file: [201602959.py](https://github.com/LuisEspino/CoronavirusML/blob/main/src/201602959.py)
+
 *All data and graphics were generated on November 15, 2020, to obtain real data it is necessary to execute the file specified above.*
 
 API: https://covidtracking.com/data/api
 
 ### Abstract
-COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, in December 2019. Currently COVID-19 is a pandemic that affects many countries around the world.
+COVID-19 is the most recently discovered infectious disease caused by the coronavirus. Both this new virus and the disease it causes were unknown before the outbreak broke out in Wuhan, China, on December 2019. Currently COVID-19 is a pandemic that affects all countries around the world.
 
 In the following report, a comparison is made between the number of tests and the number of positive cases found to measure the effectiveness of the tests and the level of spread of the virus and how real the data from tests performed is.
 All the information used in this report is obtained from a free api, with the objective of having the most up-to-date information possible and as much information as possible in real time.
@@ -843,7 +844,7 @@ Of course, for this, it is necessary to evaluate asymptomatic cases (cases that 
 
 To answer the question asked above it is necessary to see the following graph:
 <p align="center">
-    <img src="https://drive.google.com/uc?export=view&id=1R9CwINXZ1T8zP8blriAjl6RbzoiNg-xM" width="400">
+    <img src="https://drive.google.com/uc?export=view&id=1R9CwINXZ1T8zP8blriAjl6RbzoiNg-xM" width="500">
 </p>
 
 
@@ -878,18 +879,19 @@ Below, you can see the centroids and the final graph:
 
 ### Final Graph:
 <p align="center">
-    <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="400">
+    <img src="https://drive.google.com/uc?export=view&id=1JsINO_QxiYKAacpmn5-oTOyLD4btagHz" width="500">
 </p>
 
-### conclusions:
+### Conclusions:
 - The amount of evidence in relation to the number of positive cases is quite good, but in some phases it could be intensified to obtain a more realistic data.
+- The amount of positive tests and cases detected is not relevant if the government does not take the necessary precautionary measures.
 
 ## Prediction of deaths per month in the municipality of Chimaltenango
 In the following analysis, it is based on the municipality of Chimaltenango in the department of Chimaltenango, according to the data provided by the Ministry of Public Health and Social Assistance, it indicates that the deaths began in the month of April, and are counted until November 2 . The main idea of this study is to use linear regression and establish a prediction based on the data obtained in eight months.
 The following figure is presented where the orange points are the data obtained, while the green points are from the data of the model prediction.<br> 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML/main/img/200915078.png" width="400">
+<img src="https://github.com/LuisEspino/CoronavirusML/blob/main/img/200915078.png" width="400">
 </p> <br><br>
 
 # Prediction Of Confirmed Cases Per Day
