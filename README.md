@@ -819,6 +819,7 @@ Where np (i) represents the total number of positive cases of coronavirus on day
 ## Comparison between the number of cases detected and the number of tests – US
 
 The data and graphs shown in the following report are generated in the file: [201602959.py](https://github.com/LuisEspino/CoronavirusML/blob/main/src/201602959.py)
+*All data and graphics were generated on November 15, 2020, to obtain real data it is necessary to execute the file specified above.*
 
 API: https://covidtracking.com/data/api
 
