@@ -10,6 +10,7 @@ Next it will be about how the covid-19 pandemic has evolved since the first day 
 All the data collected and displayed have been extracted from the public databases of each country that track this information. With this information and using the Python programming language and its Sckit-learn library, it is possible to analyze and predict the data that will be shown below.
 
 ## Table of Contents
+- [General Concepts](#General-Concepts) 
 - [Covid-19 infection trend in Guatemala](#covid-19-infection-trend-in-guatemala) 
 - [The Epidemic Progression Index](#The-Epidemic-Progression-Index)
 - [Prediction of infecteds in Costa Rica](#prediction-of-infecteds-in-costa-rica)
@@ -41,6 +42,22 @@ All the data collected and displayed have been extracted from the public databas
 - [Using LSTM to predict COVID cases and mortality in Guatemala] (#Using LSTM to predict COVID infections and mortality in Guatemala)
 - [References](#References)
 
+## General Concepts
+### Data prediction with Python
+Among programming languages, Python is known as one that manages to master all the statistics, related to data mining and even machine learning, it is free software, so many people have been able to use it to develop their solutions by giving A place that has very interesting libraries where you can find almost all the machine learning techniques that currently exist, of course, has its negative part, and that is that derived from the fact that many people have contributed, it has its specific syntax for each case, which makes learning a bit complex.
+Currently there is a very viable solution, since Scikit-learn consists of being a standardization conformed in an open code library, which tries to unify in the same context all the possible algorithms and functions, helping greatly the preprocessing phases , training, optimization and validation of the different predictive methods used.
+
+Scikit-learn gives the possibility of having a large amount of data processing options, of which only some will be used throughout this report, but it is recommended to be able to search for the documentation of this tool that is very useful to perform this type of predictions like those found throughout the document.
+A factor that must be considered with respect to the aforementioned library is its high level of maturity, with which it manages to define predictive models that are even used in production, so it is taken as a basis for the development of the different solutions, find will be focused on linear regression methodology.
+
+### Linear regression
+This prediction model is based on the possibility of calculating a straight line that accommodates as much as possible to the different samples that are identified within the population that is taken for analysis.
+
+The way to calculate it is based on the fact that linear regression focuses on defining the parameters that are found or characterize a linear function, y = mx + b, in such a way that the quadratic errors in the measurement that is carried out can be eliminated to a certain extent. to the line defined by the function described above, minimizing the distance from each doctor to the line, manually it is not so complex, although the purpose of the different solutions that are presented is to make a fully automated model.
+The different data that are handled in the report are not only treated in this way, also in some cases only 2 dimensions are not taken into account to extract some information, but when it comes to three-dimensional data, it is often preferable to opt for a Descending Gradient, which iterates to be able to follow the previous process, in such a way as to find the line that best fits the contour defined by the selected samples, which gives it a higher computational data, it is frequently used in multidimensional cases.
+
+### Error measurement
+As a fundamental part of the models with which the information will be defined is that when there are problems of this nature, be it machine learning or even data science, on very rare occasions they are exact, mainly if it is the prediction of the advance of a pathological virus, since the results that are produced are probable, they are usually estimates, this reason gives as a result that there should always be some mechanism that can assess the variation that exists and occurs throughout the calculations performed, of course to know the results that are being presented as their accuracy, and that these can be objectively and quantifiably comparable, applying other additional methods that can support depending on their characteristics towards the behavior of the data set.
 
 ## Covid-19 infection trend in Guatemala
 
@@ -153,7 +170,7 @@ The reason why the prediction of deaths in the department of Guatemala is releva
 
 As can be seen in the graph below, the level of contagion worldwide is high and despite being Central America a territory with populations not as dense as other parts of the world, it is possible to identify that there is a great increase and impact of the pandemic:
 <p align="center">
-<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997.jpg" width="400">
 </p>
 
 ### Background
@@ -183,7 +200,7 @@ The trend of deaths due to the COVID-19 pandemic is made with the information pr
 
 According to the 201403997.py file, if it is executed with a configuration to predict the next 30 days, a constant decrease in the number of deaths can be noticed with respect to how the behavior has come, derived from the fact that there has been a substantial drop in the infected and fatality in these last days of the disease, following this model linearly, we can define that cases will continue to decrease, unless there is a second wave of infections in the country, which surely would not be as aggressive as the first but would change the statistics with which they are working and therefore the results of the predictions, this behavior can be verified in the following graph, which shows how the number of deaths has been fluctuating, and was increasing at a certain time, but at the moment already It has decreased and as the days go by we see that the deaths in the capital city associated with SARS-CoV-2 will continue to decrease:
 <p align="center">
-<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997_2.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997_2.PNG" width="400">
 </p>
 
 The sample taken from the Ministry of Health according to its data collected is from February 13, until November 8 inclusive, in which for the department of Guatemala it was placed in a cumulative way to be able to work with the linspace tool of the numpy library that provides a linear regression from the data entered, so that it could be verified how the death trend would be.
@@ -194,7 +211,7 @@ The sample taken from the Ministry of Health according to its data collected is 
 Additional in the code the information is mapped from February 13, until November 8 inclusive of the other departments where there is a list according to the days that the cases were reported, if at a certain moment you want to use the solution to handle a prediction of the other departments.
 It can be verified in the following image, which shows the results of the number of deaths due to:
 <p align="center">
-<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997_4.png" width="400">
+<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/201403997_4.PNG" width="400">
 </p>
 
 As is well known in the case of Guatemala in the month of November and what has been in recent weeks there has been a decreasing fall in cases that end in death, for which the model tends to decrease steadily, although it is always It should take into account that according to the data and reports available in Asian and European countries, there is a high probability that there is a second wave, in which case some adjustments would have to be made to the model so that its prediction follows its correct course.
