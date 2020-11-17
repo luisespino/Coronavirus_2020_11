@@ -1082,7 +1082,7 @@ The problem is phrased as a regression problem, we transform the data from a sin
 The dataset is divided into two subsets, in the chart we can see the real data in blue, and the predicted model for training data(orange) and test data (green). As we can see, the model did an excellent job of fitting both the training and the test datasets
 
 <p align="center">
-    <img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201010425.py" width="400">
+    <img src="https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/img/201010425.png" width="400">
 </p>
 
 Only problem is the spike that was a missreport from the government. The rest seems to fit quite well with 100 epochs. This graph shows positive cases, to fit deaths you must change usercols in line 39 of file [201010425.py](https://github.com/LuisEspino/CoronavirusML/blob/main/2020-11/src/201010425.py)
