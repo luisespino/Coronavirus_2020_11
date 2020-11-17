@@ -1,5 +1,5 @@
 # Coronavirus Data Analysis with Machine Learning
-Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan.\
+Luis Fernando Espino Barrios and Alvarado Kevin, Cardona Berny, Galicia Nery, Giron Gary, Guarchaj Ottoniel, Hernandez Fernando Antonio, Hevia Eduardo, Lemus Yoselin, Linares Jefferson, Lizama Luis, Lopez Abner, Melgar James, Morales Mario, Morales Oscar, Ordoñez Bryan, Sánchez Sebastián, Solares Cesar, Solares Omar, Vasquez Pavel, Vega Daniel, Veliz Jorge, Villatoro Kherson, Gustavo Ichel, Celso Soto, Velíz José, Alvarado David, López Ivan, Mazariegos Fernando.\
 Universidad de San Carlos de Guatemala\
 Technical Report November 2020
 
@@ -1039,6 +1039,23 @@ While the Central American countries relax their measures, such as in Guatemala,
 
 The data used for this analysis can be found in [this link](https://github.com/LuisEspino/CoronavirusML/blob/main/src/201603166.py)
 
+## Adjustment figures in Guatemala
+From 30 March 2020 until 18 July 2020, cases are recorded on the day before (March 29) it was reported to the media.
+
+On 18 July 2020, Ministry of Health added more than 3,000 cases to the reports due to errors in typing and reporting. Ministry of Health also adjusted the recovery figures, increasing Guatemala's recovery rates to over 60% (and increasing ever since). Deaths are not affected from adjustment of cases and recoveries.
+
+### Covid-19 data lag demonstration in Guatemala
+One of the most important aspects to evaluate in this global pandemic is the data, therefore when an error occurs, the data that is available can be detrimental to finding specific and accurate solutions to contain the pandemic
+
+From the first case of covid-19, March 14, 2020, until the cases of July 18, 2020, the records were presented to the media the next day, however they were not certain.
+
+Through machine learning and with the help of the k-means algorithm in [this link](https://github.com/famt89/CoronavirusML/blob/main/2020-11/src/201020345.py), a graph of the information was obtained in which the lag of this adjustment of July 18, 2020 can be observed, we can see that the data was grouped and it can be noted In the cluster for the month of July 2020, this mismatch in the covid-19 records in Guatemala.
+
+Due to a count and adjustment as of July 18, 2020, there is a lag of detected cases of covid-19 in Guatemala, which can be seen in the following graph:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/famt89/CoronavirusML/main/2020-11/img/201020345.png" width="400">
+</p>
 
 
 ## References 
