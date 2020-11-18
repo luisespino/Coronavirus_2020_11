@@ -86,7 +86,7 @@ For the department of Guatemala, it is projected that by the end of November, th
 ## The Epidemic Progression Index
 The Epidemic Progression Index (EPI) is a measure of the percentage of infected people with respect to the number of swabs performed. Since swabs are done to people at risk, the EPI indicates how strong the spread of the epidemic is. The math behind the formula is as follows:
 <p align="center">
-<img src="https://raw.githubusercontent.com/LuisEspino/CoronavirusML_2020_11/main/img/9430901.png" width="400">
+<img src="https://github.com/LuisEspino/CoronavirusML_2020_11/blob/main/img/9430901.jpg" width="400">   
 </p>
 Where np (i) represents the total number of positive cases of coronavirus on day i (for example, today), np (i-1) the total number of positive cases of coronavirus on day i-1 (for example, yesterday ), ts (i) the total number of swabs made on day i and ts (i-1) the total number of swabs on day i-1. EPI is a number between 0 and 1. When EPI is equal to 1, it means that all people who have had a swab are positive for the coronavirus. Therefore, the epidemics continue to advance. In contrast, an EPI value equal to 0 means that the epidemics stop, that is, all the people who had a swab are negative for the coronavirus.
 
@@ -242,8 +242,7 @@ According to the file 201212596.py, It can be seen in the image that 3 groups we
 With these data we can categorize based on the current day of the year and the number of infected of the day to which group it belongs and obtain an estimate of infections for that day.
 
 <p align="center">
-<
-   src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
+<img src="https://user-images.githubusercontent.com/13458088/99028380-36ee1880-2535-11eb-8208-321e1d860bd4.png" width="400">
 </p>
 
 ### Centroid information
@@ -787,7 +786,7 @@ Source Code: [201603014.py] <br>
 Confusion matrix: <br>
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/SebastianSNZ/CoronavirusML/main/img/201603014.png" width="400">
+<img src="https://github.com/LuisEspino/CoronavirusML_2020_11/blob/main/img/201603014.png" width="400">
 </p>
 
 | Accuracy Rate: | 81.52% |
